@@ -1,0 +1,4156 @@
+Post 1:
+A coworker of mine believes that any use of in-code comments (ie, not javadoc style method or class comments) is a code smell.  What do you think?
+
+
+TF-IDF Scores:
+class: 0.4664
+code: 0.4880
+method: 0.4436
+style: 0.4436
+think: 0.2916
+use: 0.2564
+
+Termine con il punteggio TF-IDF più alto: code (0.4880)
+
+----------------------------------------------------------------------------------------------------
+
+Post 2:
+When starting a project for a company that's not primarily a programming company, one of the expectations is that there's a finished product at the end free of all bugs and does everything needed right away. However, that's rarely the case. 
+What are some ways to manage expectations and explain to non-programmers how software development differs from other types of product development?
+
+
+TF-IDF Scores:
+away: 0.1952
+bugs: 0.2053
+case: 0.2053
+company: 0.3373
+development: 0.2912
+does: 0.1304
+end: 0.1800
+expectations: 0.4105
+explain: 0.1487
+free: 0.2053
+needed: 0.1870
+non: 0.1596
+product: 0.4105
+programmers: 0.1487
+programming: 0.1100
+project: 0.1304
+right: 0.1740
+software: 0.1456
+starting: 0.1870
+ways: 0.1740
+
+Termine con il punteggio TF-IDF più alto: expectations (0.4105)
+
+----------------------------------------------------------------------------------------------------
+
+Post 3:
+Sometimes, the things I have to do for my job are interesting and engaging.  Sometimes, they aren't.  Occasionally, they really aren't.
+Do you have any particular strategies or tricks for dealing with those dull stretches when your brain would rather be doing anything other than what you're supposed to be doing, particularly when the Internet and its boundless opportunities for interesting Slack beckon?
+
+
+TF-IDF Scores:
+aren: 0.4843
+doing: 0.4185
+interesting: 0.4317
+internet: 0.2547
+job: 0.2092
+particular: 0.2422
+particularly: 0.2320
+really: 0.1770
+supposed: 0.2547
+things: 0.1674
+tricks: 0.2422
+
+Termine con il punteggio TF-IDF più alto: aren (0.4843)
+
+----------------------------------------------------------------------------------------------------
+
+Post 4:
+I have read a few articles on Internet about programming language choice in the enterprise. Recently many dynamic typed languages have been popular, i.e. Ruby, Python, PHP and Erlang. But many enterprises still stay with static typed languages like C, C++, C# and Java.
+And yes, one of the benefits of static typed languages is that programming errors are caught earlier, at compile time, rather than at run time. But there are also advantages with dynamic typed languages. (more on Wikipedia)
+The main reason why enterprises don't start to use languages like Erlang, Ruby and Python, seem to be the fact that they are dynamic typed. That also seem to be the main reason why people on StackOverflow decide against Erlang. See Why did you decide "against" Erlang.
+However, there seem to be a strong criticism against dynamic typing in the enterprises, but I don't really get it why it is that strong.
+Really, why is there so much criticism against dynamic typing in the enterprises? Does it really affect the cost of projects that much, or what? But maybe I'm wrong.
+
+
+TF-IDF Scores:
+articles: 0.1371
+choice: 0.1248
+cost: 0.1371
+did: 0.1066
+does: 0.0871
+don: 0.1835
+enterprise: 0.1371
+fact: 0.1371
+internet: 0.1371
+java: 0.1066
+language: 0.0818
+languages: 0.5328
+like: 0.1469
+main: 0.2741
+maybe: 0.1248
+people: 0.0901
+php: 0.1202
+programming: 0.1469
+projects: 0.1039
+python: 0.2404
+read: 0.1202
+really: 0.2858
+reason: 0.2497
+recently: 0.1303
+run: 0.1303
+stackoverflow: 0.1371
+start: 0.1126
+stay: 0.1303
+time: 0.1742
+use: 0.0753
+wrong: 0.1303
+yes: 0.1303
+
+Termine con il punteggio TF-IDF più alto: languages (0.5328)
+
+----------------------------------------------------------------------------------------------------
+
+Post 5:
+At first glance, I'd say a good programming team needs to understand the following matters:
+
+The details of the core language / framework
+HTML, (asynchronous) javascript
+SQL / data model
+Usability / UI design
+Security
+Project management.
+
+If this team is not complete: what is needed?
+
+
+TF-IDF Scores:
+complete: 0.2503
+data: 0.2632
+design: 0.1907
+details: 0.2632
+following: 0.2503
+framework: 0.2231
+good: 0.1795
+html: 0.2503
+language: 0.1572
+management: 0.2102
+model: 0.2398
+needed: 0.2398
+needs: 0.2503
+programming: 0.1411
+project: 0.1673
+say: 0.1996
+team: 0.4204
+understand: 0.2102
+
+Termine con il punteggio TF-IDF più alto: team (0.4204)
+
+----------------------------------------------------------------------------------------------------
+
+Post 6:
+Where waterfall commonly includes:
+
+Requirements
+Functional design
+Technical design
+Build
+Test
+Review
+(Deploy)
+
+And iterations across this list. If I forgot a step, let me know.
+
+
+TF-IDF Scores:
+commonly: 0.3714
+design: 0.5382
+functional: 0.3383
+know: 0.2155
+list: 0.3148
+requirements: 0.3383
+technical: 0.3383
+test: 0.2888
+
+Termine con il punteggio TF-IDF più alto: design (0.5382)
+
+----------------------------------------------------------------------------------------------------
+
+Post 7:
+What's your favourite quote about programming?
+One quote per answer, and please check for duplicates before posting!
+
+
+TF-IDF Scores:
+answer: 0.3908
+check: 0.5152
+favourite: 0.5152
+posting: 0.4900
+programming: 0.2762
+
+Termine con il punteggio TF-IDF più alto: check (0.5152)
+
+----------------------------------------------------------------------------------------------------
+
+Post 8:
+We've all had them, managers who have either come from sales or last looked at code 10 or more years ago but think they know how to write code.
+What can I do to give the impression that I'm grateful for their intervention, but keep it as short as possible so I can get on with my work?
+Or, should I be engaging more with the manager to educate them with modern coding techniques and practices? After all, a manager who understands these will be able to talk sensibly to clients and more senior management when discussing the project and its timescales.
+
+
+TF-IDF Scores:
+10: 0.2368
+ago: 0.2368
+code: 0.2606
+coding: 0.1767
+come: 0.2184
+know: 0.1445
+management: 0.1989
+manager: 0.4981
+possible: 0.1989
+practices: 0.2184
+project: 0.1582
+senior: 0.2368
+short: 0.2368
+techniques: 0.2368
+think: 0.1557
+ve: 0.1509
+work: 0.1533
+write: 0.2046
+years: 0.1989
+
+Termine con il punteggio TF-IDF più alto: manager (0.4981)
+
+----------------------------------------------------------------------------------------------------
+
+Post 9:
+I am finishing my college degree in programming soon and I'm exploring the next steps to take to further my career. One option I've been considering is getting a certification or a series of certifications in the area of development I want to work in.
+Are these certifications worth the time and money? Do employers place a lot of value in them?
+
+
+TF-IDF Scores:
+career: 0.2409
+college: 0.3017
+considering: 0.2869
+degree: 0.3017
+development: 0.2140
+getting: 0.2748
+lot: 0.2346
+money: 0.3017
+programming: 0.1617
+steps: 0.2869
+time: 0.1917
+value: 0.3017
+ve: 0.1828
+want: 0.2019
+work: 0.1857
+worth: 0.2557
+
+Termine con il punteggio TF-IDF più alto: college (0.3017)
+
+----------------------------------------------------------------------------------------------------
+
+Post 10:
+During my four years at university we have been using much functional programming in several functional programming languages. But I have also used much object oriented programming to, and in fact I use object oriented languages more when doing my own small project to prepare for my first job. But I often wish that I was coding in a functional programming language when doing these projects.
+However, when looking for a job, it is very rare to see a job where knowledge of a functional programming language is required.
+Why isn't functional programming languages used more in the industry? There is quite much news about functional programming languages these days, so I wonder if functional programming is catching on in the industry now?
+
+
+TF-IDF Scores:
+coding: 0.0716
+days: 0.0960
+doing: 0.1659
+fact: 0.1009
+functional: 0.6435
+industry: 0.2019
+isn: 0.0829
+job: 0.2488
+knowledge: 0.0919
+language: 0.1205
+languages: 0.3139
+looking: 0.0885
+oriented: 0.2019
+programming: 0.4328
+project: 0.0641
+projects: 0.0765
+quite: 0.0855
+small: 0.0885
+use: 0.0555
+used: 0.1351
+using: 0.0688
+wonder: 0.0960
+years: 0.0806
+
+Termine con il punteggio TF-IDF più alto: functional (0.6435)
+
+----------------------------------------------------------------------------------------------------
+
+Post 11:
+The coding standards for the code hosted in drupal.org suggest to use two spaces to indent the code; other sites suggest to use tabs to indent the code.
+What is the proper indentation character for everything, and in every situation? Please explain the answer you give.
+
+
+TF-IDF Scores:
+answer: 0.2664
+character: 0.3513
+code: 0.5512
+coding: 0.2492
+explain: 0.2545
+situation: 0.3513
+standards: 0.3199
+use: 0.3862
+
+Termine con il punteggio TF-IDF più alto: code (0.5512)
+
+----------------------------------------------------------------------------------------------------
+
+Post 12:
+We often receive last minute requests from the business asking for an extra feature to be implemented.  The project manager is usually responsible for filtering out these requests as "must haves" or "nice to have", but there are cases where the business wants to squeeze all these features into a release.   Is there a good way to say NO to the business?  What steps can be taken to stop or minimize scope creep?
+
+
+TF-IDF Scores:
+asking: 0.1825
+business: 0.6337
+cases: 0.2221
+extra: 0.2221
+feature: 0.1774
+features: 0.1883
+good: 0.1515
+implemented: 0.2023
+manager: 0.2221
+nice: 0.2221
+project: 0.1412
+say: 0.1685
+steps: 0.2112
+taken: 0.2112
+usually: 0.1825
+wants: 0.2112
+way: 0.1460
+
+Termine con il punteggio TF-IDF più alto: business (0.6337)
+
+----------------------------------------------------------------------------------------------------
+
+Post 13:
+I realize there have been lots of discussions about this type of thing and they often devolve into dogma around whether you ask the "100 logical pirates" type of questions or whether you get them to write "fizz buzz". 
+I'm interested in what techniques and questions have been effective for you when interviewing potential developers for jobs. 
+One technique per answer so we can vote on them, please.
+
+
+TF-IDF Scores:
+answer: 0.2156
+ask: 0.2270
+developers: 0.2270
+effective: 0.2842
+interested: 0.2409
+interviewing: 0.2703
+questions: 0.4420
+techniques: 0.2703
+thing: 0.2589
+type: 0.4985
+write: 0.2336
+
+Termine con il punteggio TF-IDF più alto: type (0.4985)
+
+----------------------------------------------------------------------------------------------------
+
+Post 14:
+We've often run across scenarios where the business will promise a client a new feature.  The business will promise that the feature be implemented in a specific way.  These technical details promised by the business are usually poor.  Unfortunately, client is now set and want this feature to be implemented in the way described by the business.
+In the end, the business just wants this feature to be completed without regard to quality and maintainability.  Is there a good way to push back?  How can we explain to the business that providing technical details before the requirements have been gathered is a bad idea?
+
+
+TF-IDF Scores:
+bad: 0.1073
+business: 0.6724
+client: 0.2357
+details: 0.2357
+end: 0.1033
+explain: 0.0854
+feature: 0.3764
+good: 0.0804
+idea: 0.0968
+implemented: 0.2147
+just: 0.0737
+new: 0.0819
+quality: 0.1073
+requirements: 0.1073
+run: 0.1121
+set: 0.0999
+specific: 0.1121
+technical: 0.2147
+usually: 0.0968
+ve: 0.0714
+want: 0.0789
+wants: 0.1121
+way: 0.2324
+
+Termine con il punteggio TF-IDF più alto: business (0.6724)
+
+----------------------------------------------------------------------------------------------------
+
+Post 15:
+How do you bill your programming projects? Do you do it per hour? Per job? 
+Please include what kind of project you are doing in the answer. (Mobile, Web, Desktop, etc... You can be more specific if you want.)
+BONUS:
+If you'd like to give specific amounts in your answer, you may. ;-)
+
+
+TF-IDF Scores:
+answer: 0.4253
+desktop: 0.2804
+doing: 0.2304
+include: 0.2666
+job: 0.2304
+kind: 0.2554
+like: 0.1503
+programming: 0.1503
+project: 0.1781
+projects: 0.2126
+specific: 0.5332
+want: 0.1876
+web: 0.2376
+
+Termine con il punteggio TF-IDF più alto: specific (0.5332)
+
+----------------------------------------------------------------------------------------------------
+
+Post 16:
+Who in the software engineering and software development fields uses Twitter to tweet about relevant happenings in the field?
+
+
+TF-IDF Scores:
+development: 0.2851
+field: 0.4020
+relevant: 0.3525
+software: 0.5703
+twitter: 0.4020
+uses: 0.3822
+
+Termine con il punteggio TF-IDF più alto: software (0.5703)
+
+----------------------------------------------------------------------------------------------------
+
+Post 17:
+Are there any great programming or software development books that are language agnostic?  Why should I read it?
+
+
+TF-IDF Scores:
+books: 0.4375
+development: 0.3539
+great: 0.4544
+language: 0.2979
+programming: 0.2674
+read: 0.4375
+software: 0.3539
+
+Termine con il punteggio TF-IDF più alto: great (0.4544)
+
+----------------------------------------------------------------------------------------------------
+
+Post 18:
+The Actor Model which is used by Erlang seems to be a very different way to do concurrent programming. What are your thoughts about the Actor Model? Will it be a popular solution for concurrency?
+
+
+TF-IDF Scores:
+different: 0.3534
+model: 0.7340
+programming: 0.2160
+solution: 0.3832
+used: 0.2697
+way: 0.2649
+
+Termine con il punteggio TF-IDF più alto: model (0.7340)
+
+----------------------------------------------------------------------------------------------------
+
+Post 19:
+For the longest time in places like Java's IRC channel, SO, and other places I've been told something along the lines of "Worry about how the code looks and its readability/understandability now, and performance later if absolutely necessary". So for the longest time, I haven't really been OCD about performance for my small desktop or web apps, just removing the obviously inefficient.
+Most responses are "What about scalability?". Thats a legitimate point, but if my app was only built to parse, say, files 10,000 lines long, should I make my code a mess for the small percentage of people that are going to shove in a 1,000,000 line file?
+My main question is when should I trade the easy but somewhat inefficient ways of doing tasks for big giant complicated beasts that do things extremely quickly but destroy any possible ways of upgrading and make the code excessively difficult and prone to rewriting anyway by the next developer? 
+
+
+TF-IDF Scores:
+10: 0.1497
+app: 0.1574
+apps: 0.1497
+big: 0.1334
+code: 0.2470
+desktop: 0.1574
+developer: 0.1166
+difficult: 0.1574
+doing: 0.1293
+easy: 0.1574
+extremely: 0.1574
+file: 0.1574
+files: 0.1497
+going: 0.1574
+java: 0.1224
+just: 0.0984
+later: 0.1434
+like: 0.0844
+line: 0.1380
+long: 0.1116
+main: 0.1574
+make: 0.2146
+obviously: 0.1434
+people: 0.1035
+places: 0.3148
+point: 0.1434
+possible: 0.1257
+question: 0.0954
+readability: 0.1574
+really: 0.1094
+say: 0.1194
+small: 0.2760
+somewhat: 0.1574
+tasks: 0.1380
+things: 0.1035
+time: 0.2000
+ve: 0.0954
+ways: 0.2668
+web: 0.1334
+
+Termine con il punteggio TF-IDF più alto: places (0.3148)
+
+----------------------------------------------------------------------------------------------------
+
+Post 20:
+If I have some code that has 80% test coverage (all tests pass), is it fair to say that it's of higher quality than code with no test coverage?  
+Or is it fair to say it's more maintainable?
+
+
+TF-IDF Scores:
+code: 0.3089
+coverage: 0.5905
+quality: 0.2689
+say: 0.4478
+test: 0.4591
+tests: 0.2689
+
+Termine con il punteggio TF-IDF più alto: coverage (0.5905)
+
+----------------------------------------------------------------------------------------------------
+
+Post 21:
+Test driven development. I get it, like it.
+But writing tests does require overhead. So should TDD be used universally throughout the code base, or are there areas where TDD provides a high ROI and other areas where the ROI is so low that it is not worth following.
+
+
+TF-IDF Scores:
+code: 0.1454
+development: 0.1972
+does: 0.1766
+driven: 0.2643
+following: 0.2643
+like: 0.1490
+low: 0.2779
+require: 0.2531
+tdd: 0.5286
+test: 0.2161
+tests: 0.2531
+universally: 0.2643
+used: 0.1860
+worth: 0.2356
+writing: 0.2356
+
+Termine con il punteggio TF-IDF più alto: tdd (0.5286)
+
+----------------------------------------------------------------------------------------------------
+
+Post 22:
+Having taken a course in Operating Systems I'm interested in expanding my knowledge of the Linux kernel and practice working with a big system. What are some interesting but not overly difficult projects I can try my hand at? 
+EDIT: a bit of background on what I did do with the kernel. 
+
+Implemented a new scheduling policy
+Implemented User Threads and a corresponding mutex library (not really kernel hacking but contained kernel related theory)
+
+
+
+TF-IDF Scores:
+background: 0.2072
+big: 0.1847
+bit: 0.2072
+course: 0.2072
+did: 0.1694
+difficult: 0.2179
+having: 0.2072
+implemented: 0.3969
+interested: 0.1847
+interesting: 0.1847
+knowledge: 0.1985
+library: 0.2072
+new: 0.1515
+practice: 0.2072
+projects: 0.1653
+really: 0.1515
+related: 0.2072
+systems: 0.2179
+taken: 0.2072
+theory: 0.2179
+try: 0.1985
+user: 0.1985
+working: 0.1847
+
+Termine con il punteggio TF-IDF più alto: implemented (0.3969)
+
+----------------------------------------------------------------------------------------------------
+
+Post 23:
+How would someone implement Agile process concepts as a solo developer?  Agile seems useful for getting applications developed at a faster pace, but it also seems very team oriented...
+
+
+TF-IDF Scores:
+agile: 0.6564
+applications: 0.3282
+developer: 0.2432
+getting: 0.2989
+oriented: 0.3282
+process: 0.2782
+team: 0.2621
+useful: 0.2432
+
+Termine con il punteggio TF-IDF più alto: agile (0.6564)
+
+----------------------------------------------------------------------------------------------------
+
+Post 24:
+
+Possible Duplicate:
+Using “Foo” and “Bar” in examples 
+
+I know AT&T labs used them in their Unix days, but do they have even deeper histories?
+
+
+TF-IDF Scores:
+days: 0.4997
+examples: 0.4787
+know: 0.3049
+possible: 0.4196
+used: 0.3517
+using: 0.3583
+
+Termine con il punteggio TF-IDF più alto: days (0.4997)
+
+----------------------------------------------------------------------------------------------------
+
+Post 25:
+Does learning COBOL still make sense?
+
+
+TF-IDF Scores:
+cobol: 0.5579
+does: 0.3545
+learning: 0.4231
+make: 0.3804
+sense: 0.4892
+
+Termine con il punteggio TF-IDF più alto: cobol (0.5579)
+
+----------------------------------------------------------------------------------------------------
+
+Post 26:
+There is a widely accepted opinion that Singleton is an anti-pattern. As usual, there are always exceptions to the rule. Can you explain why Singleton is a bad choice in general and give an example of some valid use cases for it?
+
+
+TF-IDF Scores:
+accepted: 0.4138
+bad: 0.3769
+cases: 0.4138
+choice: 0.3769
+example: 0.2998
+explain: 0.2998
+general: 0.3769
+use: 0.2275
+
+Termine con il punteggio TF-IDF più alto: accepted (0.4138)
+
+----------------------------------------------------------------------------------------------------
+
+Post 27:
+Will Java have the same importance it had in the past, or it will be less relevant than nowadays?
+
+
+TF-IDF Scores:
+java: 0.5312
+past: 0.5991
+relevant: 0.5991
+
+Termine con il punteggio TF-IDF più alto: past (0.5991)
+
+----------------------------------------------------------------------------------------------------
+
+Post 28:
+I just started working a year ago, and I want to join an open source project for the same reasons as anyone else: help create something useful and develop my skills further.
+My problem is, I don't know how to find a project where I'll fit in.
+How can I find a beginner-friendly project?  What attributes should I be searching for?  What are warning signs that a project might not be the right fit?  Are there any tools out there to help match people with open source projects?
+There's a similar question here, but that question has to do with employment and is limited to PHP/Drupal.
+
+
+TF-IDF Scores:
+ago: 0.1670
+create: 0.1540
+develop: 0.1670
+don: 0.1175
+help: 0.2804
+just: 0.1098
+know: 0.1019
+ll: 0.1540
+open: 0.3339
+people: 0.1154
+php: 0.1540
+problem: 0.1540
+project: 0.4463
+projects: 0.1332
+question: 0.2128
+reasons: 0.1540
+right: 0.1488
+similar: 0.1488
+skills: 0.1670
+source: 0.3512
+started: 0.1443
+tools: 0.1756
+useful: 0.1301
+want: 0.1175
+working: 0.1488
+year: 0.1540
+
+Termine con il punteggio TF-IDF più alto: project (0.4463)
+
+----------------------------------------------------------------------------------------------------
+
+Post 29:
+Elite developers can be 10x more productive than an average developer. 
+Clearly it's easier to find an elite developer around the whole world than in a company's backyard. 
+If a company is not located in a programming hot spot, should they consider hiring people who work from home?
+
+
+TF-IDF Scores:
+clearly: 0.3002
+company: 0.4933
+consider: 0.2734
+developer: 0.4447
+developers: 0.2397
+easier: 0.3002
+people: 0.1973
+productive: 0.3002
+programming: 0.1609
+work: 0.1847
+world: 0.2397
+
+Termine con il punteggio TF-IDF più alto: company (0.4933)
+
+----------------------------------------------------------------------------------------------------
+
+Post 30:
+For a long time in SO and in other places Java has the reputation of being slow. From jokes to many comments in questions and answers, people still believe Java is slow based solely on experience with it in the 90s.
+This is my issue: we have disproved (most) of the reasons that people believe Java is slow. Outside of small things, Java is pretty fast.
+So why is it that people still refuse to believe Java is fast now? Is it part of their mindset that anything thats not C/C++ is slow? Is it because people don't check over time? Is it because people are just biased?
+
+
+TF-IDF Scores:
+answers: 0.1392
+based: 0.1334
+believe: 0.4177
+check: 0.1464
+don: 0.0980
+experience: 0.1241
+issue: 0.1334
+java: 0.5693
+just: 0.0915
+long: 0.1039
+outside: 0.1464
+people: 0.4813
+places: 0.1464
+pretty: 0.1284
+questions: 0.1139
+reasons: 0.1284
+small: 0.1284
+things: 0.0963
+time: 0.1861
+
+Termine con il punteggio TF-IDF più alto: java (0.5693)
+
+----------------------------------------------------------------------------------------------------
+
+Post 31:
+I've been told that to be taken seriously as a job applicant, I should drop years of relevant experience off my résumé, remove the year I got my degree, or both. Or not even bother applying, because no one wants to hire programmers older than them.1
+Or that I should found a company, not because I want to, or because I have a product I care about, but because that way I can get a job if/when my company is acquired.
+Or that I should focus more on management jobs (which I've successfully done in the past) because… well, they couldn't really explain this one, except the implication was that over a certain age you're a loser if you're still writing code. But I like writing code.
+Have you seen this? Is this only a local (Northern California) issue?
+If you've ever hired programmers:2
+
+Of the résumés you've received, how old was the eldest applicant?
+What was the age of the oldest person you've interviewed?
+How old (when hired) was the oldest person you hired?
+
+How old is "too old" to employed as a programmer?
+1 I'm assuming all applicants have equivalent applicable experience. This isn't about someone with three decades of COBOL applying for a Java guru job.
+2 Yes, I know that (at least in the US) you aren't supposed to ask how old an applicant is. In my experience, though, you can get a general idea from a résumé.
+
+
+TF-IDF Scores:
+aren: 0.1106
+ask: 0.0929
+certain: 0.1060
+cobol: 0.1163
+code: 0.1217
+company: 0.1912
+degree: 0.1163
+experience: 0.2958
+explain: 0.0843
+general: 0.1060
+got: 0.1060
+idea: 0.0956
+isn: 0.0956
+issue: 0.1060
+java: 0.0905
+job: 0.2868
+know: 0.0675
+like: 0.0624
+management: 0.0929
+old: 0.4930
+past: 0.1020
+person: 0.2119
+product: 0.1163
+programmer: 0.0986
+programmers: 0.1686
+really: 0.0809
+relevant: 0.1020
+remove: 0.1163
+seen: 0.1020
+supposed: 0.1163
+taken: 0.1106
+ve: 0.3525
+want: 0.0779
+wants: 0.1106
+way: 0.0765
+writing: 0.1972
+year: 0.1020
+years: 0.0929
+yes: 0.1106
+
+Termine con il punteggio TF-IDF più alto: old (0.4930)
+
+----------------------------------------------------------------------------------------------------
+
+Post 32:
+Joel Spolsky wrote a famous blog post "Human Task Switches considered harmful".
+While I agree with the premise and it seems like common sense, I'm wondering if there are any studies or white papers on this to calculate the overhead on task switches, or is the evidence merely anecdotal? 
+
+
+TF-IDF Scores:
+blog: 0.3469
+common: 0.2770
+considered: 0.3469
+joel: 0.3469
+like: 0.1859
+sense: 0.3042
+task: 0.6597
+
+Termine con il punteggio TF-IDF più alto: task (0.6597)
+
+----------------------------------------------------------------------------------------------------
+
+Post 33:
+"Regular" golf vs. code golf:
+Both are competitions.  Both have a well-defined set of rules, which I'll leave out for simplicity.  Both have well-defined goals; in short, "use fewer hits/characters than your competitors."
+To win matches, athletic golfers rely on
+
+equipment
+
+Some situations call for a sand wedge; others, a 9-iron.
+
+
+techniques
+
+The drive works better when your feet are about shoulder width apart and your arms are relaxed.
+
+
+and strategies
+
+Sure, you could take that direct shortcut to the hole... but do you really want to risk the water hazard or sand bunker when those trees are in the way and the wind is so strong?  It might be better to go around the long way.
+
+
+
+What do code golfers have that's analagous to athletic golfers' equipment, techniques and strategies?
+Sample answer to get this started: use the right club!  Choose GolfScript instead of C#.
+
+
+TF-IDF Scores:
+answer: 0.1623
+better: 0.3898
+code: 0.2238
+instead: 0.1876
+leave: 0.2035
+ll: 0.1876
+long: 0.1518
+really: 0.1487
+right: 0.1814
+set: 0.1814
+short: 0.2035
+situations: 0.2035
+started: 0.1758
+sure: 0.1876
+techniques: 0.4069
+use: 0.2353
+vs: 0.2035
+want: 0.1432
+way: 0.2813
+works: 0.1949
+
+Termine con il punteggio TF-IDF più alto: techniques (0.4069)
+
+----------------------------------------------------------------------------------------------------
+
+Post 34:
+If you were to design a programming language, how would you do it? What features would you put in? What would you leave out? Statically or dynamically typed? Strongly or weakly typed? Compiled or interpreted? Justify your answers.
+
+
+TF-IDF Scores:
+answers: 0.4946
+design: 0.3769
+features: 0.4409
+language: 0.3106
+leave: 0.4946
+programming: 0.2788
+
+Termine con il punteggio TF-IDF più alto: answers (0.4946)
+
+----------------------------------------------------------------------------------------------------
+
+Post 35:
+Did you learn to touch-type when you were already working as a programmer?  If so how did it affect your productivity?  Or are you still unable to touch type and do you think it holds you back?
+According to Steve Yegge it is essential,
+Personally I did not notice much difference, possibly because I was spending less than 25% of my work time actually typing (I was working on a large legacy project at the time and I was spending more time on reading and debugging existing code.)
+
+
+TF-IDF Scores:
+actually: 0.1800
+code: 0.1111
+did: 0.4955
+difference: 0.2124
+learn: 0.1863
+personally: 0.1935
+possibly: 0.1935
+programmer: 0.1800
+project: 0.1350
+reading: 0.1935
+think: 0.1328
+time: 0.4049
+type: 0.3725
+work: 0.1307
+working: 0.3601
+
+Termine con il punteggio TF-IDF più alto: did (0.4955)
+
+----------------------------------------------------------------------------------------------------
+
+Post 36:
+Rather than slavishly pair program all the time, we use pair programming selectively on our team. I think it works best in the following circumstances:
+
+Ramping up brand new team members on a project (instead of letting them wade through documentation or code on their own).
+Having junior and senior people work together (helps to show some of the skills and tricks of the more experienced developers, plus it allows the old dogs to learn new tricks sometimes).
+When someone is trying to track down a defect, it often helps to pair with a fresh set of eyes.
+
+When to use pair program and why?
+When to avoid pair programming? Why?
+
+
+TF-IDF Scores:
+avoid: 0.1710
+best: 0.1413
+code: 0.1020
+developers: 0.1557
+following: 0.1855
+having: 0.1855
+instead: 0.1710
+learn: 0.1710
+new: 0.2712
+old: 0.1653
+people: 0.1282
+program: 0.3709
+programming: 0.2091
+project: 0.1239
+senior: 0.1855
+set: 0.1653
+skills: 0.1855
+team: 0.3115
+think: 0.1219
+time: 0.1239
+tricks: 0.3709
+trying: 0.1479
+use: 0.2145
+work: 0.1200
+works: 0.1777
+
+Termine con il punteggio TF-IDF più alto: program (0.3709)
+
+----------------------------------------------------------------------------------------------------
+
+Post 37:
+No matter how much you love a programming language, there are always a few details in it that aren’t quite as nice as they could be.
+In this question, I would like to specifically focus on syntax elements. In a programming language that you use frequently (perhaps your favourite programming language, or perhaps the one you are forced to use at work), which syntax element do you find most unreadable, unclear, inconvenient or unpleasant?
+
+
+TF-IDF Scores:
+aren: 0.2484
+details: 0.2612
+favourite: 0.2612
+frequently: 0.2612
+language: 0.4678
+like: 0.1400
+matter: 0.2612
+nice: 0.2612
+programming: 0.4200
+question: 0.1583
+quite: 0.2214
+use: 0.2872
+work: 0.1607
+
+Termine con il punteggio TF-IDF più alto: language (0.4678)
+
+----------------------------------------------------------------------------------------------------
+
+Post 38:
+I think everyone has their own program or set of features beyond "Hello World!", that they use when trying out a new language.
+Mine is a guessing game:
+I'm thinking of a number 1-10, guess what it is!
+Guess: 3
+Nope, too low!
+Guess: 7
+Nope, too high!
+Guess: 5
+Yes, You win!
+Play again (Y/N)? N
+
+What do you write?
+
+
+TF-IDF Scores:
+10: 0.1819
+features: 0.1621
+game: 0.1913
+guess: 0.7650
+language: 0.1142
+low: 0.1913
+new: 0.1330
+number: 0.1913
+program: 0.1819
+set: 0.1621
+think: 0.1196
+thinking: 0.1677
+trying: 0.1451
+use: 0.1051
+world: 0.1527
+write: 0.1572
+yes: 0.1819
+
+Termine con il punteggio TF-IDF più alto: guess (0.7650)
+
+----------------------------------------------------------------------------------------------------
+
+Post 39:
+I have seen this on the SO on many times. Whenever a question is vague and the question is asking some magical answer somebody or the other leaves a comment saying answer is 42. Even a book I am reading right now uses '42' as the number whenever it wants demonstrate some basic concept using an integer. So is there any history behind it or it is just a coincidence?
+
+
+TF-IDF Scores:
+answer: 0.4031
+asking: 0.2184
+basic: 0.2657
+book: 0.2420
+concept: 0.2657
+just: 0.1661
+number: 0.2657
+question: 0.3221
+reading: 0.2420
+right: 0.2252
+seen: 0.2330
+times: 0.2527
+uses: 0.2527
+using: 0.1812
+wants: 0.2527
+
+Termine con il punteggio TF-IDF più alto: answer (0.4031)
+
+----------------------------------------------------------------------------------------------------
+
+Post 40:
+I am a moderately capable web developer. I can put stuff where I want it to go and put some JQuery stuff in there if I need to. However, if I am making my own website (which I am starting to do) I have no idea how to design it. If someone was to sit next to me a point to the screen and say "put this picture there, text there" I can do that quite easily. But designing my own site with my choice of colours and text will look like a toddler has invented it.
+Does anyone know any websites/books I can look at or has anyone got any tips on the basics of non-toddler web design?
+
+
+TF-IDF Scores:
+books: 0.1608
+choice: 0.1670
+design: 0.2657
+developer: 0.1358
+does: 0.1165
+easily: 0.1744
+got: 0.1670
+idea: 0.1507
+know: 0.1064
+like: 0.0983
+look: 0.3340
+making: 0.1744
+need: 0.1464
+non: 0.1426
+point: 0.1670
+quite: 0.1554
+say: 0.1391
+starting: 0.1670
+stuff: 0.3340
+text: 0.3667
+tips: 0.1834
+want: 0.1227
+web: 0.3108
+website: 0.1834
+websites: 0.1834
+
+Termine con il punteggio TF-IDF più alto: text (0.3667)
+
+----------------------------------------------------------------------------------------------------
+
+Post 41:
+goto is almost universally discouraged. Is using this statement ever worthwhile?
+
+
+TF-IDF Scores:
+universally: 0.8127
+using: 0.5827
+
+Termine con il punteggio TF-IDF più alto: universally (0.8127)
+
+----------------------------------------------------------------------------------------------------
+
+Post 42:
+Managed OSes like Microsoft Singularity and JNode are quite an interesting concept. Essentially, the OS is bootstrapped with code written in a low-level language (C/C++/Assembly), which essentially implements a virtual machine. The rest of the OS (and all userland apps) run on the virtual machine. There are some great things about this. For example, you suddenly make arbitrary pointers obsolete. And if well written, you get rid of a ton of legacy crud that most modern OSes currently have. 
+However, as a disadvantage, you're that much farther away from the hardware, and as a developer, you lose the ability to drop down to a lower level of abstraction and get your hands dirty. 
+What are your opinions on this?
+
+
+TF-IDF Scores:
+ability: 0.2518
+apps: 0.2394
+away: 0.2394
+code: 0.1317
+concept: 0.2518
+currently: 0.2394
+developer: 0.1865
+example: 0.1824
+great: 0.2294
+interesting: 0.2134
+language: 0.1503
+level: 0.5036
+like: 0.1350
+low: 0.2518
+make: 0.1717
+quite: 0.2134
+run: 0.2394
+things: 0.1655
+
+Termine con il punteggio TF-IDF più alto: level (0.5036)
+
+----------------------------------------------------------------------------------------------------
+
+Post 43:
+All but the most trivial programs are filled with bugs and so anything that promises to remove them is extremely alluring. At the moment, correctness proofs are code are extremely esoteric, mainly because of the difficultly of learning this and the extra effort it takes to prove a program correct. Do you think that code proving will ever take off?
+
+
+TF-IDF Scores:
+bugs: 0.2719
+code: 0.2844
+correct: 0.2476
+extra: 0.2719
+extremely: 0.5438
+learning: 0.2062
+program: 0.2585
+programs: 0.2585
+remove: 0.2719
+takes: 0.2476
+think: 0.1700
+trivial: 0.2719
+
+Termine con il punteggio TF-IDF più alto: extremely (0.5438)
+
+----------------------------------------------------------------------------------------------------
+
+Post 44:
+on a widescreen monitor one can easily see more than 80 characters at a time, without scrollbars. even linus torvalds sees the 80 character limit as outdated.
+so, is the 80 character limit still relevant in times of widescreen monitors?
+
+
+TF-IDF Scores:
+character: 0.7569
+easily: 0.3599
+relevant: 0.3319
+time: 0.2405
+times: 0.3599
+
+Termine con il punteggio TF-IDF più alto: character (0.7569)
+
+----------------------------------------------------------------------------------------------------
+
+Post 45:
+When I am in a code or design rut, I tend to find a non-dev coworker to discuss the problem with. It forces me to explain the problem in great detail and I'll usually find something I missed in the process.
+What are your "unsticking" methods?
+
+
+TF-IDF Scores:
+code: 0.1677
+design: 0.2323
+explain: 0.2323
+great: 0.2920
+ll: 0.2811
+methods: 0.2920
+non: 0.2493
+problem: 0.5623
+process: 0.2717
+tend: 0.3048
+usually: 0.2634
+
+Termine con il punteggio TF-IDF più alto: problem (0.5623)
+
+----------------------------------------------------------------------------------------------------
+
+Post 46:
+We, as programmers, are constantly being asked 'How long will it take'?
+And you know, the situation is almost always like this:
+
+The requirements are unclear. Nobody has done an in depth analysis of all the implications.
+The new feature will probably break some assumptions you made in your code and you start thinking immediately of all the things you might have to refactor. 
+You have other things to do from past assignments and you will have to come up with an estimate that takes that other work into account.
+The 'done' definition is probably unclear: When will it be done? 'Done' as in just finished coding it, or 'done' as in "the users are using it"?
+No matter how conscious you are of all these things, sometimes your "programmer's pride" makes you give/accept shorter times than you originally suppose it might take. Specially when you feel the pressure of deadlines and management expectations.
+
+Many of these are organizational or cultural issues that are not simple and easy to solve, but in the end the reality is that you are being asked for an estimate and they expect you to give a reasonable answer. It's part of your job. You cannot simply say: I don't know. 
+As a result, I always end up giving estimates that I later realize I cannot fulfill. It has happened countless of times, and I always promise it won't happen again. But it does.
+What is your personal process for deciding and delivering an estimate? What techniques have you found useful?
+
+
+TF-IDF Scores:
+account: 0.1468
+answer: 0.1114
+asked: 0.2575
+code: 0.0768
+coding: 0.1041
+come: 0.1288
+does: 0.0933
+don: 0.0983
+easy: 0.1468
+end: 0.2575
+expectations: 0.1468
+feature: 0.1172
+feel: 0.1288
+happen: 0.1396
+job: 0.1206
+just: 0.0918
+know: 0.1703
+later: 0.1337
+like: 0.0787
+long: 0.1041
+makes: 0.1288
+management: 0.1172
+matter: 0.1468
+new: 0.1021
+originally: 0.1396
+past: 0.1288
+probably: 0.2675
+process: 0.1244
+programmer: 0.1244
+programmers: 0.1064
+reality: 0.1468
+requirements: 0.1337
+say: 0.1114
+simple: 0.1288
+simply: 0.1337
+situation: 0.1468
+solve: 0.1468
+start: 0.1206
+takes: 0.1337
+techniques: 0.1396
+things: 0.2896
+thinking: 0.1288
+times: 0.2792
+useful: 0.1088
+using: 0.1001
+work: 0.0904
+
+Termine con il punteggio TF-IDF più alto: things (0.2896)
+
+----------------------------------------------------------------------------------------------------
+
+Post 47:
+I know some people are massive proponents of test driven development. I have used unit tests in the past, but only to test operations that can be tested easily or which I believe will quite possibly be correct. Complete or near complete code coverage sounds like it would take a lot of time.
+
+What projects do you use test-driven development for? Do you only use it for projects above a certain size?
+Should I be using it or not? Convince me!
+
+
+
+TF-IDF Scores:
+believe: 0.1739
+certain: 0.1666
+code: 0.0957
+complete: 0.3478
+correct: 0.1666
+coverage: 0.1829
+development: 0.2595
+driven: 0.3478
+easily: 0.1739
+know: 0.1061
+like: 0.0980
+lot: 0.1422
+past: 0.1604
+people: 0.1202
+possibly: 0.1666
+projects: 0.2774
+quite: 0.1550
+test: 0.4267
+tests: 0.1666
+time: 0.1162
+unit: 0.1666
+use: 0.2011
+used: 0.1224
+using: 0.1247
+
+Termine con il punteggio TF-IDF più alto: test (0.4267)
+
+----------------------------------------------------------------------------------------------------
+
+Post 48:
+When learning a new programming language you sometimes come across a language feature which 
+makes you wish you had it in your other programming languages that you know.
+What are some language feature which were at the time of learning very new to you and that you wish your other programming languages had.  
+An example of this is generators in Python or C#.
+Other examples may include list comprehensions in Python, template in C++ or LINQ in .NET or lazy evaluation in Haskell.
+What other semi-unique language features have you come across which were completely new and enlightening to you?  Are there other features of older programming languages which were unique and have fallen out of fashion?
+
+
+TF-IDF Scores:
+come: 0.2767
+completely: 0.1578
+example: 0.1143
+examples: 0.1437
+feature: 0.2520
+features: 0.2674
+include: 0.1500
+know: 0.0915
+language: 0.3768
+languages: 0.3680
+learning: 0.2393
+list: 0.1337
+makes: 0.1384
+net: 0.1337
+new: 0.3290
+programming: 0.3383
+python: 0.2767
+time: 0.1002
+
+Termine con il punteggio TF-IDF più alto: language (0.3768)
+
+----------------------------------------------------------------------------------------------------
+
+Post 49:
+As programmers we have a lot of inputs:
+
+Ebooks 
+Code snippets 
+Interesting emails 
+Documents
+Web articles 
+Blog posts
+StackOverflow questions
+Podcasts
+...
+
+Which tools do you use to store, organize, search and consult all of this stuff?
+Is there a silver bullet solution to handle this huge amount of data? 
+
+
+TF-IDF Scores:
+articles: 0.2951
+blog: 0.2951
+code: 0.1544
+data: 0.2951
+interesting: 0.2502
+lot: 0.2295
+programmers: 0.2138
+questions: 0.2295
+search: 0.2951
+solution: 0.2806
+stackoverflow: 0.2951
+stuff: 0.2688
+tools: 0.2951
+use: 0.1623
+web: 0.2502
+
+Termine con il punteggio TF-IDF più alto: articles (0.2951)
+
+----------------------------------------------------------------------------------------------------
+
+Post 50:
+What is the recommended  User Account Control (UAC) setting when developing on Windows?
+Even on Win7 I find it annoying enough to turn it off (because it makes me more productive with it off) but sometimes I feel bad because I know I'll find more problems in my code if I leave it on.
+
+
+TF-IDF Scores:
+account: 0.3117
+bad: 0.2840
+code: 0.1631
+developing: 0.2965
+feel: 0.2734
+know: 0.1809
+leave: 0.2965
+ll: 0.2734
+makes: 0.2734
+problems: 0.3117
+productive: 0.3117
+user: 0.2840
+windows: 0.2965
+
+Termine con il punteggio TF-IDF più alto: account (0.3117)
+
+----------------------------------------------------------------------------------------------------
+
+Post 51:
+What methods do you use to stay awake and alert while working?
+Personally I drink coffee non stop throughout the day.  But I've also heard of this thing called exercise that should help too.  Does anyone else have tips and tricks to stay more awake and alert while working?  Redbull? Maybe a magic pill that won't require me to sleep?
+
+
+TF-IDF Scores:
+called: 0.2393
+day: 0.2099
+does: 0.1521
+heard: 0.2180
+help: 0.1911
+maybe: 0.2180
+methods: 0.2180
+non: 0.1861
+personally: 0.2180
+require: 0.2180
+stay: 0.4552
+thing: 0.2180
+tips: 0.2393
+tricks: 0.2276
+use: 0.1316
+ve: 0.1450
+working: 0.4057
+
+Termine con il punteggio TF-IDF più alto: stay (0.4552)
+
+----------------------------------------------------------------------------------------------------
+
+Post 52:
+I'm freshly out of college, and starting university somewhere next week. We've seen unit tests, but we kinda not used them much; and everyone talks about them, so I figured maybe I should do some.
+The problem is, I don't know what to test. Should I test the common case? The edge case? How do I know that a function is adequately covered?
+I always have the terrible feeling that while a test will prove that a function works for a certain case, it's utterly useless to prove that the function works, period.
+
+
+TF-IDF Scores:
+case: 0.5601
+certain: 0.1700
+college: 0.1867
+common: 0.1491
+don: 0.1249
+know: 0.2166
+maybe: 0.1700
+problem: 0.1637
+seen: 0.1637
+starting: 0.1700
+test: 0.4355
+tests: 0.1700
+unit: 0.1700
+used: 0.1249
+useless: 0.1867
+ve: 0.1131
+works: 0.3401
+
+Termine con il punteggio TF-IDF più alto: case (0.5601)
+
+----------------------------------------------------------------------------------------------------
+
+Post 53:
+I'm trying to find places where I can hone my craft outside the context of school or work. Are there places online, or books available, where I can access lists of programming puzzles or challenges?
+
+
+TF-IDF Scores:
+access: 0.3176
+available: 0.3020
+books: 0.2785
+context: 0.3176
+outside: 0.3176
+places: 0.6352
+programming: 0.1702
+trying: 0.2409
+work: 0.1954
+
+Termine con il punteggio TF-IDF più alto: places (0.6352)
+
+----------------------------------------------------------------------------------------------------
+
+Post 54:
+On any team, you are going to have the need for more grizzled and grey developers and some young pups. Some reasons include:
+
+Money. There are often tasks that don't require the same level of experience to deliver, so it makes sense not to pay top dollar to have those tasks fulfilled.
+Energy. There's an energy and enthusiasm that new people can bring to a team that stops it from getting too stale and set in its ways. There's also calmness and wisdom that the more senior people can bring.
+Knowledge transfer and career growth. Both in terms of the project and skills, it's useful and often fun to teach people and to learn new stuff. It's satisfying to help "bring on" new team members.
+
+I realise there are some cutting edge projects where it may be important for there to be more senior people than junior, but in general, is there an ideal mix of experiences on a team, or is it totally dependent on the project?
+
+
+TF-IDF Scores:
+career: 0.1128
+developers: 0.1128
+don: 0.0946
+experience: 0.1198
+experiences: 0.1413
+general: 0.1287
+getting: 0.1287
+going: 0.1413
+help: 0.1128
+include: 0.1344
+knowledge: 0.1287
+learn: 0.1239
+level: 0.1413
+makes: 0.1239
+money: 0.1413
+need: 0.1128
+new: 0.2947
+pay: 0.1413
+people: 0.3716
+project: 0.1796
+projects: 0.1072
+reasons: 0.1239
+require: 0.1287
+senior: 0.2687
+sense: 0.1239
+set: 0.1198
+skills: 0.1344
+stuff: 0.1287
+tasks: 0.2478
+team: 0.4513
+useful: 0.1047
+ways: 0.1198
+
+Termine con il punteggio TF-IDF più alto: team (0.4513)
+
+----------------------------------------------------------------------------------------------------
+
+Post 55:
+What question have you found especially valuable in interviewing software developers?  What is it about the question that has made it particularly useful?
+I'm looking for a particular question you like to ask, not just an interviewing approach like "make them write code".
+
+
+TF-IDF Scores:
+approach: 0.2523
+ask: 0.2015
+code: 0.1320
+developers: 0.2015
+interviewing: 0.4799
+just: 0.1577
+like: 0.2705
+looking: 0.2213
+make: 0.1720
+particular: 0.2399
+particularly: 0.2298
+question: 0.4588
+software: 0.1790
+useful: 0.1869
+write: 0.2073
+
+Termine con il punteggio TF-IDF più alto: interviewing (0.4799)
+
+----------------------------------------------------------------------------------------------------
+
+Post 56:
+It doesn't have to be programming or software development related, but just asked during an interview for an IT related job.
+I know some "left field" questions are meant to see how the candidate copes with unexpected and novel situations, but here I'm looking for a question that appeared to be completely unrelated to the job they were interviewing you for, or something that made you think "what useful information could they possibly get from my answer to that question?".
+
+
+TF-IDF Scores:
+answer: 0.1709
+asked: 0.1976
+completely: 0.2253
+development: 0.1598
+doesn: 0.2052
+field: 0.2253
+information: 0.1976
+interviewing: 0.2142
+job: 0.3702
+just: 0.1408
+know: 0.1307
+looking: 0.1976
+possibly: 0.2052
+programming: 0.1208
+question: 0.2731
+questions: 0.1752
+related: 0.4285
+situations: 0.2142
+software: 0.1598
+think: 0.1408
+useful: 0.1669
+
+Termine con il punteggio TF-IDF più alto: related (0.4285)
+
+----------------------------------------------------------------------------------------------------
+
+Post 57:
+Literate programming has good ideals. Why do you think that this isn't mainstream? It is because it has failed to deliver?
+
+
+TF-IDF Scores:
+good: 0.5057
+isn: 0.6094
+programming: 0.3975
+think: 0.4636
+
+Termine con il punteggio TF-IDF più alto: isn (0.6094)
+
+----------------------------------------------------------------------------------------------------
+
+Post 58:
+I originally tried asking this on StackOverflow, but it was too subjective :-(. I am interested in methods of defining the power of programming languages. Turing completeness is one, but it is almost universally satisfied. What would be nice is to define a measure of power that discriminates among programming languages that are actually in used. For example, can anyone propose a non-subjective method that would discriminate between assembly and Java?
+Turing completeness means that a language is maximally powerful in what it can output (which pretty much means it can do anything non-time based in the real world). So if we want to define a stronger measure of power, we need to take another approach. Shortness was suggested in the original question, but this is not easy to define at all. Does anyone have any other suggestions?
+
+
+TF-IDF Scores:
+actually: 0.1581
+approach: 0.1865
+asking: 0.1533
+based: 0.1699
+does: 0.1185
+easy: 0.1865
+example: 0.1351
+interested: 0.1581
+java: 0.1450
+language: 0.1114
+languages: 0.2901
+means: 0.3730
+method: 0.1774
+methods: 0.1699
+need: 0.1489
+nice: 0.1865
+non: 0.2901
+original: 0.1774
+originally: 0.1774
+pretty: 0.1636
+programming: 0.2000
+question: 0.1130
+real: 0.1636
+stackoverflow: 0.1865
+time: 0.1185
+tried: 0.1865
+universally: 0.1774
+used: 0.1248
+want: 0.1248
+world: 0.1489
+
+Termine con il punteggio TF-IDF più alto: means (0.3730)
+
+----------------------------------------------------------------------------------------------------
+
+Post 59:
+For decades, the accepted degree to get to become a software developer was "Compter Science."
+We've had a few questions already about whether that degree really prepares students to develop software.
+Some schools have, in the last 8 years or so, started offering multiple distinct majors in programming.  Using the curriculum from my school:
+
+Computer Science, which starts out with some intro programming courses in the first year, and then focuses on theoretical computer science, algorithms, and a bit of OS stuff.  Most classes involve several smaller projects and homeworks, done solo or in pairs.
+Software Engineering, which starts out with the same intro programming courses, does a few classes of theory, and then goes into software development practices (testing, process methodologies, sofware metrics, requirements gathering) and software design (distributed system design, info system design, real-time/embedded design, subsystem design, etc)
+
+Different schools do it differently, so the above is just a real-world example I'm familiar with.  What I ask is: Is there a need for distinct majors in programming?
+
+
+TF-IDF Scores:
+accepted: 0.1335
+ask: 0.1066
+bit: 0.1269
+degree: 0.2669
+design: 0.4835
+develop: 0.1269
+developer: 0.0989
+development: 0.0947
+different: 0.1170
+does: 0.0848
+example: 0.0967
+goes: 0.1335
+just: 0.0834
+need: 0.1066
+practices: 0.1170
+process: 0.1131
+programming: 0.2862
+projects: 0.1012
+questions: 0.1038
+real: 0.2341
+really: 0.0928
+requirements: 0.1216
+software: 0.4734
+started: 0.1097
+stuff: 0.1216
+testing: 0.1170
+theory: 0.1335
+time: 0.0848
+using: 0.0910
+ve: 0.0809
+world: 0.1066
+year: 0.1170
+years: 0.1066
+
+Termine con il punteggio TF-IDF più alto: design (0.4835)
+
+----------------------------------------------------------------------------------------------------
+
+Post 60:
+I was instructed by my project manager that frequent deployment in PROD or to test server should be avoided. But I don't understand why? We roll our testing copy to PROD on every sprint end but suddenly client would ask a simple change to the existing application which would require a re-deployment. When every thing was well tested and QA approved. why should we avoid frequent deployment?
+How it was done universally?
+
+
+TF-IDF Scores:
+application: 0.2863
+ask: 0.2286
+avoid: 0.2511
+change: 0.2608
+client: 0.2863
+don: 0.1916
+end: 0.2511
+manager: 0.2863
+project: 0.1819
+require: 0.2608
+simple: 0.2511
+test: 0.2226
+testing: 0.2511
+thing: 0.2608
+understand: 0.2286
+universally: 0.2722
+
+Termine con il punteggio TF-IDF più alto: application (0.2863)
+
+----------------------------------------------------------------------------------------------------
+
+Post 61:
+I know this is obviously not true for some games, minesweeper, card games, etc.  But what about any game involving simulating the real world environment.  Obviously these games have some form of a physics engineer powering the graphics. 
+For someone like me who personally did not enjoy physics but loves video games, do I have a chance at ever getting involved in the development cycle of a video game such as this while disliking physics? 
+
+
+TF-IDF Scores:
+development: 0.1888
+did: 0.2070
+environment: 0.2662
+form: 0.2662
+game: 0.5323
+getting: 0.2424
+know: 0.1544
+like: 0.1427
+obviously: 0.4849
+personally: 0.2424
+real: 0.2334
+world: 0.2125
+
+Termine con il punteggio TF-IDF più alto: game (0.5323)
+
+----------------------------------------------------------------------------------------------------
+
+Post 62:
+One per answer please. I'll add my favourite as an answer.
+
+
+TF-IDF Scores:
+add: 0.4441
+answer: 0.6737
+favourite: 0.4441
+ll: 0.3895
+
+Termine con il punteggio TF-IDF più alto: answer (0.6737)
+
+----------------------------------------------------------------------------------------------------
+
+Post 63:
+In my current job it feels like we have a lot requirement changes. We are an "Agile" shop, so I get that we are supposed to adjust and what not, but sometime the change is large and nothing trivial. 
+My question is, how do you effectively communicate the cost of the change? Because of being agile, if a change is big enough something will get dropped from the current sprint, but it usually just get added next time around. Since our model is SaaS, the end customer is effectively the business itself, and they know they will get the cut feature n weeks later.
+I guess what I am trying to get at is the removal of a feature really isn't anything to use for communication as it was only delayed by n weeks. What other ways do you have to get the business to understand what a change costs?
+
+
+TF-IDF Scores:
+agile: 0.3256
+big: 0.1380
+business: 0.3097
+change: 0.5932
+cost: 0.1628
+end: 0.1428
+feature: 0.2600
+guess: 0.1628
+isn: 0.1338
+job: 0.1338
+just: 0.1018
+know: 0.0945
+later: 0.1483
+like: 0.0873
+lot: 0.1266
+model: 0.1483
+question: 0.0987
+really: 0.1132
+supposed: 0.1628
+time: 0.1035
+trivial: 0.1628
+trying: 0.1235
+understand: 0.1300
+use: 0.0895
+usually: 0.1338
+ways: 0.1380
+
+Termine con il punteggio TF-IDF più alto: change (0.5932)
+
+----------------------------------------------------------------------------------------------------
+
+Post 64:
+I know that they are implemented extremely unsafely in C/C++. Can't they be implemented in a safer way? Are the disadvantages of macros really bad enough to outweigh the massive power they provide?
+
+
+TF-IDF Scores:
+bad: 0.3600
+extremely: 0.3953
+implemented: 0.7201
+know: 0.2293
+really: 0.2748
+way: 0.2599
+
+Termine con il punteggio TF-IDF più alto: implemented (0.7201)
+
+----------------------------------------------------------------------------------------------------
+
+Post 65:
+This is more a discussion question than an actual attempt to determine the "best", since that clearly varies by the needs of the organization. I'm more curious about the arguments in favor of different systems across categories (centralized vs distributed, open vs proprietary, etc).
+So, what do you think is the best version control system?
+
+
+TF-IDF Scores:
+actual: 0.2668
+best: 0.3866
+clearly: 0.2668
+determine: 0.2668
+different: 0.2339
+needs: 0.2537
+open: 0.2537
+question: 0.1617
+systems: 0.2668
+think: 0.1668
+version: 0.2668
+vs: 0.5073
+
+Termine con il punteggio TF-IDF più alto: vs (0.5073)
+
+----------------------------------------------------------------------------------------------------
+
+Post 66:
+There are a lot of questions about what programming books should be on the programmer's bookshelf. How about non-programming related books that can help you become a better programmer or developer? It would also be interesting to know why they would help.
+My first choice would be Sun Tzu's "Art of War" (however cliché), because it made it obvious that the success of any project depends on the strength of its weakest link (and warfare is a big project).
+
+
+TF-IDF Scores:
+better: 0.2149
+big: 0.2000
+books: 0.4138
+choice: 0.2149
+developer: 0.1748
+help: 0.3768
+interesting: 0.2000
+know: 0.1369
+lot: 0.1835
+non: 0.1835
+programmer: 0.4000
+programming: 0.2529
+project: 0.2998
+questions: 0.1835
+related: 0.2244
+
+Termine con il punteggio TF-IDF più alto: books (0.4138)
+
+----------------------------------------------------------------------------------------------------
+
+Post 67:
+What are the first 5 things you do before starting a new project?
+Do you always spend a day researching new frameworks? Or, using similar or competing products?
+
+
+TF-IDF Scores:
+day: 0.3722
+new: 0.5901
+project: 0.2697
+similar: 0.3597
+starting: 0.3866
+things: 0.2790
+using: 0.2894
+
+Termine con il punteggio TF-IDF più alto: new (0.5901)
+
+----------------------------------------------------------------------------------------------------
+
+Post 68:
+Tester and blogger Lanette Creamer recently posted this question on Twitter:
+
+If you are a professional software developer who works with testers, think of the best testers you know. What traits do they have in common?
+
+I thought it would make an excellent question for here.
+My thoughts are:
+
+They want to remove ambiguity from requirements even if it means asking awkward questions.
+They create new features by seeing the way software "should" work, rather than just how it's documented.
+They demonstrate honesty and integrity and encourage but not demand it from those around them. In other words, they model behavior.
+
+What are the traits of the best testers you've worked with?
+
+
+TF-IDF Scores:
+asking: 0.1704
+best: 0.3005
+common: 0.1656
+create: 0.1818
+developer: 0.1536
+features: 0.1757
+just: 0.1296
+know: 0.1203
+make: 0.1414
+means: 0.2073
+model: 0.1889
+new: 0.1441
+professional: 0.1972
+question: 0.2513
+questions: 0.1612
+recently: 0.1972
+remove: 0.2073
+requirements: 0.1889
+software: 0.2942
+think: 0.1296
+thought: 0.1889
+twitter: 0.2073
+ve: 0.1257
+want: 0.1388
+way: 0.1363
+words: 0.2073
+work: 0.1276
+worked: 0.1972
+works: 0.1889
+
+Termine con il punteggio TF-IDF più alto: best (0.3005)
+
+----------------------------------------------------------------------------------------------------
+
+Post 69:
+I'd like to sell my software on the 'net but am not sure how to do the whole Merchant setup.  I have access to Commerce Server 2009, and I want to seem professional so a plain old PayPal account is out.
+What do I need to know/do to sell a few things using ASP.NET, accept credit cards, and what not? 
+
+
+TF-IDF Scores:
+access: 0.2978
+account: 0.2978
+asp: 0.2831
+know: 0.1727
+like: 0.1596
+need: 0.2378
+net: 0.5047
+old: 0.2524
+professional: 0.2831
+software: 0.2112
+sure: 0.2611
+things: 0.1957
+using: 0.2030
+want: 0.1993
+
+Termine con il punteggio TF-IDF più alto: net (0.5047)
+
+----------------------------------------------------------------------------------------------------
+
+Post 70:
+I'm considering learning iPhone development and Objective C but don't want to avoid developing something for the most saturated markets and app categories.
+What categories should I avoid?  Are there too many dating applications, or should I just stick to coming up with a creative game or two?
+
+
+TF-IDF Scores:
+app: 0.3123
+applications: 0.3123
+avoid: 0.5478
+considering: 0.2970
+developing: 0.2970
+development: 0.2216
+don: 0.2091
+game: 0.3123
+just: 0.1953
+learning: 0.2369
+want: 0.2091
+
+Termine con il punteggio TF-IDF più alto: avoid (0.5478)
+
+----------------------------------------------------------------------------------------------------
+
+Post 71:
+I'm not exactly sure when to use Enterprise Library, and when not to... and that is making me not learn it at all.  I feel that I have enough of a reason to start learning then perhaps one day I'll use it.
+Are there times when I should use EntLib?
+When shouldn't I use it?  
+
+
+TF-IDF Scores:
+day: 0.2305
+enterprise: 0.2628
+feel: 0.2305
+learn: 0.2305
+learning: 0.1994
+library: 0.2500
+ll: 0.2305
+making: 0.2500
+reason: 0.2394
+start: 0.2160
+sure: 0.2305
+times: 0.2500
+use: 0.5780
+
+Termine con il punteggio TF-IDF più alto: use (0.5780)
+
+----------------------------------------------------------------------------------------------------
+
+Post 72:
+I have often heard it said that objects have not delivered in terms of code reuse. Do you agree? If you believe that they haven't, why not?
+
+
+TF-IDF Scores:
+believe: 0.5646
+code: 0.3106
+heard: 0.5408
+said: 0.5408
+
+Termine con il punteggio TF-IDF più alto: believe (0.5646)
+
+----------------------------------------------------------------------------------------------------
+
+Post 73:
+Aspect oriented programming promises to deal with cross cutting concerns, but I'm not completely sold on it yet. Have there been any other attempts to deal with this problem?
+
+
+TF-IDF Scores:
+completely: 0.5720
+oriented: 0.5720
+problem: 0.5016
+programming: 0.3066
+
+Termine con il punteggio TF-IDF più alto: completely (0.5720)
+
+----------------------------------------------------------------------------------------------------
+
+Post 74:
+I have often wondered if it would be possible to write a programming language that would work as a conversation. I would tell the computer that I want to store coordinates and it would ask what representation I would use. I would then ask to find the shortest path between points and it would ask if I want to use Djkstra's, brute force or use Floyd's? What research has been done towards producing a system like this?
+
+
+TF-IDF Scores:
+ask: 0.6268
+language: 0.1562
+like: 0.1402
+points: 0.2488
+possible: 0.2089
+programming: 0.1402
+tell: 0.2383
+use: 0.4315
+want: 0.3502
+work: 0.1610
+write: 0.2150
+
+Termine con il punteggio TF-IDF più alto: ask (0.6268)
+
+----------------------------------------------------------------------------------------------------
+
+Post 75:
+I'm comparing different STS's for claims based authentication and am trying when it's appropriate to use each one.  
+It appears that ADFSv2 should be used in all Windows Environments.  Ping and Siteminder are more for the Unix side... although a sales rep said Ping was better for Windows, I didn't really understand "why"
+Any comparative information is much appreciated!
+
+
+TF-IDF Scores:
+based: 0.2735
+better: 0.2735
+didn: 0.3003
+different: 0.2633
+information: 0.2633
+really: 0.2088
+said: 0.2735
+trying: 0.2277
+understand: 0.2398
+use: 0.1651
+used: 0.2010
+windows: 0.5711
+
+Termine con il punteggio TF-IDF più alto: windows (0.5711)
+
+----------------------------------------------------------------------------------------------------
+
+Post 76:
+Dcpromo.exe is famous among MCSEs for being they only way to create a Windows Domain Controller (in other words an Active Directory Domain) ... which in turn is often used by the ASP.NET Membership system.
+I'm trying to determine if I should put content on "www.dcpromo.com" geared for developers or more towards sysadmins.
+To me, a logical extension of this "domain controller on the internet" is to use WIF for the ASP.NET Membership system.  We'd then have a website that will serve the developer's interests in the SSO, SAML, user managment and identity areas we all struggle with.
+So my question is: 
+Q:  Do programmers see a connection between the utility dcpromo.exe and ASP.NET Membership?  If so does it make sense to have a purpose of http://www.dcpromo.com  help developers in the areas of membership and cloud computing?  
+
+
+TF-IDF Scores:
+asp: 0.5197
+create: 0.1598
+determine: 0.1822
+developer: 0.1350
+developers: 0.2909
+does: 0.1158
+help: 0.1455
+internet: 0.1822
+make: 0.1242
+net: 0.4632
+programmers: 0.1320
+purpose: 0.1822
+question: 0.1104
+sense: 0.1598
+trying: 0.1382
+use: 0.1002
+used: 0.1219
+user: 0.1659
+way: 0.1198
+website: 0.1822
+windows: 0.1732
+words: 0.1822
+
+Termine con il punteggio TF-IDF più alto: asp (0.5197)
+
+----------------------------------------------------------------------------------------------------
+
+Post 77:
+Language shortcuts can often be used to make code more concise.
+For example, ternary and null coalescing operators can reduce the amount of code, but arguably to the detriment of readability:
+In C#:
+Person newGuy = new Person();
+if (boss == null) {
+    newGuy.Boss = GetDefaultBoss();
+} else {
+    newGuy.Boss = boss;
+}
+
+is functionally equivalent to:
+Person newGuy = new Person();
+newGuy.Boss = boss ?? GetDefaultBoss();
+
+but obviously a lot more verbose.
+Where do you draw the line when it comes to conciseness vs readability?
+
+
+TF-IDF Scores:
+code: 0.2006
+comes: 0.1917
+example: 0.1389
+language: 0.1145
+line: 0.1681
+lot: 0.1491
+make: 0.1307
+new: 0.2666
+obviously: 0.1746
+person: 0.6985
+readability: 0.3835
+reduce: 0.1917
+used: 0.1283
+vs: 0.1823
+
+Termine con il punteggio TF-IDF più alto: person (0.6985)
+
+----------------------------------------------------------------------------------------------------
+
+Post 78:
+I used ad-hoc MUML (made-up modeling language) to design and explain system fairly frequently.  It looks similar to UML and tends to be pretty well understood.
+However, I've had a professor or two that harped on the use of strict, formal UML, as close to the spec as possible.  I always suspected that strict UML wasn't really as common as they claimed.  So, how 'bout it- how often do you actually draw out complete diagrams that use all the proper line endings, multiplicity, member type symbols, etc?
+
+
+TF-IDF Scores:
+actually: 0.2366
+common: 0.2229
+complete: 0.2654
+design: 0.2022
+explain: 0.2022
+fairly: 0.2791
+formal: 0.2791
+frequently: 0.2791
+language: 0.1666
+line: 0.2448
+possible: 0.2229
+pretty: 0.2448
+really: 0.1940
+similar: 0.2366
+type: 0.2448
+use: 0.3069
+used: 0.1868
+ve: 0.1691
+
+Termine con il punteggio TF-IDF più alto: use (0.3069)
+
+----------------------------------------------------------------------------------------------------
+
+Post 79:
+This goes back to a conversation I've had with my girlfriend. I tried to tell her that I simply don't feel adequate enough in my programming language (C++) to call myself good. She then asked me, "Well, when do you consider yourself good enough?"
+That's an interesting question. I didn't know what to tell her. So I'm asking you.
+For any programming language, framework or the like, when do you reach a point were you sit back, look at what you've done and say, "Hey, I'm actually pretty good at this."? How do you define "good" so that you can tell others, honestly, "Yeah, I'm good at X".
+Additionally, do you reach these conclusions by comparing what others can do?
+Additional Info
+I have read the canonical paper on how it takes ten-thousand hours before you are an expert on the field. (Props to anybody that knows what this paper is called again)
+I have also read various articles from Coding Horror about interviewing people. Some people, it was said, "Cannot function outside of a framework." So they may be "good" for that framework, but not otherwise in the language. Is this true? 
+
+
+TF-IDF Scores:
+actually: 0.1084
+articles: 0.1279
+asked: 0.1122
+asking: 0.1051
+called: 0.1279
+coding: 0.0907
+consider: 0.1165
+didn: 0.1279
+don: 0.0856
+feel: 0.1122
+field: 0.1279
+framework: 0.3252
+goes: 0.1279
+good: 0.5233
+interesting: 0.1084
+interviewing: 0.1216
+know: 0.0742
+language: 0.2291
+like: 0.0686
+look: 0.1165
+outside: 0.1279
+people: 0.1682
+point: 0.1165
+pretty: 0.1122
+programming: 0.1371
+question: 0.0775
+read: 0.2243
+said: 0.1165
+say: 0.0970
+simply: 0.1165
+takes: 0.1165
+tell: 0.3495
+tried: 0.1279
+ve: 0.1550
+
+Termine con il punteggio TF-IDF più alto: good (0.5233)
+
+----------------------------------------------------------------------------------------------------
+
+Post 80:
+Planning Poker
+Summary, in case you don't want to read the wiki article:
+
+Get a list of tasks you want to do for the upcoming iteration
+For each task:
+2.1 Discuss with the group what it entails
+2.2 Everyone writes down / selects an estimation of how much effort is required for the task
+2.3 Everyone reveals their estimation
+2.4 The highest and lowest outliers explain their reasoning
+2.5 Repeat until a consensus is reached
+
+Usually something similar to numbers from the Fibonacci sequence like 0, ½, 1, 2, 3, 5, 8, 13, 20, 40, 100 are the allowed values, so you don't get long arguments over close values like 23 vs 27.
+Further, the numbers represent a unit-less value of effort, whose value is determined by a baseline task that everyone agrees equals about a 1, and all else is relative to that.
+Ultimately, the goal is to get a good feel for a given team's "velocity", which is the number of these points that can be completed in a given iteration.  With that, it's possible to make reasonably accurate estimates of how long any given feature will take.
+
+We did this at iteration planning meetings at one company I worked at, and I thought it was one of the few good things about that particular company.  So, what I'm wondering is, has anyone used this?  Do you think it's a useful tool for estimation?  Does it work in all situations, or does it lend itself to certain teams, projects, etc?
+
+
+TF-IDF Scores:
+case: 0.1327
+certain: 0.1209
+company: 0.2181
+did: 0.1032
+does: 0.1687
+don: 0.1777
+explain: 0.0962
+feature: 0.1060
+feel: 0.1164
+given: 0.3982
+goal: 0.1327
+good: 0.1810
+like: 0.1423
+list: 0.1125
+long: 0.1883
+make: 0.0905
+number: 0.1327
+particular: 0.1262
+points: 0.1262
+possible: 0.1060
+projects: 0.1007
+read: 0.1164
+similar: 0.1125
+situations: 0.1262
+task: 0.3786
+tasks: 0.1164
+team: 0.1060
+things: 0.0873
+think: 0.0830
+thought: 0.1209
+tool: 0.1327
+ultimately: 0.1327
+unit: 0.1209
+used: 0.0888
+useful: 0.0983
+usually: 0.1091
+value: 0.2654
+vs: 0.1262
+want: 0.1777
+work: 0.0817
+worked: 0.1262
+
+Termine con il punteggio TF-IDF più alto: given (0.3982)
+
+----------------------------------------------------------------------------------------------------
+
+Post 81:
+I've been in workplaces where, at the start of a project, the "Should we use VB.Net or C#" question has been raised.
+Granted, it's probably less common to have to make that decision now than it was in the early days of .Net, particularly given the trend towards language convergence, but it can still be a heated debate.
+So, between VB.Net and C#, Which language do you prefer and why?
+
+
+TF-IDF Scores:
+common: 0.1800
+days: 0.2144
+early: 0.2255
+given: 0.2255
+language: 0.2692
+make: 0.1537
+net: 0.5733
+particularly: 0.2054
+probably: 0.2054
+project: 0.1433
+question: 0.1366
+start: 0.1853
+use: 0.1239
+vb: 0.4509
+ve: 0.1366
+
+Termine con il punteggio TF-IDF più alto: net (0.5733)
+
+----------------------------------------------------------------------------------------------------
+
+Post 82:
+By now I work with asp.net and C#. I have done a decent work in Java as well. I am planning my career in such a way I should be language-agnostic someday. What are the things that I need to learn? 
+First would OOP paradigms as its speaks about the Class design. Are there any others?
+
+
+TF-IDF Scores:
+asp: 0.3255
+career: 0.2734
+class: 0.3423
+design: 0.2480
+java: 0.2662
+language: 0.2044
+learn: 0.3002
+need: 0.2734
+net: 0.2902
+things: 0.2251
+way: 0.2251
+work: 0.4214
+
+Termine con il punteggio TF-IDF più alto: work (0.4214)
+
+----------------------------------------------------------------------------------------------------
+
+Post 83:
+Coming from a procedural/OO programming background, I tend to write Scheme programs in a procedural fashion. I would be intersted in learning Scheme or Lisp in a functional way from the ground up, to kind of reset my programmer's mind.
+Is there a tutorial or book out there that's the de-facto standard for describing best practices, design methodologies, and other helpful information on functional programming concepts? What about that book makes it special?
+
+
+TF-IDF Scores:
+background: 0.2195
+best: 0.1673
+book: 0.4206
+design: 0.1673
+functional: 0.4206
+helpful: 0.2309
+information: 0.2025
+kind: 0.2103
+learning: 0.1751
+makes: 0.2025
+practices: 0.2025
+programmer: 0.1957
+programming: 0.2475
+programs: 0.2195
+standard: 0.1897
+tend: 0.2195
+way: 0.1518
+write: 0.1897
+
+Termine con il punteggio TF-IDF più alto: book (0.4206)
+
+----------------------------------------------------------------------------------------------------
+
+Post 84:
+I think we’ve all seen this. Beginners ask questions on Stack Overflow that follow the basic outline...
+
+I’m trying to do (very vague description of the goal) but it doesn’t work/I get an error/exception. Please help!
+
+Isn’t it bizarre that so many of them seem to consider it unnecessary to paste the error message?
+I wonder what the psychology of this is. What is it about error messages that makes people initially assume that they are useless and not worth paying any attention to?
+The answer I’m looking for is not “they don’t understand the error message”. That doesn’t explain why they wouldn’t consider telling anyone else who might understand it.
+
+
+TF-IDF Scores:
+answer: 0.1542
+ask: 0.1623
+basic: 0.2033
+consider: 0.3704
+doesn: 0.3704
+don: 0.1361
+explain: 0.1473
+follow: 0.1852
+goal: 0.2033
+help: 0.1623
+initially: 0.2033
+isn: 0.1671
+looking: 0.1783
+makes: 0.1783
+people: 0.1337
+questions: 0.1581
+seen: 0.1783
+think: 0.1271
+trying: 0.1542
+understand: 0.3247
+useless: 0.2033
+ve: 0.1232
+wonder: 0.1933
+work: 0.1251
+worth: 0.1723
+
+Termine con il punteggio TF-IDF più alto: consider (0.3704)
+
+----------------------------------------------------------------------------------------------------
+
+Post 85:
+I've never found the ideal way to perform code reviews and yet often my customers require them. Each customer seems to do them in a different way and I've never felt satisfied in any of them. 
+What has been the most effective way for you to perform code reviews?
+For example:
+
+Is one person regarded as the gatekeeper for quality and reviews the code, or do the team own the standard?  
+Do you do review code as a team exercise using a projector?
+Is it done in person, via email or using a tool? 
+Do you eschew reviews and use things like pair programming and collective code ownership to ensure code quality?
+
+
+
+TF-IDF Scores:
+code: 0.5517
+different: 0.1541
+effective: 0.1758
+example: 0.1274
+like: 0.0942
+person: 0.3202
+programming: 0.0942
+quality: 0.3202
+require: 0.1601
+standard: 0.1444
+team: 0.2807
+things: 0.1156
+tool: 0.1758
+use: 0.0966
+using: 0.2397
+ve: 0.2131
+way: 0.3467
+
+Termine con il punteggio TF-IDF più alto: code (0.5517)
+
+----------------------------------------------------------------------------------------------------
+
+Post 86:
+I'm considering whether I should start using VIM again instead of an IDE. What are the most useful features of VIM that aren't standard in an IDE?
+
+
+TF-IDF Scores:
+aren: 0.3997
+considering: 0.3997
+features: 0.3563
+instead: 0.3686
+standard: 0.3454
+start: 0.3454
+useful: 0.3114
+using: 0.2866
+
+Termine con il punteggio TF-IDF più alto: aren (0.3997)
+
+----------------------------------------------------------------------------------------------------
+
+Post 87:
+What best practices should be undertaken for a website that needs to "scale out" to handle capacity?  This is especially relevant now that people are considering the cloud, but may be missing out on the fundamentals.
+I'm interested in hearing about anything you consider a best practice from development-level tasks, to infrastructure, to management.
+
+
+TF-IDF Scores:
+best: 0.4142
+consider: 0.2603
+considering: 0.2718
+development: 0.2028
+interested: 0.2423
+level: 0.2858
+management: 0.2282
+needs: 0.2718
+people: 0.1879
+practice: 0.2718
+practices: 0.2507
+relevant: 0.2507
+tasks: 0.2507
+website: 0.2858
+
+Termine con il punteggio TF-IDF più alto: best (0.4142)
+
+----------------------------------------------------------------------------------------------------
+
+Post 88:
+I recently saw that Microsoft released a coding standards document (All-In-One Code Framework Coding Standards) and it got me thinking...  The company that I work for has no formal coding standards at all.  There are only a few developers and we have been together long enough to have evolved into similar styles and its never been an issue.
+Does the company you work for have a documented coding standards?  If no, why not?  Does having a standard make a difference?  Is it worth writing a standard from scratch or should you adopt another standard as your own (ie. make Microsoft's standards yours)?
+
+
+TF-IDF Scores:
+code: 0.0718
+coding: 0.3895
+company: 0.2256
+developers: 0.1096
+difference: 0.1373
+does: 0.1744
+formal: 0.1373
+framework: 0.1163
+got: 0.1250
+having: 0.1305
+issue: 0.1250
+long: 0.0974
+make: 0.1872
+recently: 0.1305
+similar: 0.1163
+standard: 0.3383
+standards: 0.6251
+thinking: 0.1204
+work: 0.1689
+worth: 0.1163
+writing: 0.1163
+
+Termine con il punteggio TF-IDF più alto: standards (0.6251)
+
+----------------------------------------------------------------------------------------------------
+
+Post 89:
+Have you ever had to work to coding standards that:
+
+Greatly decreased your productivity?
+Were originally included for good reasons but were kept long after the original concern became irrelevant?
+Were in a list so long that it was impossible to remember them all?
+Made you think the author was just trying to leave their mark rather than encouraging good coding practice?
+You had no idea why they were included?
+
+If so, what is your least favorite rule and why?
+
+Some examples here
+
+
+TF-IDF Scores:
+coding: 0.3656
+examples: 0.2347
+good: 0.3514
+idea: 0.2117
+just: 0.1611
+leave: 0.2450
+list: 0.2184
+long: 0.3656
+original: 0.2450
+originally: 0.2450
+practice: 0.2450
+reasons: 0.2260
+standards: 0.2347
+think: 0.1611
+trying: 0.1954
+work: 0.1586
+
+Termine con il punteggio TF-IDF più alto: coding (0.3656)
+
+----------------------------------------------------------------------------------------------------
+
+Post 90:
+Having worked on a failed project is one of the few things that most programmers have in common, regardless of language used, industry or experience.
+These projects can be great learning experiences, soul-crushing disasters (or both!), and can occur for a multitude of reasons:
+
+upper management change of heart
+under-skilled / under-resourced team
+emergence of superior competitor during dev cycle
+over/under management
+
+Once you've worked on a couple of such projects, is it possible to recognise at an early stage exactly when a project is doomed to fail? 
+For me, a big sign is having a hard & fast external deadline combined with feature creep. I've seen projects which were well planned out and proceeding right on schedule go horribly off the rails once the late feature requests started to roll in and get added to the final "deliverable". The proposers of these requests earned the nickname of Columbo, due to rarely leaving the room without asking for "just one more thing".
+What are the warning signs you look out for that set off the alarm bells of impending doom in your head?
+
+
+TF-IDF Scores:
+asking: 0.1345
+big: 0.1387
+change: 0.1491
+common: 0.1307
+early: 0.1637
+experience: 0.1387
+experiences: 0.1637
+feature: 0.2614
+great: 0.1491
+having: 0.3113
+industry: 0.1637
+just: 0.1023
+language: 0.0977
+learning: 0.1242
+look: 0.1491
+management: 0.2614
+possible: 0.1307
+programmers: 0.1186
+project: 0.2080
+projects: 0.3725
+reasons: 0.1436
+right: 0.1387
+seen: 0.1436
+set: 0.1387
+started: 0.1345
+team: 0.1307
+thing: 0.1491
+things: 0.1076
+used: 0.1096
+ve: 0.1984
+worked: 0.3113
+
+Termine con il punteggio TF-IDF più alto: projects (0.3725)
+
+----------------------------------------------------------------------------------------------------
+
+Post 91:
+I have a tester that while testing will have an error occur (ok so far), but then he frequently reports it right away.  We (the developers) then later find that the tester has not tried to reproduce the issue and (when asked) cannot find a way to make it happen again.
+Now these are still bugs, I don't want to ignore them.  But without repro steps I am kind of stuck.  Sometimes there is a stack trace (though frequently it is not useful because this is compact framework and there are no line numbers).  But when there is one I can take the stack trace and crack open the code and start guessing, but that does not lead to testable "fixes".
+What do you do in scenarios like this?
+
+
+TF-IDF Scores:
+asked: 0.1900
+away: 0.2060
+bugs: 0.2167
+code: 0.1133
+developers: 0.1730
+does: 0.1377
+don: 0.1450
+far: 0.1974
+framework: 0.1837
+frequently: 0.4334
+happen: 0.2060
+issue: 0.1974
+kind: 0.1974
+later: 0.1974
+like: 0.1161
+line: 0.1900
+make: 0.1477
+open: 0.2060
+right: 0.1837
+start: 0.1780
+steps: 0.2060
+testing: 0.1900
+tried: 0.2167
+useful: 0.1605
+want: 0.1450
+way: 0.1424
+
+Termine con il punteggio TF-IDF più alto: frequently (0.4334)
+
+----------------------------------------------------------------------------------------------------
+
+Post 92:
+We are starting a push for code coverage here at my work, and it has got me to thinking.... How much code coverage is enough?
+When do you get to the point of diminishing returns on code coverage?  What is the sweet spot between good coverage and not enough?  Does it vary by the type of project your are making (ie WPF, WCF, Mobile, ASP.NET)  (These are C# classes we are writing.)
+
+
+TF-IDF Scores:
+asp: 0.1817
+code: 0.2999
+coverage: 0.7644
+does: 0.1214
+good: 0.1303
+got: 0.1741
+making: 0.1817
+net: 0.1620
+point: 0.1741
+project: 0.1214
+starting: 0.1741
+thinking: 0.1676
+type: 0.1676
+work: 0.1176
+writing: 0.1620
+
+Termine con il punteggio TF-IDF più alto: coverage (0.7644)
+
+----------------------------------------------------------------------------------------------------
+
+Post 93:
+Sometimes I feel like a musician who can't play live shows. Programming is a pretty cool skill, and a very broad world, but a lot of it happens "off camera"- in your head, in your office, away from spectators. 
+You can of course talk about programming with other programmers, and there is peer programming, and you do get to create something that you can show to people, but when it comes to explaining to non programmers what is it that you do, or how was your day at work, it's sort of tricky. 
+How do you get the non programmers in your life to understand what is it that you do? 
+NOTE: this is not a repeat of Getting non-programmers to understand the development process, because that question was about managing client expectations. 
+
+
+TF-IDF Scores:
+away: 0.1640
+client: 0.1725
+comes: 0.1725
+course: 0.1640
+create: 0.1512
+day: 0.1512
+development: 0.1223
+expectations: 0.1725
+feel: 0.1512
+getting: 0.1571
+life: 0.1725
+like: 0.0924
+live: 0.1725
+lot: 0.1341
+non: 0.4023
+people: 0.1134
+pretty: 0.1512
+process: 0.1462
+programmers: 0.4998
+programming: 0.2773
+question: 0.1045
+understand: 0.2754
+work: 0.1061
+world: 0.1377
+
+Termine con il punteggio TF-IDF più alto: programmers (0.4998)
+
+----------------------------------------------------------------------------------------------------
+
+Post 94:
+I've read Peopleware in 2009. It was one of the best book I ever read.
+But this book is a little old. I'd like to know, in your opinion, what is and what is not relevant in this book?
+
+
+TF-IDF Scores:
+best: 0.1900
+book: 0.7164
+know: 0.1521
+like: 0.1405
+little: 0.2622
+old: 0.2222
+read: 0.4599
+relevant: 0.2299
+ve: 0.1589
+
+Termine con il punteggio TF-IDF più alto: book (0.7164)
+
+----------------------------------------------------------------------------------------------------
+
+Post 95:
+I've heard it said (by coworkers) that everyone "codes in English" regardless of where they're from. I find that difficult to believe, however I wouldn't be surprised if, for most programming languages, the supported character set is relatively narrow.
+Have you ever worked in a country where English is not the primary language?
+If so, what did their code look like?
+
+
+TF-IDF Scores:
+believe: 0.3038
+character: 0.3195
+code: 0.1671
+did: 0.2484
+difficult: 0.3195
+heard: 0.2910
+language: 0.1908
+languages: 0.2484
+like: 0.1713
+look: 0.2910
+programming: 0.1713
+said: 0.2910
+set: 0.2708
+ve: 0.1936
+worked: 0.3038
+
+Termine con il punteggio TF-IDF più alto: character (0.3195)
+
+----------------------------------------------------------------------------------------------------
+
+Post 96:
+A few years ago I considered myself somewhat of a web developer, knowing the basic 3 languages (HTML, CSS, JS) and lots of PHP. Moving on from simple text to actual websites was a pain because of the so called "standards" out there, which at the time were ridiculously complicated for me. It pretty much boiled down to this (minus the IE related stuff):
+
+Standards are there to replace old ways of doing things in a simpler way. However when trying to actually implement some of the stuff (Entirely CSS based layout for example), it took me 10x longer to actually do it then if I did the simpler and still working solution. If it rendered the same, then why should I use the more complicated example that takes 10x longer and breaks once you change browsers? This sparked many long religious debates in ##php, ##css, and ##js in Freenode IRC and actually got me banned from ##css because I messed with their little world over there.
+My question: Should I follow every single standard and coding conventions even if they take me 10x longer but get me the same result as the simple one?
+
+For the poll tag, those of you who have websites of any size (huge or small), do you follow all the standards? 
+
+
+TF-IDF Scores:
+actual: 0.1290
+actually: 0.3281
+ago: 0.1227
+based: 0.1175
+basic: 0.1290
+called: 0.1290
+change: 0.1175
+coding: 0.0915
+considered: 0.1290
+developer: 0.0956
+did: 0.1003
+doing: 0.1060
+example: 0.1870
+follow: 0.2350
+got: 0.1175
+html: 0.1227
+languages: 0.1003
+little: 0.1290
+long: 0.0915
+old: 0.1094
+php: 0.2263
+pretty: 0.1131
+question: 0.0782
+related: 0.1227
+simple: 0.2263
+single: 0.1290
+small: 0.1131
+solution: 0.1227
+somewhat: 0.1290
+standard: 0.1060
+standards: 0.3526
+stuff: 0.2350
+takes: 0.1175
+text: 0.1290
+things: 0.0848
+time: 0.0820
+trying: 0.0979
+use: 0.0709
+way: 0.0848
+ways: 0.1094
+web: 0.1094
+websites: 0.2580
+working: 0.1094
+world: 0.1030
+years: 0.1030
+
+Termine con il punteggio TF-IDF più alto: standards (0.3526)
+
+----------------------------------------------------------------------------------------------------
+
+Post 97:
+If you're developer (Senior or Lead Developer) and you'd rather stay with code/design than pursue a management career, what are the available career paths at your company, or any you've heard of? How far can you go?
+Is it possible to continue being a geek until you bite the dust or is that too naive?
+Are people like Uncle Bob for example still considered developers, as they claim?
+
+
+TF-IDF Scores:
+available: 0.2446
+career: 0.4108
+code: 0.1345
+company: 0.2113
+considered: 0.2572
+design: 0.1864
+developer: 0.3811
+developers: 0.2054
+example: 0.1864
+far: 0.2343
+heard: 0.2343
+like: 0.1379
+management: 0.2054
+people: 0.1691
+possible: 0.2054
+senior: 0.2446
+stay: 0.2446
+ve: 0.1559
+
+Termine con il punteggio TF-IDF più alto: career (0.4108)
+
+----------------------------------------------------------------------------------------------------
+
+Post 98:
+Use of desktops are decreasing day by day in daily life but for coding purpose are there any reasons for using desktop over laptop? 
+
+
+TF-IDF Scores:
+coding: 0.2490
+day: 0.6157
+desktop: 0.3510
+life: 0.3510
+purpose: 0.3510
+reasons: 0.3078
+use: 0.1930
+using: 0.2394
+
+Termine con il punteggio TF-IDF più alto: day (0.6157)
+
+----------------------------------------------------------------------------------------------------
+
+Post 99:
+I am excited about the changes in PHP 6 previewed in PHP 5.3+. However, I wonder why it takes so long to release PHP 6? Books about it have been published since 2008, and announcements on it since 2007, but I am yet to hear about an alpha or a beta. Why does it take so long to release it? Or is that the way it goes with all languages when they transition to a major release where I guess it takes around 4-5 years to release?
+
+
+TF-IDF Scores:
+books: 0.2067
+does: 0.1497
+goes: 0.2357
+guess: 0.2357
+languages: 0.1833
+long: 0.3344
+php: 0.6200
+takes: 0.4293
+way: 0.1549
+wonder: 0.2241
+years: 0.1882
+
+Termine con il punteggio TF-IDF più alto: php (0.6200)
+
+----------------------------------------------------------------------------------------------------
+
+Post 100:
+i wonder apart from those very simple hello world apps, what other programs should i try developing for learning. i am entering uni next year and wonder what kind of programs will be developed in that environment. 
+this is not really a language specific thing, but if you want to know what i use currently mainly
+
+windows: C#/WPF - i studied java/vb etc in poly but i think C# is the way to go, maybe even F#
+web: PHP/MySQL, Zend Framework/Doctrine, + HTML/CSS/JS(jQuery) of course. looking to try google app engine with python too. 
+
+for now, i am thinking of 
+
+todo lists
+apps that integrate with api eg. twitter/tumblr which i use
+text editor - i am currently trying to develop a text editor that uses markdown and generates html files for viewing (link to blog entry). not very pratical after i started developing it. cos when editing theres no formatting and in HTML format, i cannot edit directly 
+blog software (for web)
+
+
+
+TF-IDF Scores:
+app: 0.1232
+apps: 0.2343
+blog: 0.2464
+course: 0.1171
+currently: 0.2343
+develop: 0.1171
+developing: 0.2343
+environment: 0.1232
+files: 0.1171
+framework: 0.1044
+google: 0.1232
+html: 0.3514
+java: 0.0958
+kind: 0.1122
+know: 0.0715
+language: 0.0736
+learning: 0.0934
+looking: 0.1080
+maybe: 0.1122
+php: 0.1080
+programs: 0.2343
+python: 0.1080
+really: 0.0856
+simple: 0.1080
+software: 0.0874
+specific: 0.1171
+started: 0.1012
+text: 0.2464
+thing: 0.1122
+think: 0.0770
+thinking: 0.1080
+try: 0.2244
+trying: 0.0934
+twitter: 0.1232
+use: 0.1355
+uses: 0.1171
+vb: 0.1232
+want: 0.0825
+way: 0.0810
+web: 0.2088
+windows: 0.1171
+wonder: 0.2343
+world: 0.0984
+year: 0.1080
+
+Termine con il punteggio TF-IDF più alto: html (0.3514)
+
+----------------------------------------------------------------------------------------------------
+
+Post 101:
+I am currently reading the recently published Being Geek by Michael "Rands" Lopp and I can't get enough of it.
+
+Is there any other career guidance books aimed directly or indirectly at programmers that are worth reading?
+
+
+TF-IDF Scores:
+books: 0.3145
+career: 0.2863
+currently: 0.3410
+programmers: 0.2598
+reading: 0.6532
+recently: 0.3410
+worth: 0.3039
+
+Termine con il punteggio TF-IDF più alto: reading (0.6532)
+
+----------------------------------------------------------------------------------------------------
+
+Post 102:
+In chapter one of "The Pragmatic Programmer" the first learning goal is:
+
+Learn at least one new language every year. Different languages solve the same problems in different ways. By learning several different approaches, you can help broaden your thinking and avoid getter struck in a rut. [...]
+
+To achieve this over a career, the list of languages is likely to get quite long (particularly if you do not want to "progress" into management). Clearly the education of a programmer (or whatever form) is going to get you started with a core of commercially useful languages (the usual list from job posting: C, C++, Ruby, Python, JavaScript, C#, Java, VB, ...). Additionally a formal or informal learning programme is likely to have covered functional approaches (via something like Haskell, LISP or an ML derived language)
+But once a reasonable subset of that list is learned- what's next, and why?
+
+
+TF-IDF Scores:
+avoid: 0.1237
+career: 0.1126
+clearly: 0.1410
+different: 0.3710
+form: 0.1410
+formal: 0.1410
+functional: 0.1284
+goal: 0.1410
+going: 0.1410
+help: 0.1126
+java: 0.1096
+job: 0.1159
+language: 0.1684
+languages: 0.3289
+learn: 0.1237
+learning: 0.3209
+like: 0.0756
+list: 0.3586
+long: 0.1000
+management: 0.1126
+new: 0.0980
+particularly: 0.1284
+posting: 0.1341
+problems: 0.1410
+programmer: 0.2390
+python: 0.1237
+quite: 0.1195
+solve: 0.1410
+started: 0.1159
+thinking: 0.1237
+useful: 0.1045
+vb: 0.1410
+want: 0.0944
+ways: 0.1195
+year: 0.1237
+
+Termine con il punteggio TF-IDF più alto: different (0.3710)
+
+----------------------------------------------------------------------------------------------------
+
+Post 103:
+To put it another way... What is the most commonly held and frustrating misunderstanding about programming, you have encountered?
+Which widespread and longstanding myths/misconceptions do you find hard for programmers to dispel/correct.
+Please, explain why this is a myth.
+
+
+TF-IDF Scores:
+commonly: 0.5271
+correct: 0.4801
+explain: 0.3819
+programmers: 0.3819
+programming: 0.2825
+way: 0.3465
+
+Termine con il punteggio TF-IDF più alto: commonly (0.5271)
+
+----------------------------------------------------------------------------------------------------
+
+Post 104:
+I work for a company that supports several languages: COBOL, VB6, C#, and Java. I use those languages for my primary work, but I often find myself coding some minor programs (e.g. scripts) in Python because I find it to be the best tool for that type of task.
+For example: an analyst gives me a complex CSV file to populate some DB tables, so I use Python to parse it and create a DB script.
+What's the problem?
+The main problem I see is that a few parts of these quick and dirty scripts are slowly gaining importance and:
+
+My company does not support Python
+They're not version controlled (I back them up in another way)
+My coworkers do not know Python
+
+The analysts have even started to reference them in emails ("launch the script that exports..."), so they are needed more often than I initially thought.
+I should add that these scripts are just utilities that are not part of the main project; they simply help to get trivial tasks done in less time. For my own small tasks they help a lot.
+In short, if I were a lottery winner to be in a accident, my coworkers would need to keep the project alive without those scripts; they would spend more time fixing CSV errors by hand, for example.
+Is this a common scenario? Am I doing something wrong? What should I do?
+
+
+TF-IDF Scores:
+add: 0.1280
+best: 0.0928
+cobol: 0.1280
+coding: 0.0908
+common: 0.1022
+company: 0.2104
+complex: 0.1280
+create: 0.1123
+does: 0.0813
+doing: 0.1052
+example: 0.1855
+file: 0.1280
+help: 0.2044
+initially: 0.1280
+java: 0.0995
+just: 0.0800
+know: 0.0743
+languages: 0.1991
+lot: 0.0995
+main: 0.2560
+need: 0.1022
+needed: 0.1166
+problem: 0.2245
+programs: 0.1217
+project: 0.1627
+python: 0.4491
+short: 0.1217
+simply: 0.1166
+small: 0.1123
+started: 0.1052
+task: 0.1217
+tasks: 0.2245
+thought: 0.1166
+time: 0.1627
+tool: 0.1280
+trivial: 0.1280
+type: 0.1123
+use: 0.1408
+version: 0.1280
+way: 0.0842
+work: 0.1576
+wrong: 0.1217
+
+Termine con il punteggio TF-IDF più alto: python (0.4491)
+
+----------------------------------------------------------------------------------------------------
+
+Post 105:
+In fact this question is about cautions to be taken to enhance quality user experience and reduce avoidable support calls.
+
+
+TF-IDF Scores:
+experience: 0.3566
+fact: 0.4207
+quality: 0.3832
+question: 0.2550
+reduce: 0.4207
+taken: 0.4001
+user: 0.3832
+
+Termine con il punteggio TF-IDF più alto: fact (0.4207)
+
+----------------------------------------------------------------------------------------------------
+
+Post 106:
+Please, stay on technical issues, avoid behavior, cultural, career or political issues.
+
+
+TF-IDF Scores:
+avoid: 0.4948
+career: 0.4506
+stay: 0.5366
+technical: 0.5140
+
+Termine con il punteggio TF-IDF più alto: stay (0.5366)
+
+----------------------------------------------------------------------------------------------------
+
+Post 107:
+If you've always loved unit testing, good for you! But for the unfortunate ones who weren't born with a liking for it, how have you managed to make this task more enjoyable ? 
+This is not a "what is the right way to unit test" question. I simply want to know little personal tricks that reduce the boredom (dare I say) of writing unit tests.
+
+
+TF-IDF Scores:
+good: 0.1556
+know: 0.1324
+little: 0.2282
+make: 0.1556
+question: 0.1383
+reduce: 0.2282
+right: 0.1934
+say: 0.1731
+simply: 0.2079
+task: 0.2170
+test: 0.1774
+testing: 0.2001
+tests: 0.2079
+tricks: 0.2170
+unit: 0.6236
+ve: 0.1383
+want: 0.1527
+way: 0.1500
+writing: 0.1934
+
+Termine con il punteggio TF-IDF più alto: unit (0.6236)
+
+----------------------------------------------------------------------------------------------------
+
+Post 108:
+As an example, say there's an interface that contains a table/grid of information that is periodically updated.  The table is meant to represent an event that has happened, perhaps the date and time of a stock price change.
+The actual frequency of these events could be dozens of events per second.  This is obviously too much information for a user to process/understand, so I'm trying to find out how much information a user COULD process in a given amount of time so that we can throttle the data and come up with an alternate display.
+I know some studies have been done on this, but I can't seem to find an authoritative source.
+
+
+TF-IDF Scores:
+actual: 0.2008
+change: 0.1829
+come: 0.1761
+data: 0.2008
+date: 0.2008
+example: 0.1455
+given: 0.2008
+information: 0.5282
+know: 0.1165
+obviously: 0.1829
+process: 0.3404
+say: 0.1523
+source: 0.2008
+time: 0.2552
+trying: 0.1523
+understand: 0.1603
+user: 0.3658
+
+Termine con il punteggio TF-IDF più alto: information (0.5282)
+
+----------------------------------------------------------------------------------------------------
+
+Post 109:
+As programmers I think we are the most inclined to use new technologies and things that are not so mainstream.
+I absolutely love OpenId's ability to log in with credentials you already have, but I always use a provider that I already use and that is the fastest to log in, like google. God knows I'd never used it if i had to type in the whole "https://www.google.com/accounts/o8/id" I like to click on the google button and then just say yes (the first time, then its just clicking the button).
+Does any of you ever uses the Generic "Enter your own provider" OpenId?
+Do you think its worth to even offer it to more casual end users?
+
+
+TF-IDF Scores:
+ability: 0.2027
+does: 0.1288
+end: 0.1778
+google: 0.6082
+just: 0.2535
+like: 0.2173
+new: 0.1409
+programmers: 0.1469
+say: 0.1538
+things: 0.1333
+think: 0.2535
+time: 0.1288
+type: 0.1778
+use: 0.3344
+used: 0.1357
+uses: 0.1928
+worth: 0.1718
+yes: 0.1928
+
+Termine con il punteggio TF-IDF più alto: google (0.6082)
+
+----------------------------------------------------------------------------------------------------
+
+Post 110:
+What is the best practice, most commonly accepted naming conventions for private variables in C#?
+
+private int myInteger;
+private int MyInteger;
+private int mMyInteger;
+private int _myInteger;
+private int _MyInteger;
+Mysterious other option
+
+Which do you use and why?  (My company is fairly new to C# and I would like to pick the most "industry accepted" method to try and get into our coding standard.)
+
+
+TF-IDF Scores:
+accepted: 0.5528
+best: 0.2003
+coding: 0.1961
+commonly: 0.2764
+company: 0.2271
+fairly: 0.2764
+industry: 0.2764
+like: 0.1482
+method: 0.2628
+new: 0.1922
+practice: 0.2628
+standard: 0.2271
+try: 0.2518
+use: 0.1520
+
+Termine con il punteggio TF-IDF più alto: accepted (0.5528)
+
+----------------------------------------------------------------------------------------------------
+
+Post 111:
+
+Possible Duplicate:
+Really “wow” them in the interview 
+
+Let's say I appear for an interview. What questions could I expect and how do I prepare?
+
+
+TF-IDF Scores:
+possible: 0.5264
+questions: 0.5126
+really: 0.4583
+say: 0.5000
+
+Termine con il punteggio TF-IDF più alto: possible (0.5264)
+
+----------------------------------------------------------------------------------------------------
+
+Post 112:
+I'm posting this here since programmers write viruses, and AV software.  They also have the best knowledge of heuristics and how AV systems work (cloaking etc).
+The EICAR test file was used to functionally test an antivirus system.  As it stands today almost every AV system will flag EICAR as being a "test" virus.  For more information on this historic test virus please click here.
+Currently the EICAR test file is only good for testing the presence of an AV solution, but it doesn't check for engine file or DAT file up-to-dateness. In other words, why do a functional test of a system that could have definition files that are more than 10 years old.  With the increase of zero day threats it doesn't make much sense to functionally test your system using EICAR.
+That being said, I think EICAR needs to be updated/modified to be effective test that works in conjunction with an AV management solution.
+This question is about real world testing, without using live viruses... which is the intent of the original EICAR.
+That being said I'm proposing a new EICAR file format with the appendage of an XML blob that will conditionally cause the Antivirus engine to respond.
+X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-EXTENDED-ANTIVIRUS-TEST-FILE!$H+H*
+<?xml version="1.0"?>
+<engine-valid-from>2010-1-1Z</engine-valid-from>
+<signature-valid-from>2010-1-1Z</signature-valid-from>
+<authkey>MyTestKeyHere</authkey> 
+
+In this sample, the antivirus engine would only alert on the EICAR file if both the signature  or engine file is equal to or newer than the valid-from date. Also there is a passcode that will protect the usage of EICAR to the system administrator.
+If you have a backgound in "Test Driven Design" TDD for software you may get that all I'm doing is applying the principals of TDD to my infrastructure.  
+Based on your experience and contacts how can I make this idea happen?
+
+
+TF-IDF Scores:
+10: 0.0714
+based: 0.0684
+best: 0.0544
+check: 0.0751
+currently: 0.0714
+date: 0.0751
+day: 0.0659
+design: 0.0544
+doesn: 0.1368
+doing: 0.0617
+driven: 0.0714
+effective: 0.0751
+experience: 0.0637
+file: 0.6009
+files: 0.0714
+functional: 0.0684
+good: 0.0512
+happen: 0.0714
+idea: 0.0617
+information: 0.0659
+knowledge: 0.0684
+live: 0.0751
+make: 0.1024
+management: 0.0600
+needs: 0.0714
+new: 0.0522
+old: 0.0637
+original: 0.0714
+posting: 0.0714
+programmers: 0.0544
+question: 0.0455
+real: 0.0659
+said: 0.1368
+sense: 0.0659
+software: 0.1066
+solution: 0.1429
+systems: 0.0751
+tdd: 0.1429
+test: 0.5840
+testing: 0.1317
+think: 0.0470
+used: 0.0503
+using: 0.1024
+version: 0.0751
+words: 0.0751
+work: 0.0462
+works: 0.0684
+world: 0.0600
+write: 0.0617
+years: 0.0600
+
+Termine con il punteggio TF-IDF più alto: file (0.6009)
+
+----------------------------------------------------------------------------------------------------
+
+Post 113:
+People make mistakes, even in the real life... Which should we, geeky programmers, avoid?
+
+
+TF-IDF Scores:
+avoid: 0.4407
+life: 0.5025
+make: 0.3426
+people: 0.3304
+programmers: 0.3641
+real: 0.4407
+
+Termine con il punteggio TF-IDF più alto: life (0.5025)
+
+----------------------------------------------------------------------------------------------------
+
+Post 114:
+I've been working in the enterprise space for the past 4½ years and have noticed that generally speaking, enterprises are not conducive environments for the test-first style of development. Projects are usually fixed-cost, fixed-timeline and waterfall style. Any unit testing, if done at all, usually comes after development in the QA phase and done by another team.
+Prior to working for an enterprise, I consulted for many small to medium sized companies, and none of them were willing to pay for a test-first style of development project. They usually wanted development started immediately, or after a short design stint: i.e., something more akin to Agile, though some clients wanted everything mapped out similar to waterfall.
+With what types of shops, companies, and clients does test-driven development work
+best? What types of projects tend to be conducive to TDD?
+
+
+TF-IDF Scores:
+agile: 0.1308
+best: 0.0948
+comes: 0.1308
+cost: 0.1308
+design: 0.0948
+development: 0.4640
+does: 0.0831
+driven: 0.1244
+enterprise: 0.2616
+generally: 0.1308
+past: 0.1147
+pay: 0.1308
+project: 0.0831
+projects: 0.1984
+short: 0.1244
+similar: 0.1109
+small: 0.1147
+started: 0.1075
+style: 0.3732
+tdd: 0.1244
+team: 0.1045
+tend: 0.1244
+test: 0.3052
+testing: 0.1147
+unit: 0.1192
+usually: 0.3225
+ve: 0.0793
+work: 0.0805
+working: 0.2218
+years: 0.1045
+
+Termine con il punteggio TF-IDF più alto: development (0.4640)
+
+----------------------------------------------------------------------------------------------------
+
+Post 115:
+See title, but I am asking from a technical perspective, not 
+
+Take my 40 year old virgin niece on a date or you're fired.
+
+
+
+TF-IDF Scores:
+asking: 0.4112
+date: 0.5005
+old: 0.4242
+technical: 0.4559
+year: 0.4389
+
+Termine con il punteggio TF-IDF più alto: date (0.5005)
+
+----------------------------------------------------------------------------------------------------
+
+Post 116:
+When writing or using an algorithm, should the Big Oh complexity be mentioned?
+
+
+TF-IDF Scores:
+big: 0.6146
+using: 0.4944
+writing: 0.6146
+
+Termine con il punteggio TF-IDF più alto: big (0.6146)
+
+----------------------------------------------------------------------------------------------------
+
+Post 117:
+So I'm sure everyone has run into this person at one point or another, someone catches wind of your project or idea and initially shows some interest. You get to talking about some of your methods and usually around this time they interject stating how you should use method X instead, or just use library Y. But not as a friendly suggestion, but bordering on a commandment. Often repeating the same advice over and over like a overzealous parrot.
+Personally, I like to reinvent the wheel when I'm learning, or even just for fun, even if it turns out worse than what's been done before. But this person apparently cannot fathom recreating ANY utility for such purposes, or possibly try something that doesn't strictly follow traditional OOP practices, and will settle for nothing except their sense of perfection, and thus naturally heave their criticism sludge down my ears full force. To top it off, they eventually start justifying their advice (retardation) by listing all the incredibly complex things they've coded single-handedly (usually along the lines of "trust me, I've made/used program X for a long time, blah blah blah").
+Now, I'm far from being a programming master, I'm probably not even that good, and as such I value advice and critique, but I think advice/critique has a time and place. There is also a big difference between being helpful and being narcissistic. In the past I probably would have used a somewhat stronger George Carlin style dismissal, but I don't think burning bridges is the best approach anymore.
+Do you have any advice on how to deal with this kind of verbal flogging?
+
+
+TF-IDF Scores:
+approach: 0.1397
+best: 0.1012
+big: 0.1184
+complex: 0.1397
+difference: 0.1397
+doesn: 0.1272
+don: 0.0935
+far: 0.1272
+follow: 0.1272
+good: 0.0952
+helpful: 0.1397
+idea: 0.1148
+initially: 0.1397
+instead: 0.1225
+just: 0.1746
+kind: 0.1272
+learning: 0.1059
+library: 0.1328
+like: 0.1497
+long: 0.0991
+method: 0.1328
+methods: 0.1272
+past: 0.1225
+person: 0.2544
+personally: 0.1272
+point: 0.1272
+possibly: 0.1272
+practices: 0.1225
+probably: 0.2544
+program: 0.1328
+programming: 0.0749
+project: 0.0887
+run: 0.1328
+sense: 0.1225
+single: 0.1397
+somewhat: 0.1397
+start: 0.1148
+style: 0.1328
+sure: 0.1225
+things: 0.0918
+think: 0.1746
+time: 0.2662
+try: 0.1272
+use: 0.1536
+used: 0.1870
+usually: 0.2295
+value: 0.1397
+ve: 0.1693
+
+Termine con il punteggio TF-IDF più alto: time (0.2662)
+
+----------------------------------------------------------------------------------------------------
+
+Post 118:
+When should a project be released to alpha, beta and to the public?
+Is it a good idea to extend the alpha and beta phases when it is needed?
+When in a later phase (eg. beta), is it wise to go back to an early phase (eg. alpha) if it didn't work out?
+
+
+TF-IDF Scores:
+didn: 0.4233
+early: 0.4233
+good: 0.2886
+idea: 0.3478
+later: 0.3855
+needed: 0.3855
+project: 0.2689
+work: 0.2605
+
+Termine con il punteggio TF-IDF più alto: didn (0.4233)
+
+----------------------------------------------------------------------------------------------------
+
+Post 119:
+What things tend to slow a developer down?
+Please try to refrain from posting answers that:
+
+are slow now but useful in the feature. (TDD, Refactoring, ...)
+list a distraction.
+
+
+
+TF-IDF Scores:
+answers: 0.3512
+developer: 0.2736
+feature: 0.2949
+list: 0.3130
+posting: 0.3512
+tdd: 0.3512
+tend: 0.3512
+things: 0.2428
+try: 0.3364
+useful: 0.2736
+
+Termine con il punteggio TF-IDF più alto: answers (0.3512)
+
+----------------------------------------------------------------------------------------------------
+
+Post 120:
+What steps and measures can I take to prevent deep indentations in my code?
+
+
+TF-IDF Scores:
+code: 0.4820
+steps: 0.8762
+
+Termine con il punteggio TF-IDF più alto: steps (0.8762)
+
+----------------------------------------------------------------------------------------------------
+
+Post 121:
+In an earlier question, I asked for career advice for new software engineers who did well before and during college.  But what about people who weren't fortunate enough to go to MIT or Yale, for whatever reason?  What if you went to what Joel Spolsky calls a JavaSchool?
+What can/should JavaSchool alumni do to develop their skills and make up for the things they missed in college?  (Or, was Joel wrong about those schools being disadvantageous?)
+
+
+TF-IDF Scores:
+asked: 0.2176
+career: 0.1982
+college: 0.4963
+develop: 0.2360
+did: 0.1930
+joel: 0.4963
+make: 0.1692
+new: 0.1725
+people: 0.1631
+question: 0.1504
+reason: 0.2260
+skills: 0.2360
+software: 0.1760
+things: 0.1631
+wrong: 0.2360
+
+Termine con il punteggio TF-IDF più alto: college (0.4963)
+
+----------------------------------------------------------------------------------------------------
+
+Post 122:
+How can I track that I'm developing software more or less productive than the previous days? 
+
+
+TF-IDF Scores:
+days: 0.5225
+developing: 0.5225
+productive: 0.5495
+software: 0.3898
+
+Termine con il punteggio TF-IDF più alto: productive (0.5495)
+
+----------------------------------------------------------------------------------------------------
+
+Post 123:
+I've been asked this in a few interviews. And it always catches me off guard.My professional and academic background are already in the resumé, which the interviewer has obviously looked at. What more to tell him/her? Should I start with my hobbies? I like gardening, or looking at NSFW pictures on reddit in my free time?
+What and how do you answer to this specific question? Do you have a prepared answer for it? Am I wrong if I think this question is a bit silly?
+UPDATE There have been a lot of great answers to this question. I'm in pickle which to choose as the 'correct' answer, because most of them are very insightful. I found a great writing on this subject matter. It's a bit crazy for my taste, but it's interesting:
+How To Introduce Yourself… I Mean Practically
+
+
+TF-IDF Scores:
+answer: 0.4078
+answers: 0.1704
+asked: 0.1572
+background: 0.1704
+bit: 0.3409
+correct: 0.1632
+free: 0.1792
+great: 0.3265
+interesting: 0.1519
+like: 0.0961
+looking: 0.1572
+lot: 0.1394
+matter: 0.1792
+mean: 0.1792
+obviously: 0.1632
+professional: 0.1704
+question: 0.3259
+specific: 0.1704
+start: 0.1473
+tell: 0.1632
+think: 0.1120
+time: 0.1139
+ve: 0.1086
+writing: 0.1519
+wrong: 0.1704
+
+Termine con il punteggio TF-IDF più alto: answer (0.4078)
+
+----------------------------------------------------------------------------------------------------
+
+Post 124:
+Sometimes, one creates a exploratory prototype and forgets about structure in the directories...
+What are good tips on dividing the programming files over (several levels of) directories?
+
+
+TF-IDF Scores:
+files: 0.5834
+good: 0.4184
+programming: 0.3289
+tips: 0.6135
+
+Termine con il punteggio TF-IDF più alto: tips (0.6135)
+
+----------------------------------------------------------------------------------------------------
+
+Post 125:
+Google sometimes come up with irrelevant links, not everything is available on SO, there are cases where the local documentation is also annoying to look through... Are there other efficient ways you use to search?
+
+
+TF-IDF Scores:
+available: 0.3723
+cases: 0.3915
+come: 0.3433
+google: 0.3915
+look: 0.3566
+search: 0.3915
+use: 0.2152
+ways: 0.3319
+
+Termine con il punteggio TF-IDF più alto: cases (0.3915)
+
+----------------------------------------------------------------------------------------------------
+
+Post 126:
+Please, explain why and list which languages have the (mis)feature implemented As far you know.
+Post what you consider a harmful feature, not what you dislike.
+
+
+TF-IDF Scores:
+consider: 0.3389
+explain: 0.2696
+far: 0.3389
+feature: 0.5942
+implemented: 0.3389
+know: 0.2158
+languages: 0.2893
+list: 0.3154
+
+Termine con il punteggio TF-IDF più alto: feature (0.5942)
+
+----------------------------------------------------------------------------------------------------
+
+Post 127:
+I am referring to explaining to the non-programmer what programming is. I made sure to search for similar questions before creating this one, but the few ones I did find seemed to dodge the question, and I specifically would like to see some metaphors or analogies. I personally find it easier to explain something technical to someone through the use of metaphors or analogies.
+The reason I'm interested in this is because many people encounter the work of a programmer on a daily basis, but if you ask the average person what a programmer is or does, they don't really know. This leads to certain situations of misunderstanding (ex. "[...] but I thought you were good with computers!")
+I really would like to find the best one out there. I would like to be able to easily explain to someone what my career choice is about. Of course, at least the general idea.
+I personally don't have a solid one, but I have long thought about it and I have usually gravitated towards the 'language' metaphor, where we happen to know a language that computers understand, and therefore we are able to tell computers what to do, or "teach" them, to solve our problems.
+For example:
+
+Imagine that in an alternate reality, humanoid robots with artificial intelligence exist, and some people are able to communicate with them through a common language, which is a variation of English. These people who can communicate with the robots are able to teach them how to solve certain problems or do certain tasks, like doing our chores.
+Well, although robots like that don't exist yet, programmers of our time are like those people, but instead of communicating with the robots, they communicate with computers. Programmers "teach" the computers how to perform certain tasks or solve certain problems by means of software which they create by using this "common language".
+Programmers and this "common language" are what give us things like email, websites, video games, word processors, smart phones (to put it simply), and many other things which we use on a daily basis.
+
+I don't mean to put programming on the throne or anything, it's just the best metaphor I could come up with.
+I'm sure someone will find some issue with this one, it's probably a bit contrived, but then again that's why I'm asking this question.
+
+
+TF-IDF Scores:
+ask: 0.0650
+asking: 0.0669
+best: 0.1180
+bit: 0.0774
+career: 0.0650
+certain: 0.3709
+choice: 0.0742
+come: 0.0714
+common: 0.1951
+course: 0.0774
+create: 0.0714
+did: 0.0633
+does: 0.0517
+doing: 0.0669
+don: 0.2180
+easier: 0.0814
+easily: 0.0774
+example: 0.0590
+explain: 0.1180
+general: 0.0742
+good: 0.0555
+happen: 0.0774
+idea: 0.0669
+instead: 0.0714
+interested: 0.0690
+issue: 0.0742
+just: 0.0509
+know: 0.0945
+language: 0.2431
+like: 0.3056
+long: 0.0578
+mean: 0.0814
+means: 0.0814
+non: 0.0633
+people: 0.2142
+person: 0.0742
+personally: 0.1484
+probably: 0.0742
+problems: 0.2443
+programmer: 0.2071
+programmers: 0.1770
+programming: 0.0873
+question: 0.0987
+questions: 0.0633
+reality: 0.0814
+really: 0.1132
+reason: 0.0742
+search: 0.0814
+similar: 0.0690
+simply: 0.0742
+situations: 0.0774
+software: 0.0578
+solve: 0.2443
+sure: 0.1428
+tasks: 0.1428
+technical: 0.0742
+tell: 0.0742
+things: 0.1071
+thought: 0.1484
+time: 0.0517
+understand: 0.0650
+use: 0.0895
+using: 0.0555
+usually: 0.0669
+websites: 0.0814
+work: 0.0501
+
+Termine con il punteggio TF-IDF più alto: certain (0.3709)
+
+----------------------------------------------------------------------------------------------------
+
+Post 128:
+How useful are infix operators in a programming language? Are they worth the extra complexity they provide? Can you provide any examples where infix operators are better suited to the problem that can't be handled by just overloading the normal operators?
+
+
+TF-IDF Scores:
+better: 0.3805
+examples: 0.3805
+extra: 0.4177
+just: 0.2612
+language: 0.2494
+problem: 0.3663
+programming: 0.2239
+useful: 0.3095
+worth: 0.3541
+
+Termine con il punteggio TF-IDF più alto: extra (0.4177)
+
+----------------------------------------------------------------------------------------------------
+
+Post 129:
+In response to This Question, I ask:   What are the best parts of your coding standard?
+What are the best practices that help with code quality, reliability, maintainability, readability, etc.
+Please include the language, the item from the standard, and the reason it improves your code.
+
+
+TF-IDF Scores:
+ask: 0.2238
+best: 0.4061
+code: 0.2932
+coding: 0.1988
+help: 0.2238
+include: 0.2665
+language: 0.1673
+practices: 0.2458
+quality: 0.2553
+question: 0.1699
+readability: 0.2803
+reason: 0.2553
+standard: 0.4606
+
+Termine con il punteggio TF-IDF più alto: standard (0.4606)
+
+----------------------------------------------------------------------------------------------------
+
+Post 130:
+We’re working on a .Net framework which ultimately amounts to a single DLL.  We intend to charge for commercial use of the framework, but make it free for open source/non-commercial use.  The rough plan at the moment is to administer this through some form of fairly simple licence which will be issued whether you’re using it for free or paying.
+We’re debating whether to make the source code available.  It’s our perception (and our own preference) that it’s far more appealing to use something where you have access to the source code.
+I’m interested in whether people think making the source code available will damage our ability to make money from the framework, or whether it will encourage more usage and enough “good” people will arrange to pay for the correct licence if using it commercially.
+My feeling is that, generally, commercial operations don’t mess about on the licencing front and so making the source code available will only encourage usage and therefore ultimately generate more revenue, but I’d be interested in others views/experience.
+
+
+TF-IDF Scores:
+ability: 0.1089
+access: 0.1089
+available: 0.3106
+code: 0.2278
+correct: 0.0992
+don: 0.0729
+experience: 0.0923
+fairly: 0.1089
+far: 0.0992
+form: 0.1089
+framework: 0.2768
+free: 0.2177
+generally: 0.1089
+good: 0.0742
+interested: 0.1846
+make: 0.2227
+making: 0.2071
+money: 0.1089
+net: 0.0923
+non: 0.0847
+open: 0.1035
+pay: 0.1089
+people: 0.1432
+simple: 0.0955
+single: 0.1089
+source: 0.5444
+think: 0.0681
+ultimately: 0.2177
+use: 0.1796
+using: 0.1485
+working: 0.0923
+
+Termine con il punteggio TF-IDF più alto: source (0.5444)
+
+----------------------------------------------------------------------------------------------------
+
+Post 131:
+This is a "Share the Knowledge" question. I am interested in learning from your successes and/or failures.
+Information that might be helpful...
+Background:
+
+Context: Language, Application,
+Environment, etc.
+How was the bug identified ?
+Who or what identified the bug ?
+How complex was reproducing the bug ? 
+
+The Hunting.
+
+What was your plan  ?
+What difficulties did you encounter ?
+How was the offending code finally found ?
+
+The Killing.
+
+How complex was the fix ?
+How did you determine the scope of the fix ?
+How much code was involved in the fix ?
+
+Postmortem.
+
+What was the root cause technically ? buffer overrun, etc.
+What was the root cause from 30,000 ft ?
+How long did the process ultimately take ?
+Were there any features adversely effected by the fix ?
+What methods, tools, motivations did you find particularly helpful ? ...horribly useless ?
+If you could do it all again
+?............
+
+These examples are general, not applicable in every situation and possibly useless. Please season as needed.
+
+
+TF-IDF Scores:
+application: 0.1558
+background: 0.1481
+code: 0.1630
+complex: 0.3116
+context: 0.1558
+determine: 0.1558
+did: 0.4845
+environment: 0.1558
+examples: 0.1419
+features: 0.1320
+general: 0.1419
+helpful: 0.3116
+information: 0.1366
+interested: 0.1320
+knowledge: 0.1419
+language: 0.0930
+learning: 0.1182
+long: 0.1105
+methods: 0.1419
+needed: 0.1419
+particularly: 0.1419
+possibly: 0.1419
+process: 0.1320
+question: 0.0944
+situation: 0.1558
+tools: 0.1558
+ultimately: 0.1558
+useless: 0.3116
+
+Termine con il punteggio TF-IDF più alto: did (0.4845)
+
+----------------------------------------------------------------------------------------------------
+
+Post 132:
+I have had a few that I am proud of and some of them were written by myself few years ago. It doesn't have to be necessarily buggy, just bad code. 
+
+
+TF-IDF Scores:
+ago: 0.4837
+bad: 0.4633
+code: 0.2661
+doesn: 0.4633
+just: 0.3180
+years: 0.4061
+
+Termine con il punteggio TF-IDF più alto: ago (0.4837)
+
+----------------------------------------------------------------------------------------------------
+
+Post 133:
+Should curly braces be on their own line or not? What do you think about it?
+if (you.hasAnswer()) {
+    you.postAnswer();
+} else {
+    you.doSomething();
+}
+
+or should it be
+if (you.hasAnswer())
+{
+    you.postAnswer();
+}
+else
+{
+    you.doSomething();
+}
+
+or even
+if (you.hasAnswer())
+    you.postAnswer();
+else
+    you.doSomething();
+
+Please be constructive! Explain why, share experiences, back it up with facts and references.
+
+
+TF-IDF Scores:
+experiences: 0.6103
+explain: 0.4422
+line: 0.5352
+think: 0.3815
+
+Termine con il punteggio TF-IDF più alto: experiences (0.6103)
+
+----------------------------------------------------------------------------------------------------
+
+Post 134:
+Coding standards are common in any software development organization, but how important are they to follow?  I can understand the need for some consistency, but when dealing with simple things like the position of braces, line length, etc., I'm not sure excessively strict standards contribute much to software development.
+Isn't it more important that your code is readable, not that it conforms to a predefined standard?  It seems they're more like... guidelines anyway.
+
+
+TF-IDF Scores:
+code: 0.1304
+coding: 0.1768
+common: 0.1990
+development: 0.3536
+follow: 0.2270
+isn: 0.2048
+like: 0.2672
+line: 0.2185
+need: 0.1990
+simple: 0.2185
+software: 0.3536
+standard: 0.2048
+standards: 0.4540
+sure: 0.2185
+things: 0.1638
+understand: 0.1990
+
+Termine con il punteggio TF-IDF più alto: standards (0.4540)
+
+----------------------------------------------------------------------------------------------------
+
+Post 135:
+The Joel Test is a well known test for determining how good your team is. What do you think about the points? Do you disagree with any of them? Is there anything that you would add?
+
+
+TF-IDF Scores:
+add: 0.3830
+good: 0.2612
+joel: 0.3830
+points: 0.3642
+team: 0.3059
+test: 0.5957
+think: 0.2395
+
+Termine con il punteggio TF-IDF più alto: test (0.5957)
+
+----------------------------------------------------------------------------------------------------
+
+Post 136:
+I have heard a lot of people mention Code Complete as a book worthwhile reading. Unfortunately, I am so busy that I don't have time to read it, so can anyone tell me what the key points of the book are?
+
+
+TF-IDF Scores:
+book: 0.5609
+code: 0.1611
+complete: 0.2928
+don: 0.2061
+heard: 0.2805
+lot: 0.2394
+people: 0.2024
+points: 0.2928
+read: 0.2700
+reading: 0.2805
+tell: 0.2805
+time: 0.1957
+
+Termine con il punteggio TF-IDF più alto: book (0.5609)
+
+----------------------------------------------------------------------------------------------------
+
+Post 137:
+There's around a zillion "PHP frameworks". And most of them bill themselves as following the MVC pattern. While it's welcome to overcome osCommerce coding style (processing logic heavily intermixed with SQL and HTML), there are certainly simpler and easier to follow approaches to get a maintainable application design.
+The original MVC concept was targetted at GUI applications. And for Gtk/Python it seems feasible to follow it accordingly. But PHP web apps don't operate on live Views (GUI elements) and a persistent Controller runtime. It's quite certainly a misnomer if it just describes the used code + directory grouping or class naming.
+"MVC" seems to be used like a buzzword for PHP frameworks. And I've actually seen one or two mature PHP frameworks admit it, but redefining the phrase anyway to match interna.
+So is it generally snake oil? Why isn't better terminology used, and a more sensible concept for maintainable PHP propagated?
+Some elaborative reasoning
+Why I suspect that PHP implementations don't follow the real MVC pattern:
+Models: in theory, Models should be fat and contain business logic, and controllers should be thin handlers (input->output). In reality the PHP frameworks advocate shallow Models. CI and Symfony for example equate Model == ORM. Even HTTP input is handled by the controller, isn't treated as model.
+Views: workarounds with AJAX discounted, there can't be Views on web pages. PHP frameworks still pump out pages. The interface still effectively follows the ordinary HTTP model, there's no advantage over non-MVC applications. (And lastly, none of the widespread php frameworks can factually output to GUI Views instead of HTML. I've seen a PHP library that can operate Gtk/Console/Web, but the frameworks don't.)
+Controller: I'm unsure. Controllers probably don't need to be long-running and persistently active in the MVC model. In PHP framework context, they're however mostly request handlers. Not really something to get argumentative about, but it just feels slightly buzzwordish.
+Would there be better descriptors? I've seen acronyms like PMVC or HMVC thrown around. Though descriptions get more ambigous there, maybe these would describe the current web frameworks less hokey?
+
+
+TF-IDF Scores:
+actually: 0.0614
+application: 0.0724
+applications: 0.1448
+apps: 0.0689
+better: 0.1319
+business: 0.0689
+class: 0.0724
+code: 0.0379
+coding: 0.0514
+concept: 0.1448
+context: 0.0724
+design: 0.0525
+don: 0.1939
+easier: 0.0724
+example: 0.0525
+follow: 0.1979
+following: 0.0689
+framework: 0.0614
+generally: 0.0724
+html: 0.1377
+instead: 0.0635
+isn: 0.1190
+just: 0.0906
+library: 0.0689
+like: 0.0776
+live: 0.0724
+long: 0.0514
+maybe: 0.0660
+model: 0.2639
+need: 0.0578
+non: 0.0563
+original: 0.0689
+php: 0.6986
+probably: 0.0660
+python: 0.0635
+quite: 0.0614
+real: 0.0635
+reality: 0.0724
+really: 0.0503
+seen: 0.1905
+style: 0.0689
+theory: 0.0724
+used: 0.1454
+ve: 0.1317
+web: 0.2455
+
+Termine con il punteggio TF-IDF più alto: php (0.6986)
+
+----------------------------------------------------------------------------------------------------
+
+Post 138:
+I originally thought of creative commons when while reading a book about wordpress (professional wordpress), I learned that I should also specify that the product is provided 
+
+... WITHOUT ANY WARRANTY; without even the
+  implied warranty of MERCHANTABILITY or
+  FITNESS FOR A PARTICULAR PURPOSE
+
+and they recommend GNU GPL.  How do I write a license or select 1?
+btw, what does MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE mean actually? Isn't without warranty enough? 
+
+
+TF-IDF Scores:
+actually: 0.2094
+book: 0.2250
+does: 0.1570
+isn: 0.2030
+mean: 0.2470
+originally: 0.2349
+particular: 0.4698
+product: 0.2470
+professional: 0.2349
+purpose: 0.4941
+reading: 0.2250
+thought: 0.2250
+write: 0.2030
+
+Termine con il punteggio TF-IDF più alto: purpose (0.4941)
+
+----------------------------------------------------------------------------------------------------
+
