@@ -1,0 +1,935 @@
+Question 4:
+When starting a project for a company that's not primarily a programming company, one of the expectations is that there's a finished product at the end free of all bugs and does everything needed right away. However, that's rarely the case. 
+What are some ways to manage expectations and explain to non-programmers how software development differs from other types of product development?
+
+
+Best Answer:
+Pretty much everybody with a computer has encountered the concept of "bugs" these days, so you might start there.  "What's the most annoying way an application has ever failed on you?  Multiply that by ten, and you'll have our users' experience if we don't devote enough resources to testing and maintenance."
+And don't underestimate the value of establishing a good working relationship with the non-programmers.  If you can establish that your judgment may be trusted, they'll take you seriously when you sound the alarm that X is going to fail spectacularly if you don't do Y pronto, even if they don't completely understand your reasoning.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 9:
+Sometimes, the things I have to do for my job are interesting and engaging.  Sometimes, they aren't.  Occasionally, they really aren't.
+Do you have any particular strategies or tricks for dealing with those dull stretches when your brain would rather be doing anything other than what you're supposed to be doing, particularly when the Internet and its boundless opportunities for interesting Slack beckon?
+
+
+Best Answer:
+Increments. I will pick something that I can do, even if it's a small task (i.e. modify comments in code). Pretty soon, the perfectionist in me wants to do more and more stuff and I'm back rolling.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 18:
+At first glance, I'd say a good programming team needs to understand the following matters:
+
+The details of the core language / framework
+HTML, (asynchronous) javascript
+SQL / data model
+Usability / UI design
+Security
+Project management.
+
+If this team is not complete: what is needed?
+
+
+Best Answer:
+Customer (or an advocate of some sort).  
+Basically, someone that can say, "Yes, you're building what I want and it's going to solve my problem." or that the team can go to when they have questions about how something is supposed to work.  That may or may not be the same person that is doing Project Management.
+Also, you're missing out on a QA person there.  You can't really depend on the developers to adequately test - they're usually too close to the code and the normal response for developers is to test happy path stuff, not doing weird crap like copy pasting War & Peace into a textbox and seeing what the application does.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 39:
+What's your favourite quote about programming?
+One quote per answer, and please check for duplicates before posting!
+
+
+Best Answer:
+
+Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.  
+
+— Brian W. Kernighan
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 42:
+We've all had them, managers who have either come from sales or last looked at code 10 or more years ago but think they know how to write code.
+What can I do to give the impression that I'm grateful for their intervention, but keep it as short as possible so I can get on with my work?
+Or, should I be engaging more with the manager to educate them with modern coding techniques and practices? After all, a manager who understands these will be able to talk sensibly to clients and more senior management when discussing the project and its timescales.
+
+
+Best Answer:
+I say, go ahead and try to engage and educate.
+If they're honestly trying to help you, the chance to learn something could be valuable to them.  If they're just shoving their nose in for ego or political reasons ("See, I'm helping, I'm helping!"), they'll likely get the notion you'll embarrass them if they keep this nonsense up -- or bore them to death with a wall of jargon they're only pretending to understand.
+And if you've got the dreaded egomaniac who truly thinks they're an expert at your job no matter what evidence you can bring to the contrary, then smile, nod, and make whatever trivial cosmetic changes will make them go the hell away.  And update your resume.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 44:
+I am finishing my college degree in programming soon and I'm exploring the next steps to take to further my career. One option I've been considering is getting a certification or a series of certifications in the area of development I want to work in.
+Are these certifications worth the time and money? Do employers place a lot of value in them?
+
+
+Best Answer:
+The main purpose of certifications is to make money for the certifying body.
+Having said that, I think certifications are more important the earlier on in your career you are. As a hiring manager, I never use certifications or the lack thereof to filter potential employees, but I do think some companies may look for these as proof that you know what you are doing. Personally, I want the job candidate to show me they can do something (which is a whole other question, I realize!)
+The more experience you have, the more you can prove by examples that you know what you are doing and the less important certifications become.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 57:
+The coding standards for the code hosted in drupal.org suggest to use two spaces to indent the code; other sites suggest to use tabs to indent the code.
+What is the proper indentation character for everything, and in every situation? Please explain the answer you give.
+
+
+Best Answer:
+Tabs
+Now, of course, consistency matters more than either one, and a good IDE makes the differences negligible.  That said, the point of this thread is to be a holy war, so:
+I prefer tabs:
+
+They're a character specifically meant for indentation
+They allow developers with different preferences in indentation size to change how it's the code looks without changing the code (separation of data and presentation for the proverbial win!)
+It's impossible to half-indent something with tabs.  So when you copy code from some website that used 3 spaces into your 4-space indented file, you don't have to deal with misalignment.
+
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 73:
+We often receive last minute requests from the business asking for an extra feature to be implemented.  The project manager is usually responsible for filtering out these requests as "must haves" or "nice to have", but there are cases where the business wants to squeeze all these features into a release.   Is there a good way to say NO to the business?  What steps can be taken to stop or minimize scope creep?
+
+
+Best Answer:
+Ask them what they want you to drop so you'll have the time to squeeze this latest request in.
+I've not had to do this for a while, and when I did, I used it sparingly otherwise it loses it's potency.
+I found it most effective towards the end of the phase when you were tidying stuff up or doing the little improvements and tweaks you'd agreed on in the planning stage.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 134:
+How do you bill your programming projects? Do you do it per hour? Per job? 
+Please include what kind of project you are doing in the answer. (Mobile, Web, Desktop, etc... You can be more specific if you want.)
+BONUS:
+If you'd like to give specific amounts in your answer, you may. ;-)
+
+
+Best Answer:
+There's always going to be a struggle between you and the client over costs: you want to charge as much as you can from a client, and a client is going to want to get as much work for as little cost as possible.
+So, when you charge hourly, it leaves open to negotiation how many hours a project should take to complete. You may think it'll take 10 hours, but your client thinks you should do it in 5.
+By charging by project, there's very little open to negotiation: it costs $X, and the client can take it or leave it.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 135:
+Who in the software engineering and software development fields uses Twitter to tweet about relevant happenings in the field?
+
+
+Best Answer:
+I'll probably get flamed for this but...
+140 characters is hardly the format to get any real pearls of programming wisdom.  Most (but not all) programming concepts/thoughts/ideas require more space to be articulated. I would follow the blogs of the list of programmers that everyone is suggesting.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 163:
+Are there any great programming or software development books that are language agnostic?  Why should I read it?
+
+
+Best Answer:
+The Pragmatic Programmer: From Journeyman to Master - Andrew Hunt and David Thomas
+This book is all about how to write code that works and is maintainable. A key concept is being practical. Everything in the book is boiled down to 70 tips that are easy to remember that help you deliver better, higher-quality software.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 192:
+If I have some code that has 80% test coverage (all tests pass), is it fair to say that it's of higher quality than code with no test coverage?  
+Or is it fair to say it's more maintainable?
+
+
+Best Answer:
+By one definition it's more maintainable, as any breaking change is more likely to be caught by the tests.
+However, the fact that code passes the unit tests doesn't mean it's intrinsically of higher quality. The code might still be badly formatted with irrelevant comments and inappropriate data structures, but it can still pass the tests.
+I know which code I'd prefer to maintain and extend.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 206:
+Test driven development. I get it, like it.
+But writing tests does require overhead. So should TDD be used universally throughout the code base, or are there areas where TDD provides a high ROI and other areas where the ROI is so low that it is not worth following.
+
+
+Best Answer:
+I'd say avoid TDD in places where the code is likely to change structurally a lot.  Ie, it's great to have a pile of tests for a method whose signature changes rarely but gets refactored internally more frequently, but it sucks to have to fix your tests every time a highly volatile interface changes dramatically.
+The apps I've been working on recently have been data-driven webapps built on a Gui->Presenter->BusinessLogic->Data Access Layer-based architecture.  My data access layer is tested like nobody's business.  The business logic layer is pretty well tested.  The Presenters are only tested in the more stable areas, and the GUI, which is changing hourly, has almost no tests.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 215:
+Having taken a course in Operating Systems I'm interested in expanding my knowledge of the Linux kernel and practice working with a big system. What are some interesting but not overly difficult projects I can try my hand at? 
+EDIT: a bit of background on what I did do with the kernel. 
+
+Implemented a new scheduling policy
+Implemented User Threads and a corresponding mutex library (not really kernel hacking but contained kernel related theory)
+
+
+
+Best Answer:
+I've not done much work on kernels before (they scare me), but I've heard that http://kernelnewbies.org/ is a fantastic resource if you want to get involved in kernel work. As already mentioned SourceForge is a great place to look if you want to get involved in an open-source kernel-related project.
+Also, a similar question has been asked on Stack Overflow before, so you may want to look here.
+What are some interesting, small Linux kernel projects to help learn the source?
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 220:
+How would someone implement Agile process concepts as a solo developer?  Agile seems useful for getting applications developed at a faster pace, but it also seems very team oriented...
+
+
+Best Answer:
+
+By doing test-driven development
+By developing in small sprints
+By having a lot of contact with the customer
+
+I remember reading a thesis about Cowboy Development, that is essentially Agile for solo developers. The thesis can be read here: Cowboy: An Agile Programming Methodology For a Solo Programmer (PDF)
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 247:
+Does learning COBOL still make sense?
+
+
+Best Answer:
+I don't think so, unless you are already in the niche market where COBOL is still maintained.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 294:
+I just started working a year ago, and I want to join an open source project for the same reasons as anyone else: help create something useful and develop my skills further.
+My problem is, I don't know how to find a project where I'll fit in.
+How can I find a beginner-friendly project?  What attributes should I be searching for?  What are warning signs that a project might not be the right fit?  Are there any tools out there to help match people with open source projects?
+There's a similar question here, but that question has to do with employment and is limited to PHP/Drupal.
+
+
+Best Answer:
+I suggest to start a project on your own on a topic that you're interested in. 
+A lot can be learned by working on a project in general.  It is not needed to see how someone else codes to learn how to code better.  And sometimes you'll actually see what not to do as the other people are often no more experienced than you are.  
+It usually helps to see other's code, but you will encounter other people's code in your own project just via the libraries and components you use.  
+Experience will teach you what is good and bad practice.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 404:
+Joel Spolsky wrote a famous blog post "Human Task Switches considered harmful".
+While I agree with the premise and it seems like common sense, I'm wondering if there are any studies or white papers on this to calculate the overhead on task switches, or is the evidence merely anecdotal? 
+
+
+Best Answer:
+The abstract of a study that says 'maybe'
+Another study [PDF] that says interruptions make things seem like they took longer.
+A study[PDF] that says interruptions increase resumption lag time, but that cues seen in the task before the interruption can speed recovery time.
+Task switching[PDF] takes a significant portion of our work week.
+More reading on the psychology of interruptions than you can shake a stick at.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 502:
+I think everyone has their own program or set of features beyond "Hello World!", that they use when trying out a new language.
+Mine is a guessing game:
+I'm thinking of a number 1-10, guess what it is!
+Guess: 3
+Nope, too low!
+Guess: 7
+Nope, too high!
+Guess: 5
+Yes, You win!
+Play again (Y/N)? N
+
+What do you write?
+
+
+Best Answer:
+It usually goes like this:
+
+Hello World
+Hello [user inputted name]
+A few problems from Project Euler
+A linked list
+A simple blog engine (either terminal or web-based, depending on what language)
+And from there I dive into a project that I want to work on (but don't care if the design gets mangled as I learn my way through a new language).
+
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 507:
+I have seen this on the SO on many times. Whenever a question is vague and the question is asking some magical answer somebody or the other leaves a comment saying answer is 42. Even a book I am reading right now uses '42' as the number whenever it wants demonstrate some basic concept using an integer. So is there any history behind it or it is just a coincidence?
+
+
+Best Answer:
+It's the answer to Life, The Universe, and Everything from Douglas Adams' Hitchhiker's Guide to the Galaxy.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 570:
+All but the most trivial programs are filled with bugs and so anything that promises to remove them is extremely alluring. At the moment, correctness proofs are code are extremely esoteric, mainly because of the difficultly of learning this and the extra effort it takes to prove a program correct. Do you think that code proving will ever take off?
+
+
+Best Answer:
+Not really in that sense, but pure functional programming is good in this domain. If you use Haskell, it's likely that your program is correct if the code compiles. Except from IO, a good type system is a good help.
+Also programming to contract can be helpful. See Microsoft Code Contracts
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 604:
+on a widescreen monitor one can easily see more than 80 characters at a time, without scrollbars. even linus torvalds sees the 80 character limit as outdated.
+so, is the 80 character limit still relevant in times of widescreen monitors?
+
+
+Best Answer:
+If I keep my lines to less than about 100 characters, I can have two editor windows side-by-side on a widescreen monitor.  It's very useful to have both the class header file and implementation both visible at the same time, or have code on one side that calls into the code on the other.  And, if I keep the lines short, I don't need a horizontal scrollbar on my editor windows, which gives me more vertical space.
+80 characters may be outdated, but there's some merit in keeping things within reason.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 729:
+As programmers we have a lot of inputs:
+
+Ebooks 
+Code snippets 
+Interesting emails 
+Documents
+Web articles 
+Blog posts
+StackOverflow questions
+Podcasts
+...
+
+Which tools do you use to store, organize, search and consult all of this stuff?
+Is there a silver bullet solution to handle this huge amount of data? 
+
+
+Best Answer:
+I'm currently using OneNote from Microsoft to organize and keep record of most of my data, activities and notes. I'm using its online storage to have it automatically shared between my home desktop, personal notebook and office notebook. Unfortunately it has some limits (for example, no integration with eBooks) but it is the most comprehensive and powerful tool I've found.
+I tried for a while also Evernote and, while its online sharing is quite better and it can be used on Android (my current mobile platform), it is not powerful as OneNote.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 739:
+What is the recommended  User Account Control (UAC) setting when developing on Windows?
+Even on Win7 I find it annoying enough to turn it off (because it makes me more productive with it off) but sometimes I feel bad because I know I'll find more problems in my code if I leave it on.
+
+
+Best Answer:
+The recommendation (even from Microsoft) is to leave it ON, and also to run your IDE unelevated whenever possible.
+First of all, it forces the programmer to live with the same "annoyances" a real world user will have (if you don't know it, would you program correctly around it?).
+Then, disabling UAC and working as an administrator is as bad as in Unix to work as root (decades of common wisdom will tell you why that's bad).
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 745:
+What methods do you use to stay awake and alert while working?
+Personally I drink coffee non stop throughout the day.  But I've also heard of this thing called exercise that should help too.  Does anyone else have tips and tricks to stay more awake and alert while working?  Redbull? Maybe a magic pill that won't require me to sleep?
+
+
+Best Answer:
+Caffeine is a major cause of the problem, not the solution.  It might seem to work in the short-term but it makes things worse overall by interfering with your sleep.
+If you don't sleep properly you will be tired and unfocused.  If you try to solve that with a high caffeine intake you won't sleep properly.
+Exercise, eat well, try to restrict the coffee to a couple of cups a day and don't work stupid long hours.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 750:
+I'm freshly out of college, and starting university somewhere next week. We've seen unit tests, but we kinda not used them much; and everyone talks about them, so I figured maybe I should do some.
+The problem is, I don't know what to test. Should I test the common case? The edge case? How do I know that a function is adequately covered?
+I always have the terrible feeling that while a test will prove that a function works for a certain case, it's utterly useless to prove that the function works, period.
+
+
+Best Answer:
+My personal philosophy has thusfar been:
+
+Test the common case of everything you can.  This will tell you when that code breaks after you make some change (which is, in my opinion, the single greatest benefit of automated unit testing).
+Test the edge cases of a few unusually complex code that you think will probably have errors.
+Whenever you find a bug, write a test case to cover it before fixing it
+Add edge-case tests to less critical code whenever someone has time to kill.
+
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 778:
+What question have you found especially valuable in interviewing software developers?  What is it about the question that has made it particularly useful?
+I'm looking for a particular question you like to ask, not just an interviewing approach like "make them write code".
+
+
+Best Answer:
+Take a look at this sample code and tell me how you'd improve it.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 779:
+It doesn't have to be programming or software development related, but just asked during an interview for an IT related job.
+I know some "left field" questions are meant to see how the candidate copes with unexpected and novel situations, but here I'm looking for a question that appeared to be completely unrelated to the job they were interviewing you for, or something that made you think "what useful information could they possibly get from my answer to that question?".
+
+
+Best Answer:
+
+Where do you see yourself in 5 years?
+
+Do they really think people are dumb enough to say that they want to do something completely different? Or don't want to work for them?
+I guess it can be useful as an indicator of who not to hire but it's so stupid easy to fake that you can't use it as an indicator of who to hire in any way if they answer correctly.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 843:
+I was instructed by my project manager that frequent deployment in PROD or to test server should be avoided. But I don't understand why? We roll our testing copy to PROD on every sprint end but suddenly client would ask a simple change to the existing application which would require a re-deployment. When every thing was well tested and QA approved. why should we avoid frequent deployment?
+How it was done universally?
+
+
+Best Answer:
+If you are talking about a hosted web application, the users don't get a say-so in when they get upgrades. That is, they are forced to upgrade each time you do a push to production.
+If your changes dramatically change the system rules or UI, you should definitely consider bundling your releases and doing it less frequently. It is very frustrating to users to have to continually re-learn how to use the tools they rely on and violates the UI principle of making them feel they are in control of their computer/software.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 866:
+I know this is obviously not true for some games, minesweeper, card games, etc.  But what about any game involving simulating the real world environment.  Obviously these games have some form of a physics engineer powering the graphics. 
+For someone like me who personally did not enjoy physics but loves video games, do I have a chance at ever getting involved in the development cycle of a video game such as this while disliking physics? 
+
+
+Best Answer:
+There are many aspects to game programing and you don't need to be an expert at all of them. 
+If you're on a bigger team you may not even be doing the core game programming but just network communication for example. 
+For core game programming I would think that above a sound physics understanding you would need a strong mathematical background.  Having a strong mathematical background will allow you to do things like modelling transformations, clippings, keyframe animation, ray tracing, image processing, texture mapping, etc.
+Having a strong physics background may help you with coming up with new computer graphics methods, but it is not required if you want to become a game programmer. 
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 870:
+One per answer please. I'll add my favourite as an answer.
+
+
+Best Answer:
+
+Code Complete by Steve McConnell. I don't even think it needs explanation. It's the definitive book on software construction. Incredibly well written and covers all aspects of the practical (programming) side of creating software. 
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 940:
+This is more a discussion question than an actual attempt to determine the "best", since that clearly varies by the needs of the organization. I'm more curious about the arguments in favor of different systems across categories (centralized vs distributed, open vs proprietary, etc).
+So, what do you think is the best version control system?
+
+
+Best Answer:
+Mercurial
+Because of it's sophisticated ability to branch and merge code, it is the best I've used. The whole DVCS paradigm just makes so much sense. I've not used Git, but I suppose that it qualifies as well. 
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 966:
+There are a lot of questions about what programming books should be on the programmer's bookshelf. How about non-programming related books that can help you become a better programmer or developer? It would also be interesting to know why they would help.
+My first choice would be Sun Tzu's "Art of War" (however cliché), because it made it obvious that the success of any project depends on the strength of its weakest link (and warfare is a big project).
+
+
+Best Answer:
+The Design of Everyday Things by Donald Norman
+
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1007:
+Tester and blogger Lanette Creamer recently posted this question on Twitter:
+
+If you are a professional software developer who works with testers, think of the best testers you know. What traits do they have in common?
+
+I thought it would make an excellent question for here.
+My thoughts are:
+
+They want to remove ambiguity from requirements even if it means asking awkward questions.
+They create new features by seeing the way software "should" work, rather than just how it's documented.
+They demonstrate honesty and integrity and encourage but not demand it from those around them. In other words, they model behavior.
+
+What are the traits of the best testers you've worked with?
+
+
+Best Answer:
+Some of the best testers I've worked with really understand how the users are going to use the software.  They understand what business function the software is supposed to play and how that software will effect the user's role/job/function.  It makes for a successful project when the tester has as much knowledge of the business as the developer and the business owner.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1009:
+I'd like to sell my software on the 'net but am not sure how to do the whole Merchant setup.  I have access to Commerce Server 2009, and I want to seem professional so a plain old PayPal account is out.
+What do I need to know/do to sell a few things using ASP.NET, accept credit cards, and what not? 
+
+
+Best Answer:
+You can use a simple checkout service like 2checkout.com, paypal, or Google Checkout.
+Or you can use a service which has an affiliate network like regnow.  This will get your product onto hundreds and hundreds of sites, but it is extremely rare to ever have a sale on any of those sites.  In my experience 99.999% of sales came directly from my own company website.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1025:
+I'm considering learning iPhone development and Objective C but don't want to avoid developing something for the most saturated markets and app categories.
+What categories should I avoid?  Are there too many dating applications, or should I just stick to coming up with a creative game or two?
+
+
+Best Answer:
+The iOS market has way to many apps in general. Try to make an iPad app. There are less iPad apps out than iPhone/iPod touch. 
+Alternatively, try to make something for a particular (local) business.
+That way you are guaranteed to get paid (by the business) and you get an app out there that is unique.
+Games are always good, provided that the gameplay attracts people. Like the speakers at the WWDC 2010 said, watch play testers as they do their thing. It helps a lot with your game development.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1059:
+I have often heard it said that objects have not delivered in terms of code reuse. Do you agree? If you believe that they haven't, why not?
+
+
+Best Answer:
+No, not necessarily.
+Objects deliver better semantics, organization of code/functionality and, possibly, ease-of-use.
+Well designed libraries deliver on the promise of code reuse, not objects per se.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1060:
+Aspect oriented programming promises to deal with cross cutting concerns, but I'm not completely sold on it yet. Have there been any other attempts to deal with this problem?
+
+
+Best Answer:
+When possible, you can encapsulate cross-cutting concerns into separate modules that are then used throughout the app via dependency injection.  This allows you to somewhat decouple the cross-cutting concern implementation from it's use throughout the code.
+This doesn't always work elegantly, though.  That's the reason people are trying to address the issue with things like AOP.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1063:
+I have often wondered if it would be possible to write a programming language that would work as a conversation. I would tell the computer that I want to store coordinates and it would ask what representation I would use. I would then ask to find the shortest path between points and it would ask if I want to use Djkstra's, brute force or use Floyd's? What research has been done towards producing a system like this?
+
+
+Best Answer:
+I think such a language would need an artificial intelligence in place, or at least a system that can learn.
+The problem is that humans don't know what they want.
+Also, even writing in classical imperative language we still make logical errors. Imagine trying telling a non-intelligent software what he has to do.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1095:
+I used ad-hoc MUML (made-up modeling language) to design and explain system fairly frequently.  It looks similar to UML and tends to be pretty well understood.
+However, I've had a professor or two that harped on the use of strict, formal UML, as close to the spec as possible.  I always suspected that strict UML wasn't really as common as they claimed.  So, how 'bout it- how often do you actually draw out complete diagrams that use all the proper line endings, multiplicity, member type symbols, etc?
+
+
+Best Answer:
+Never.
+Heck, it's been years since I last created any UML. Line diagrams on whiteboards and scraps of paper don't count.
+In fact, we just removed the sole UML question from the guide we use during interviews, because none of us really cared about the answers.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1200:
+Coming from a procedural/OO programming background, I tend to write Scheme programs in a procedural fashion. I would be intersted in learning Scheme or Lisp in a functional way from the ground up, to kind of reset my programmer's mind.
+Is there a tutorial or book out there that's the de-facto standard for describing best practices, design methodologies, and other helpful information on functional programming concepts? What about that book makes it special?
+
+
+Best Answer:
+Use it.
+If you do functional programming daily, maybe smaller applications or exercises from books, then you will be better on it.
+I have used it since the first programming lecture in university. At the beginning it was very hard, because it is so different, but now I prefer it to imperative programming.
+If you are looking for a good book, I would recommend Real World Functional Programming: With Examples in F# and C# by Tomas Petricek and Jon Skeet
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1217:
+I think we’ve all seen this. Beginners ask questions on Stack Overflow that follow the basic outline...
+
+I’m trying to do (very vague description of the goal) but it doesn’t work/I get an error/exception. Please help!
+
+Isn’t it bizarre that so many of them seem to consider it unnecessary to paste the error message?
+I wonder what the psychology of this is. What is it about error messages that makes people initially assume that they are useless and not worth paying any attention to?
+The answer I’m looking for is not “they don’t understand the error message”. That doesn’t explain why they wouldn’t consider telling anyone else who might understand it.
+
+
+Best Answer:
+I think if it is a true beginner there's a good chance they don't know there is an error message at all.  They only know it doesn't run and that there is an error.  For example in Visual studio they may not see that part of the screen.  
+Basically they don't know which part of the information they have available is useful to figure out what the problem is.  If they did there would be a better chance they could fix it themselves and not ask about it in the first place. 
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1280:
+What best practices should be undertaken for a website that needs to "scale out" to handle capacity?  This is especially relevant now that people are considering the cloud, but may be missing out on the fundamentals.
+I'm interested in hearing about anything you consider a best practice from development-level tasks, to infrastructure, to management.
+
+
+Best Answer:
+Design for Concurrency
+That is, as you're coding, plan around having multiple threads going.  Plan the shared state (often just the db).  Plan for multiple processes. Plan for physical distribution.
+This allows you to distribute your system across multiple machines, and across multiple processes with load balancing.  It allows you to have redundant processes running in case of failure, and in case you need to modify the system in-place, you don't have to kill all service to do so.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1338:
+Have you ever had to work to coding standards that:
+
+Greatly decreased your productivity?
+Were originally included for good reasons but were kept long after the original concern became irrelevant?
+Were in a list so long that it was impossible to remember them all?
+Made you think the author was just trying to leave their mark rather than encouraging good coding practice?
+You had no idea why they were included?
+
+If so, what is your least favorite rule and why?
+
+Some examples here
+
+
+Best Answer:
+Had a professor once who demanded we have at least one comment for each line of code.
+//Set x to 3
+var x = 3;
+
+//if x is greater than 2
+if(x>2){
+
+    //Print x
+    Print(x);
+}
+
+It was pretty ridiculous.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1376:
+I have a tester that while testing will have an error occur (ok so far), but then he frequently reports it right away.  We (the developers) then later find that the tester has not tried to reproduce the issue and (when asked) cannot find a way to make it happen again.
+Now these are still bugs, I don't want to ignore them.  But without repro steps I am kind of stuck.  Sometimes there is a stack trace (though frequently it is not useful because this is compact framework and there are no line numbers).  But when there is one I can take the stack trace and crack open the code and start guessing, but that does not lead to testable "fixes".
+What do you do in scenarios like this?
+
+
+Best Answer:
+A bug without context is not a bug, it's a fluke. The problem could be your code, it could be a third party library, it could be the hardware, or it could be solar radiation causing a single bit to flip on it's own. If you can't reproduce it with at least some regularity (even if only "it happens once every 10 or 20 times I do X"), it's not much better than your tester telling you "Something somewhere went wrong somehow - fix it".
+You may have to explain to your tester that his job is not to just generate input until something breaks. If it were, you could replace him with a random number generator. Part of his job is to identify bugs, which entails identifying how to produce them.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1380:
+We are starting a push for code coverage here at my work, and it has got me to thinking.... How much code coverage is enough?
+When do you get to the point of diminishing returns on code coverage?  What is the sweet spot between good coverage and not enough?  Does it vary by the type of project your are making (ie WPF, WCF, Mobile, ASP.NET)  (These are C# classes we are writing.)
+
+
+Best Answer:
+I'm of the opinion that code coverage alone is a poor metric.  It's easy to produce tons of useless tests that cover the code, but don't adequately check the output, or don't test edge cases, for example.  Covering code just means it doesn't throw an exception, not that it's right.  You need quality tests- the quantity isn't that important.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1474:
+I've read Peopleware in 2009. It was one of the best book I ever read.
+But this book is a little old. I'd like to know, in your opinion, what is and what is not relevant in this book?
+
+
+Best Answer:
+It's been a while since I read it, but I don't remember anything in the book that wasn't relevant to someone.
+What stood out the most was the discussion of process improvement using CMM and CMMI, and no mention of agile processes (although the second edition was printed in 1999, which is a few years before the Manifesto for Agile Software Development and agile development went mainstream). But the book is about people, and people haven't changed that much since the first printing of the book in 1987.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1533:
+If you're developer (Senior or Lead Developer) and you'd rather stay with code/design than pursue a management career, what are the available career paths at your company, or any you've heard of? How far can you go?
+Is it possible to continue being a geek until you bite the dust or is that too naive?
+Are people like Uncle Bob for example still considered developers, as they claim?
+
+
+Best Answer:
+At my company, the management and individual contributor tracks are separate and mostly parallel.  Individual contributors can rise very high in the company (up to Technical Fellow) without being a people manager.  It helps to partially avoid the Peter Principle, though never completely.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1588:
+Use of desktops are decreasing day by day in daily life but for coding purpose are there any reasons for using desktop over laptop? 
+
+
+Best Answer:
+Assuming you have an external monitor and keyboard to connect to your laptop the difference is small. 
+It is always better to work in a desktop like setting (bigger screen realestate, more ergonomic environment), but you can't take your work with you without a laptop. So if portability is important, get a laptop and a good external screen and keyboard to connect it to. Otherwise you might as well stay with a desktop. 
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1620:
+I am excited about the changes in PHP 6 previewed in PHP 5.3+. However, I wonder why it takes so long to release PHP 6? Books about it have been published since 2008, and announcements on it since 2007, but I am yet to hear about an alpha or a beta. Why does it take so long to release it? Or is that the way it goes with all languages when they transition to a major release where I guess it takes around 4-5 years to release?
+
+
+Best Answer:
+The release timetable is not unusual for languages, and it's not even that unusual for PHP: 5.0 was released in 2004, but 4.0 was released in 2000. 
+Compare this to the last stable releases for C (2000), Fortran (2003), or C++ (2003).
+One other thing to keep in mind is that 5.3 was a major release in all but name. It adds a lot of stuff that was originally destined for PHP 6. Due to development problems with unicode support (a major part of PHP 6), it was decided to release what was stable at the time as a 5.x branch.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1701:
+I am currently reading the recently published Being Geek by Michael "Rands" Lopp and I can't get enough of it.
+
+Is there any other career guidance books aimed directly or indirectly at programmers that are worth reading?
+
+
+Best Answer:
+Joel on Software blog contains tons of invaluable information which can help you to be successful programmer. A lot of the things can be easily reflected to non-software development professions. If you prefer to read books, there are several books which compile all the wisdom of Joel's articles.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1745:
+To put it another way... What is the most commonly held and frustrating misunderstanding about programming, you have encountered?
+Which widespread and longstanding myths/misconceptions do you find hard for programmers to dispel/correct.
+Please, explain why this is a myth.
+
+
+Best Answer:
+That because you're a programmer, you know how to fix [person]'s virus ridden machine.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1849:
+If you've always loved unit testing, good for you! But for the unfortunate ones who weren't born with a liking for it, how have you managed to make this task more enjoyable ? 
+This is not a "what is the right way to unit test" question. I simply want to know little personal tricks that reduce the boredom (dare I say) of writing unit tests.
+
+
+Best Answer:
+Smug superiority.
+I'm only half-joking.  "Look at me, cultivating good programming habits!  This 'unit testing' stuff is something Me From Ten Years Ago never would have done -- what a fool!  And just think of all the bugs I'm going to catch as a result of this boring, tedious work I'm doing right now -- my code will be awesome!  I'll get a raise for sure!*"
+* -- No, I won't.
+I find it's like working out or eating healthy; until the tangible benefits actually kick in ("Holy balls, I really AM catching a crap-ton of regression errors that would have snuck into production!"), the moral pride of knowing that you're doing The Right Thing can help carry you through.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1885:
+As programmers I think we are the most inclined to use new technologies and things that are not so mainstream.
+I absolutely love OpenId's ability to log in with credentials you already have, but I always use a provider that I already use and that is the fastest to log in, like google. God knows I'd never used it if i had to type in the whole "https://www.google.com/accounts/o8/id" I like to click on the google button and then just say yes (the first time, then its just clicking the button).
+Does any of you ever uses the Generic "Enter your own provider" OpenId?
+Do you think its worth to even offer it to more casual end users?
+
+
+Best Answer:
+Yes. I set up delegation on my own site, so I just use one of my own URLs. Easy to remember, and doesn't tie me to a provider.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1890:
+What is the best practice, most commonly accepted naming conventions for private variables in C#?
+
+private int myInteger;
+private int MyInteger;
+private int mMyInteger;
+private int _myInteger;
+private int _MyInteger;
+Mysterious other option
+
+Which do you use and why?  (My company is fairly new to C# and I would like to pick the most "industry accepted" method to try and get into our coding standard.)
+
+
+Best Answer:
+The MSDN class design guidlines http://msdn.microsoft.com/en-us/library/ta31s3bc.aspx recommends option 1 - myInteger. 
+I have always used this style. I have a personal dislike for the _ character.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 1997:
+People make mistakes, even in the real life... Which should we, geeky programmers, avoid?
+
+
+Best Answer:
+Learn that what constitutes "An acceptable degree of precision" to you is "Annoying goddamn nitpicking" to most of the world.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 2086:
+When writing or using an algorithm, should the Big Oh complexity be mentioned?
+
+
+Best Answer:
+If you can back it up with real analysis, then yes, absolutely.
+@Casebash test != analysis.  If it should always be documented then just start throwing
+ // this algorithm is O(n!) on every function.  I've worked with people who would say things like 'This function is O(1) because there are no loops', and then I would point to the call $(someHugeList).each(function(//...
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 2192:
+What things tend to slow a developer down?
+Please try to refrain from posting answers that:
+
+are slow now but useful in the feature. (TDD, Refactoring, ...)
+list a distraction.
+
+
+
+Best Answer:
+Oh this ones easy:
+
+Meetings
+More Meetings
+Meetings about the last meeting
+Meetings to prepare for the upcoming meeting
+Developing a power point presentation for a meeting
+Developing a power point presentation for a meeting discussing features that haven't been implemented, shouldn't be implemented, and for whatever reason that guy from sales will jump all over.  I can't predict what document you want displayed in the app based upon your current location without an internet connection or access to your hard-drive.  No really, just give up asking for it too.
+
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 2204:
+What steps and measures can I take to prevent deep indentations in my code?
+
+
+Best Answer:
+The best thing you can do is extract methods:
+int Step1(int state)
+{
+    if (state == 100)
+    {
+        return Step2(state);
+    }
+    else
+    {
+        return Step3(state);
+    }
+}
+
+int Step2(int state)
+{
+    if (state != 100)
+    {
+        throw new InvalidStateException(2, state);
+    }
+
+    // ....
+}
+
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 2329:
+Google sometimes come up with irrelevant links, not everything is available on SO, there are cases where the local documentation is also annoying to look through... Are there other efficient ways you use to search?
+
+
+Best Answer:
+Practise your Google-fu. Google is pretty awesome, but it's not magic. Sometimes you'll need to use search operators to get better answers, especially on some code phrases that can be difficult to search. Check out the Google Guide, for example.
+If I know where the answer is, I might use the site: operator, or if I need something citable I often use inurl:edu. Google Code is handy for finding examples, and I use it to search for APIs sometimes.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 2497:
+How useful are infix operators in a programming language? Are they worth the extra complexity they provide? Can you provide any examples where infix operators are better suited to the problem that can't be handled by just overloading the normal operators?
+
+
+Best Answer:
+I think infix operators stem from mathematics.
+This:
+2 + 3 * 4
+
+is more readable to most people, than
+(+ 2 (* 3 4))
+
+because most people are familiar with mathematics.
+Interesting enough in Haskell you can hop between infix and prefix.
+This is using the same funtion "(+)":
+(+) 1 2
+1 + 2
+
+and this is using the same function "elem":
+elem 42 [1,2,42]
+42 `elem` [1,2,42]
+
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 2654:
+In response to This Question, I ask:   What are the best parts of your coding standard?
+What are the best practices that help with code quality, reliability, maintainability, readability, etc.
+Please include the language, the item from the standard, and the reason it improves your code.
+
+
+Best Answer:
+Just one public class must be put in each file, no more.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 2700:
+I have had a few that I am proud of and some of them were written by myself few years ago. It doesn't have to be necessarily buggy, just bad code. 
+
+
+Best Answer:
+I don't know about being proud of the fix because it was so obvious, but the most horrible code I remember fixing was this.
+if (userName=="John O'Reily") { userName= "John O''Reily";}
+if (userName=="Stacy O'Neil") { userName= "Stacy O''Neil";}
+if (userName=="Finnegan O'Connor") { userName= "Finnegan O''Connor";}
+...
+someSQL = "SELECT * from Users where UserName='" + userName + "'";
+
+Apparently the previous developer just kept adding new lines every time a new (usually Irish) user started getting errors in the application.
+I'll leave it as an exercise for the class as to how it was fixed.
+
+
+----------------------------------------------------------------------------------------------------
+
+Question 2777:
+I have heard a lot of people mention Code Complete as a book worthwhile reading. Unfortunately, I am so busy that I don't have time to read it, so can anyone tell me what the key points of the book are?
+
+
+Best Answer:
+It's an intermediate book, a potpourri of software development best practices.
+If you're a beginning programmer you won't understand a lot of the material, and if you are experienced, the book will only confirm what you already know.  Consequently, the book might be of most value to intermediate programmers, who already have a bit of programming knowledge, but need a book of best practices to tie it all together.
+Several pages are spent on how to format code blocks, and the relative merits of each approach.  Personally, I think the great debate on where to put your curly braces is over. (or is it?)
+
+
+----------------------------------------------------------------------------------------------------
+
