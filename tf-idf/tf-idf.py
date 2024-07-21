@@ -45,9 +45,7 @@ def extract_posts(file_path, limit=None):
 def contains_code(text, raw_body):
     soup=BeautifulSoup(raw_body, 'html.parser')
     code_tags=soup.find_all(['code', 'pre'])
-    if code_tags: 
-        #print("code found in HTML")
-        return True
+    return bool(code_tags)
 
 questions, best_answers, unanswered_questions = extract_posts(file_path, limit=1000)
 
