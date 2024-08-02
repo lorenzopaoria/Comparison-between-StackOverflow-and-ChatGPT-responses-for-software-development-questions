@@ -200,7 +200,7 @@ def main():
     write_to_file('qa_with_codes.txt', generate_qa_with_code)
 
     #Questions with keywords in tf_idf terms
-    generate_files_for_keywords(df_tfidf, keywords )
+    generate_files_for_keywords(df_tfidf, keywords)
 
     print(f'Le domande con le risposte sono state salvate')
     print(f'Le domande senza risposte sono state salvate')
