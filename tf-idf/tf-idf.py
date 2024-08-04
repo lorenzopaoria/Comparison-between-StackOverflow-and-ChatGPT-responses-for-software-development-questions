@@ -36,7 +36,7 @@ def extract_posts(file_path, limit=None):
             elem.clear()
             while elem.getprevious() is not None:
                 del elem.getparent()[0]
-            if limit and i >= limit - 1: #limit use for fast result
+            if limit and i >= limit - 1: #limit use for fast result in phase of test
                 break
 
     for qid, question, raw_body in questions: #a question may not have an answer
