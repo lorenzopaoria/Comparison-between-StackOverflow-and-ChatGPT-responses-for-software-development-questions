@@ -160,10 +160,10 @@ def generate_unanswered_questions(f):
         f.write(question + "\n\n")
         f.write("-" * 100 + "\n\n")
 
-def generate_short_qa(f, limit_char=700):
+def generate_short_q(f, limit_char=700):
     for qid, question, _raw_body in answered_questions:
         best_answer = best_answers[qid][0]
-        if len(best_answer) < limit_char and len(question) < limit_char:
+        if len(question) < limit_char:
             f.write(f"Question {qid}:\n")
             f.write(question + "\n\n")
             f.write("Best Answer:\n")
@@ -194,7 +194,7 @@ def main():
     write_to_file('q_without_a.txt', generate_unanswered_questions)
 
     # Questions and Answers Shorter Than a Limit
-    write_to_file('short_qa.txt', generate_short_qa)
+    write_to_file('short_q.txt', generate_short_q)
 
     # Questions and Answers with Code
     write_to_file('qa_with_codes.txt', generate_qa_with_code)
@@ -204,7 +204,7 @@ def main():
 
     print(f'Le domande con le risposte sono state salvate')
     print(f'Le domande senza risposte sono state salvate')
-    print(f'Le domande e le risposte sotto i 700 caratteri sono state salvate')
+    print(f'Le domande sotto i 700 caratteri sono state salvate')
     print(f'Le domande e le risposte contenenti codice sono state salvate')
     print(f'Le domande contenenti tf_idf keywords sono state salvate')
 
