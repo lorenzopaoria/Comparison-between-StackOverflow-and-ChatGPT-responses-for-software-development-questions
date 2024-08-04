@@ -51,7 +51,7 @@ def contains_code(_text, raw_body):
     return bool(code_tags) #if the list is full the bool return 1
 
 def added_stopwords_func():
-    stopwords_file = 'stopwords.json'
+    stopwords_file = 'stopwords/stopwords.json'
 
     if os.path.exists(stopwords_file): #if the stopwords file exist open it 
         with open(stopwords_file, 'r') as file:
