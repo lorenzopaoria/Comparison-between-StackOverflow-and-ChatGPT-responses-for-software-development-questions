@@ -1,0 +1,122 @@
+[
+    {
+        "ID": "262",
+        "Question": "Will Java have the same importance it had in the past, or it will be less relevant than nowadays? ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "importance": 0.6039211659258445,
+                    "java": 0.41259165581484764,
+                    "past": 0.4872007282549792,
+                    "relevant": 0.47716119004645485
+                },
+                "Max term": "importance",
+                "Max score": 0.6039211659258445
+            }
+        ],
+        "Best answer": "Java is relevant and will continue to be relevant for many years in the Enterprise computing world.   Whether it continues to be relevant in other areas depends a lot on what Oracle does.  If they inject some life (and resources) into ME, desktop applications and other areas, and if they press on with the evolution of the Java language, then Java will do well.   But if Oracle cuts back on R&D and/or tries to stomp other players in the Java space, there's a good chance that someone / some company will develop a better (and more open) Java-like language.  If Oracle win their lawsuit against Google, I predict that the next generation of the Android platform will have a new language, just like happened with C#.  If Google get the openness right ... then, the game is on! ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "android": 0.15183627977634553,
+                    "applications": 0.11996661822447813,
+                    "areas": 0.28014827186760716,
+                    "better": 0.09753714032085768,
+                    "chance": 0.14007413593380358,
+                    "company": 0.1098625837283455,
+                    "computing": 0.1453631049072685,
+                    "depends": 0.13172876206702008,
+                    "desktop": 0.13172876206702008,
+                    "develop": 0.13560237638336117,
+                    "enterprise": 0.1453631049072685,
+                    "game": 0.12525558719794305,
+                    "good": 0.08294260054433546,
+                    "google": 0.26345752413404017,
+                    "happened": 0.14007413593380358,
+                    "java": 0.5186635741574689,
+                    "language": 0.24295858603507112,
+                    "life": 0.13172876206702008,
+                    "like": 0.1263487468812351,
+                    "lot": 0.09644233053939422,
+                    "new": 0.08730213938970724,
+                    "open": 0.11549485867403574,
+                    "platform": 0.1453631049072685,
+                    "relevant": 0.3598998546734344,
+                    "resources": 0.1453631049072685,
+                    "right": 0.1098625837283455,
+                    "space": 0.13560237638336117,
+                    "win": 0.14007413593380358,
+                    "world": 0.10514806948861759,
+                    "years": 0.10663603749049871
+                },
+                "Max term": "java",
+                "Max score": 0.5186635741574689
+            }
+        ]
+    },
+    {
+        "ID": "368",
+        "Question": "For a long time in SO and in other places Java has the reputation of being slow. From jokes to many comments in questions and answers, people still believe Java is slow based solely on experience with it in the 90s. This is my issue: we have disproved (most) of the reasons that people believe Java is slow. Outside of small things, Java is pretty fast. So why is it that people still refuse to believe Java is fast now? Is it part of their mindset that anything thats not C/C++ is slow? Is it because people don't check over time? Is it because people are just biased? ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "answers": 0.11810223326840688,
+                    "based": 0.10547504301599449,
+                    "believe": 0.36472543815214903,
+                    "check": 0.1075568107347791,
+                    "comments": 0.11229866845553807,
+                    "experience": 0.09063619132046265,
+                    "fast": 0.23620446653681376,
+                    "issue": 0.10547504301599449,
+                    "java": 0.46501102311889925,
+                    "long": 0.08846758474936049,
+                    "outside": 0.12558432962808785,
+                    "people": 0.3522003292802588,
+                    "places": 0.12157514605071634,
+                    "pretty": 0.09849797635199517,
+                    "questions": 0.10007471437509814,
+                    "reasons": 0.11229866845553807,
+                    "slow": 0.5445190086468625,
+                    "small": 0.10007471437509814,
+                    "things": 0.07436269956284569,
+                    "time": 0.1398500698501173
+                },
+                "Max term": "slow",
+                "Max score": 0.5445190086468625
+            }
+        ],
+        "Best answer": "It's the applications. As you note, we have proved, time and time again, that in contrived scenarios Java code can meet or even beat the performance of so-called \"performant\" languages like C, C++, Lisp, VB6, or JavaScript. And when presented with such evidence, most sane, open-minded opponents will hang their heads in shame and promise never again to spread such slander. ...but then, they fire up Eclipse, or NetBeans, or Guiffy, or enable the Java support in their browser, or try to run an app on their favorite feature phone. And they wait for it to become responsive... ...and wait...   ...and wait...     ...and wait...         ...and wait...             ...and...      ...what did I promise never to do again? Sorry, must have dozed off... ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "app": 0.12218593309813698,
+                    "applications": 0.11966809953849387,
+                    "called": 0.14500139092624828,
+                    "code": 0.06267872728678141,
+                    "evidence": 0.139725582747774,
+                    "favorite": 0.15145845828404708,
+                    "feature": 0.11520746728166693,
+                    "hang": 0.15145845828404708,
+                    "java": 0.20694918349078767,
+                    "javascript": 0.13140097507476697,
+                    "languages": 0.09842935714988925,
+                    "like": 0.06301717361931324,
+                    "lisp": 0.14500139092624828,
+                    "meet": 0.15145845828404708,
+                    "note": 0.139725582747774,
+                    "open": 0.11520746728166693,
+                    "performance": 0.13526495049094703,
+                    "promise": 0.29000278185249656,
+                    "run": 0.12799270721150088,
+                    "scenarios": 0.14500139092624828,
+                    "support": 0.13140097507476697,
+                    "time": 0.1555976973002381,
+                    "try": 0.09842935714988925,
+                    "wait": 0.7250069546312413
+                },
+                "Max term": "wait",
+                "Max score": 0.7250069546312413
+            }
+        ]
+    }
+]

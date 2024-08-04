@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer #tfidfVectorizer alg
 from sklearn.feature_extraction import text #stopwords
 from nltk.corpus import stopwords #stopwords 
 
-file_path = 'Posts.xml'
+file_path = 'stackOverflowDump/Posts.xml'
 
 QUESTION = '1' # 1=Question, 2=Answer
 ANSWER = '2'
@@ -83,130 +83,156 @@ def create_tfidf_matrix(posts, stopwords_list, max_df=0.8, min_df=3):
     
     return df_tfidf
 
-def write_to_file(file_path, generate_func, *args): 
-    with open(file_path, 'w', encoding='utf-8') as f:
-        generate_func(f, *args)
+def write_to_json(file_path, genetate_func, *args):
+    data=  genetate_func(*args)
+    with open(file_path, 'w', encoding= 'utf-8') as f:
+        json.dump(data, f, ensure_ascii= False, indent= 4)
 
-def generate_tfidf(f,df_tfidf):
+def generate_tfidf(df_tfidf):
+    questions_list= []
     for i, (qid, question, _raw_body) in enumerate(answered_questions):
-        f.write(f"Question {qid}:\n")
-        f.write(question + "\n\n")
-        f.write("TF-IDF Scores:\n")
+        question_dict= {
+            "ID:":qid,
+            "Question": question.replace("\n", " "),
+            "TF-IDF scores": []
+        }
         tfidf_scores = df_tfidf.iloc[i]
         max_score = tfidf_scores.max()
         max_term = tfidf_scores.idxmax()
-        for word, score in tfidf_scores.items():
-            if score > 0:
-                f.write(f"{word}: {score:.4f}\n")
-        f.write(f"\nTermine con il punteggio TF-IDF più alto: {max_term} ({max_score:.4f})\n")
+        tfidf_scores_dict= {word: score for word, score in tfidf_scores.items() if score > 0}
+        question_dict["TF-IDF scores"].append({
+            "Scores": tfidf_scores_dict,
+            "Max term": max_term,
+            "Max score": max_score
+        })
 
-        f.write("\nBest Answer:\n")
         best_answer_index = len(answered_questions) + list(best_answers.keys()).index(qid)
         best_answer = best_answers[qid][0]
-        f.write(best_answer + "\n\n")
-        f.write("TF-IDF Scores:\n")
-        tfidf_scores = df_tfidf.iloc[best_answer_index]
-        max_score = tfidf_scores.max()
-        max_term = tfidf_scores.idxmax()
-        for word, score in tfidf_scores.items():
-            if score > 0:
-                f.write(f"{word}: {score:.4f}\n")
-        f.write(f"\nTermine con il punteggio TF-IDF più alto: {max_term} ({max_score:.4f})\n")
-        f.write("\n" + "-"*100 + "\n\n")
 
-def generate_q_for_tfidf_terms(f, df_tfidf, keyword):
+        best_answer_tfidf_scores = df_tfidf.iloc[best_answer_index]
+        best_answer_max_score = best_answer_tfidf_scores.max()
+        best_answer_max_term = best_answer_tfidf_scores.idxmax()
+        best_answer_tfidf_scores_dict = {word: score for word, score in best_answer_tfidf_scores.items() if score > 0}
+
+        question_dict["Best Answer"] = best_answer.replace("\n", " ")
+        question_dict["Best Answer TF-IDF scores"] = {
+            "Scores": best_answer_tfidf_scores_dict,
+            "Max term": best_answer_max_term,
+            "Max score": best_answer_max_score
+        }
+        questions_list.append(question_dict)
+    
+    return questions_list
+
+def generate_q_for_tfidf_terms(df_tfidf, keyword):
+    questions_list = []
     for i, (qid, question, _raw_body) in enumerate(answered_questions):
         tfidf_scores = df_tfidf.iloc[i]
         max_term = tfidf_scores.idxmax()
         
         if max_term == keyword or (keyword in tfidf_scores.index and tfidf_scores[keyword] > 0.3):
-            f.write(f"Question {qid}:\n")
-            f.write(question + "\n\n")
-            f.write("TF-IDF Scores:\n")
-            
+            question_dict = {
+                "ID": qid,
+                "Question": question.replace("\n", " "),
+                "TF-IDF scores": [],
+                "Best answer": "",
+                "Best answer TF-IDF scores": []
+            }
+
             max_score = tfidf_scores[max_term]
-            
-            for word, score in tfidf_scores.items():
-                if score > 0:
-                    f.write(f"{word}: {score:.4f}\n")
-                    
-            f.write(f"\nTermine con il punteggio TF-IDF più alto: {max_term} ({max_score:.4f})\n")
-            f.write("\nBest Answer:\n")
-            
+            tfidf_scores_dict = {word: score for word, score in tfidf_scores.items() if score > 0}
+            question_dict["TF-IDF scores"].append({
+                "Scores": tfidf_scores_dict,
+                "Max term": max_term,
+                "Max score": max_score
+            })
+
             best_answer_index = len(answered_questions) + list(best_answers.keys()).index(qid)
             best_answer = best_answers[qid][0]
-            f.write(best_answer + "\n\n")
-            f.write("TF-IDF Scores:\n")
-            
+            question_dict["Best answer"] = best_answer.replace("\n", " ")
+
             tfidf_scores_best_answer = df_tfidf.iloc[best_answer_index]
             max_term_best_answer = tfidf_scores_best_answer.idxmax()
             max_score_best_answer = tfidf_scores_best_answer[max_term_best_answer]
-            
-            for word, score in tfidf_scores_best_answer.items():
-                if score > 0:
-                    f.write(f"{word}: {score:.4f}\n")
-                    
-            f.write(f"\nTermine con il punteggio TF-IDF più alto: {max_term_best_answer} ({max_score_best_answer:.4f})\n")
-            f.write("\n" + "-"*100 + "\n\n")
+            best_answer_tfidf_scores_dict = {word: score for word, score in tfidf_scores_best_answer.items() if score > 0}
+
+            question_dict["Best answer TF-IDF scores"].append({
+                "Scores": best_answer_tfidf_scores_dict,
+                "Max term": max_term_best_answer,
+                "Max score": max_score_best_answer
+            })
+            questions_list.append(question_dict)
+
+    return questions_list
 
 def generate_files_for_keywords(df_tfidf, keywords):
     for keyword in keywords:
-        file_path = f"q_with_{keyword}.txt"
-        write_to_file(file_path, generate_q_for_tfidf_terms, df_tfidf, keyword)
+        file_path = f"q_for_tfidf_term/q_with_{keyword}.json"
+        write_to_json(file_path, generate_q_for_tfidf_terms, df_tfidf, keyword)
 
-def generate_unanswered_questions(f):
+def generate_unanswered_q():
+    questions_list = []
     for qid, question, _raw_body in unanswered_questions:
-        f.write(f"Question {qid}:\n")
-        f.write(question + "\n\n")
-        f.write("-" * 100 + "\n\n")
+        question_dict = {
+            "ID": qid,
+            "Question": question.replace("\n", " ")
+        }
+        questions_list.append(question_dict)
+    return questions_list
 
-def generate_short_q(f, limit_char=700):
+def generate_short_q(limit_char=700):
+    question_list=[]
     for qid, question, _raw_body in answered_questions:
         best_answer = best_answers[qid][0]
         if len(question) < limit_char:
-            f.write(f"Question {qid}:\n")
-            f.write(question + "\n\n")
-            f.write("Best Answer:\n")
-            f.write(best_answer + "\n\n")
-            f.write("-" * 100 + "\n\n")
+            question_dict = {
+                "ID:": qid,
+                "Question": question.replace("\n"," "),
+                "Best Answer": best_answer.replace("\n"," "),
+            }
+            question_list.append(question_dict)
+    return question_list
 
-def generate_qa_with_code(f):
+def generate_a_with_code():
+    questions_list = []
     for _i, (qid, question, raw_body) in enumerate(answered_questions):
         best_answer = best_answers[qid][0]
         raw_answer_body = best_answers[qid][2]
-        if contains_code(question, raw_body) or contains_code(best_answer, raw_answer_body):
-            f.write(f"Question {qid}:\n")
-            f.write(question + "\n\n")
-            f.write("Best Answer:\n")
-            f.write(best_answer + "\n\n")
-            f.write("-" * 100 + "\n\n")
+        if contains_code(best_answer, raw_answer_body):
+            question_dict = {
+                "ID": qid,
+                "Question": question.replace("\n", " "),
+                "Best Answer": best_answer.replace("\n", " ")
+            }
+            questions_list.append(question_dict)
+    return questions_list
 
 def main():
 
     stopwords_list=added_stopwords_func()
     df_tfidf = create_tfidf_matrix(posts, stopwords_list)
-    keywords = ["python", "C++", "java", "php", "html"]
+    keywords = ["python", "C++", "java", "php", "html", "sql", "css", "programming"]
 
     # TF-IDF Results
-    write_to_file('tfidf_results.txt', generate_tfidf, df_tfidf)
+    write_to_json('tfidf_results/tfidf_results.json', generate_tfidf, df_tfidf)
 
     # Questions Without Answers
-    write_to_file('q_without_a.txt', generate_unanswered_questions)
+    write_to_json('q_without_a/q_without_a.json', generate_unanswered_q)
 
     # Questions and Answers Shorter Than a Limit
-    write_to_file('short_q.txt', generate_short_q)
+    write_to_json('q_shorter_than/short_q.json', generate_short_q)
 
     # Questions and Answers with Code
-    write_to_file('qa_with_codes.txt', generate_qa_with_code)
+    write_to_json('qa_with_codes/qa_with_codes.json', generate_a_with_code)
 
     #Questions with keywords in tf_idf terms
     generate_files_for_keywords(df_tfidf, keywords)
 
-    print(f'Le domande con le risposte sono state salvate')
-    print(f'Le domande senza risposte sono state salvate')
-    print(f'Le domande sotto i 700 caratteri sono state salvate')
-    print(f'Le domande e le risposte contenenti codice sono state salvate')
-    print(f'Le domande contenenti tf_idf keywords sono state salvate')
+    print(f'Le domande con le risposte sono state salvate in json')
+    print(f'Le domande senza risposte sono state salvate in json')
+    print(f'Le domande sotto i 700 caratteri sono state salvate in json')
+    print(f'Le domande e le risposte contenenti codice sono state salvate in json')
+    print(f'Le domande contenenti tf_idf keywords sono state salvate in json')
 
 if __name__ == "__main__":
     main()

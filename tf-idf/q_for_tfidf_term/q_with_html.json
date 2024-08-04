@@ -1,0 +1,82 @@
+[
+    {
+        "ID": "1674",
+        "Question": "i wonder apart from those very simple hello world apps, what other programs should i try developing for learning. i am entering uni next year and wonder what kind of programs will be developed in that environment.  this is not really a language specific thing, but if you want to know what i use currently mainly  windows: C#/WPF - i studied java/vb etc in poly but i think C# is the way to go, maybe even F# web: PHP/MySQL, Zend Framework/Doctrine, + HTML/CSS/JS(jQuery) of course. looking to try google app engine with python too.   for now, i am thinking of   todo lists apps that integrate with api eg. twitter/tumblr which i use text editor - i am currently trying to develop a text editor that uses markdown and generates html files for viewing (link to blog entry). not very pratical after i started developing it. cos when editing theres no formatting and in HTML format, i cannot edit directly  blog software (for web)  ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "apart": 0.12141015555894524,
+                    "app": 0.10230669547235573,
+                    "apps": 0.20923191391695287,
+                    "blog": 0.22651560203490545,
+                    "course": 0.1071687270976782,
+                    "css": 0.12681667991955417,
+                    "currently": 0.2339854070172324,
+                    "develop": 0.11325780101745272,
+                    "developing": 0.22004496263817072,
+                    "directly": 0.12681667991955417,
+                    "edit": 0.10230669547235573,
+                    "engine": 0.12141015555894524,
+                    "environment": 0.10461595695847643,
+                    "files": 0.1071687270976782,
+                    "format": 0.1169927035086162,
+                    "framework": 0.09646360241698393,
+                    "google": 0.11002248131908536,
+                    "hello": 0.12681667991955417,
+                    "html": 0.35097811052584854,
+                    "java": 0.08663962600604595,
+                    "kind": 0.11002248131908536,
+                    "know": 0.06712020880146753,
+                    "language": 0.06764128064847633,
+                    "learning": 0.08906453881932457,
+                    "lists": 0.12141015555894524,
+                    "looking": 0.09825915758496745,
+                    "maybe": 0.1071687270976782,
+                    "php": 0.10019850490814737,
+                    "programs": 0.2143374541953564,
+                    "python": 0.10230669547235573,
+                    "really": 0.07291648269823854,
+                    "simple": 0.10019850490814737,
+                    "software": 0.07426287945590619,
+                    "specific": 0.10019850490814737,
+                    "started": 0.10230669547235573,
+                    "text": 0.2339854070172324,
+                    "thing": 0.09479198054753844,
+                    "think": 0.0661105249144137,
+                    "thinking": 0.1071687270976782,
+                    "try": 0.16483046799479734,
+                    "trying": 0.09037452849720941,
+                    "twitter": 0.12141015555894524,
+                    "use": 0.11493736171087475,
+                    "uses": 0.11002248131908536,
+                    "vb": 0.12141015555894524,
+                    "want": 0.07042928474259588,
+                    "way": 0.0710275597575388,
+                    "web": 0.18074905699441882,
+                    "windows": 0.11002248131908536,
+                    "wonder": 0.24282031111789049,
+                    "world": 0.08782175835800761,
+                    "wpf": 0.12681667991955417,
+                    "year": 0.10230669547235573
+                },
+                "Max term": "html",
+                "Max score": 0.35097811052584854
+            }
+        ],
+        "Best answer": "Have a look at Project Euler.  There's nothing else like it for sharpening your foundational programming skills. ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "euler": 0.5849772280178298,
+                    "like": 0.2433909070446874,
+                    "look": 0.4168776630743841,
+                    "programming": 0.284196967412233,
+                    "project": 0.3333670564152106,
+                    "skills": 0.4825702151075308
+                },
+                "Max term": "euler",
+                "Max score": 0.5849772280178298
+            }
+        ]
+    }
+]

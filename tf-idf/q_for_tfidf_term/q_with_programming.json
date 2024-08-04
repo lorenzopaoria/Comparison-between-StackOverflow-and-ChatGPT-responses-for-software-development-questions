@@ -1,0 +1,248 @@
+[
+    {
+        "ID": "49",
+        "Question": "During my four years at university we have been using much functional programming in several functional programming languages. But I have also used much object oriented programming to, and in fact I use object oriented languages more when doing my own small project to prepare for my first job. But I often wish that I was coding in a functional programming language when doing these projects. However, when looking for a job, it is very rare to see a job where knowledge of a functional programming language is required. Why isn't functional programming languages used more in the industry? There is quite much news about functional programming languages these days, so I wonder if functional programming is catching on in the industry now? ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "coding": 0.07348273758717556,
+                    "days": 0.09442020201953659,
+                    "fact": 0.08827914011575275,
+                    "functional": 0.6309558190378302,
+                    "industry": 0.21393501118382377,
+                    "job": 0.22899957511668115,
+                    "knowledge": 0.08498853233035374,
+                    "language": 0.11918968446584587,
+                    "languages": 0.29044529143018444,
+                    "looking": 0.08657049272392736,
+                    "object": 0.21393501118382377,
+                    "oriented": 0.18884040403907318,
+                    "prepare": 0.10696750559191189,
+                    "programming": 0.4342538706878649,
+                    "project": 0.06367324039657121,
+                    "projects": 0.08213807821196892,
+                    "quite": 0.08827914011575275,
+                    "required": 0.0997849348589309,
+                    "small": 0.08213807821196892,
+                    "university": 0.10696750559191189,
+                    "use": 0.05063234959598797,
+                    "used": 0.12515659601236068,
+                    "using": 0.06542875212456516,
+                    "wonder": 0.10696750559191189,
+                    "years": 0.0784696429251484
+                },
+                "Max term": "functional",
+                "Max score": 0.6309558190378302
+            }
+        ],
+        "Best answer": "I would say that one of the reasons that functional programming is not more prevalent is the lack of knowledge base.  My experience is that corporations are very risk averse in terms of implementing technologies that are not main stream and would rather invest in tried and true frameworks (java, c++, c#).  It's only when there is a business need (like in Ericsson) that new paradigms are considered.  But even in Ericsson's case I heard that management demanded that c++ be used and Joe Armstrong was compelled to code erlang calls in c++!! This should show how reluctant corporations are to implement new technologies! ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "base": 0.19464546770762092,
+                    "business": 0.17405377652772425,
+                    "calls": 0.1884315601695211,
+                    "case": 0.16670428382753238,
+                    "code": 0.08731493509014085,
+                    "considered": 0.1884315601695211,
+                    "erlang": 0.2019949604078128,
+                    "experience": 0.14047870385624225,
+                    "frameworks": 0.17830092291201466,
+                    "functional": 0.17021176528646717,
+                    "heard": 0.17830092291201466,
+                    "implement": 0.1884315601695211,
+                    "java": 0.14414583149382632,
+                    "knowledge": 0.16049037628943258,
+                    "lack": 0.19464546770762092,
+                    "like": 0.08778640955740791,
+                    "main": 0.17405377652772425,
+                    "management": 0.16049037628943258,
+                    "need": 0.12023907262090121,
+                    "new": 0.2426281717192393,
+                    "paradigms": 0.2019949604078128,
+                    "programming": 0.10250436912026029,
+                    "reasons": 0.17405377652772425,
+                    "risk": 0.2019949604078128,
+                    "say": 0.12472264553291082,
+                    "technologies": 0.38929093541524185,
+                    "terms": 0.2109900125032272,
+                    "tried": 0.1884315601695211,
+                    "true": 0.17830092291201466,
+                    "used": 0.11817140876754717
+                },
+                "Max term": "technologies",
+                "Max score": 0.38929093541524185
+            }
+        ]
+    },
+    {
+        "ID": "501",
+        "Question": "No matter how much you love a programming language, there are always a few details in it that aren’t quite as nice as they could be. In this question, I would like to specifically focus on syntax elements. In a programming language that you use frequently (perhaps your favourite programming language, or perhaps the one you are forced to use at work), which syntax element do you find most unreadable, unclear, inconvenient or unpleasant? ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "details": 0.19303375627445155,
+                    "elements": 0.22842391382342644,
+                    "favourite": 0.22842391382342644,
+                    "focus": 0.22842391382342644,
+                    "forced": 0.22842391382342644,
+                    "frequently": 0.19303375627445155,
+                    "language": 0.3655091602671271,
+                    "like": 0.09504011594531117,
+                    "love": 0.22842391382342644,
+                    "matter": 0.20400147832171975,
+                    "nice": 0.1981739768570867,
+                    "programming": 0.33292261895230085,
+                    "question": 0.13633118361213784,
+                    "quite": 0.18047889808259926,
+                    "specifically": 0.210728835048939,
+                    "syntax": 0.421457670097878,
+                    "use": 0.20702672568932798,
+                    "work": 0.11907916888733364
+                },
+                "Max term": "syntax",
+                "Max score": 0.421457670097878
+            }
+        ],
+        "Best answer": "Semicolon insertion in JavaScript. I haven't really been bitten by it often, but it's just such a phenomenally bad idea it makes my head spin.  Here's the rules (from ECMA-262 Section 7.9)  When the program contains a token that is not allowed by the formal grammar, then a semicolon is inserted if (a) there is a line break at that point, or (b) the unexpected token was a closing brace. When the end of a file is reached, if the program cannot be parsed otherwise, then a semicolon is inserted. When a \"restricted production\" is encountered and contains a line terminator in a place where the grammar contains the annotation \"[no LineTerminator here]\", then a semicolon is inserted.    Example: return 1; // returns 1  return 1; // returns undefined  ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "bad": 0.1396097381462379,
+                    "break": 0.1693210733645856,
+                    "contains": 0.5271430757668044,
+                    "encountered": 0.18353910731647116,
+                    "end": 0.13280146599141684,
+                    "example": 0.11173473799393592,
+                    "file": 0.1422084072872233,
+                    "formal": 0.1693210733645856,
+                    "head": 0.1757143585889348,
+                    "idea": 0.14501518378301884,
+                    "javascript": 0.15923321773490443,
+                    "line": 0.2792194762924758,
+                    "makes": 0.13280146599141684,
+                    "place": 0.1422084072872233,
+                    "point": 0.13079714983113327,
+                    "production": 0.18353910731647116,
+                    "program": 0.2844168145744466,
+                    "reached": 0.18353910731647116,
+                    "really": 0.10553048819430617,
+                    "return": 0.3102060788254,
+                    "rules": 0.1757143585889348,
+                    "section": 0.1757143585889348,
+                    "unexpected": 0.18353910731647116
+                },
+                "Max term": "contains",
+                "Max score": 0.5271430757668044
+            }
+        ]
+    },
+    {
+        "ID": "724",
+        "Question": "When learning a new programming language you sometimes come across a language feature which  makes you wish you had it in your other programming languages that you know. What are some language feature which were at the time of learning very new to you and that you wish your other programming languages had.   An example of this is generators in Python or C#. Other examples may include list comprehensions in Python, template in C++ or LINQ in .NET or lazy evaluation in Haskell. What other semi-unique language features have you come across which were completely new and enlightening to you?  Are there other features of older programming languages which were unique and have fallen out of fashion? ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "come": 0.2727673119604116,
+                    "completely": 0.13971160072767513,
+                    "example": 0.1006468935820348,
+                    "examples": 0.1363836559802058,
+                    "feature": 0.2515115121849168,
+                    "features": 0.26124959939997955,
+                    "haskell": 0.14343192643419173,
+                    "include": 0.14343192643419173,
+                    "know": 0.08750194265423891,
+                    "language": 0.35272497306253,
+                    "languages": 0.3223243732929978,
+                    "learning": 0.23221978320557246,
+                    "list": 0.11610989160278623,
+                    "makes": 0.11962309354412007,
+                    "net": 0.12153799867230443,
+                    "new": 0.28517494216155825,
+                    "programming": 0.32127819099262833,
+                    "python": 0.2667463275284395,
+                    "time": 0.08492203904803086,
+                    "unique": 0.330651708392158
+                },
+                "Max term": "language",
+                "Max score": 0.35272497306253
+            }
+        ],
+        "Best answer": "Practically anything in Haskell  Monads. Yes - the big scary word that makes increadibly easy parsers, IO, operations on Lists and other things so easy (once you notice common pattern) Arrows. The same for advanced users ;) Standard stuff like lambdas etc.  Currying functions Algebraic data types Pattern matching  And many more. PS. Yes. I am Haskell fanboy if anyone asked. ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "asked": 0.15636269863717944,
+                    "big": 0.1648004939892921,
+                    "common": 0.14937925741588817,
+                    "data": 0.14729486305530992,
+                    "easy": 0.31797067274771057,
+                    "functions": 0.19622044199483785,
+                    "haskell": 0.36905993735258497,
+                    "like": 0.0884967335091975,
+                    "lists": 0.20362940313353597,
+                    "makes": 0.15389910916929306,
+                    "notice": 0.20362940313353597,
+                    "operations": 0.2126972387154055,
+                    "pattern": 0.3924408839896757,
+                    "practically": 0.2126972387154055,
+                    "standard": 0.1617889845692889,
+                    "stuff": 0.1648004939892921,
+                    "things": 0.11618871414421617,
+                    "types": 0.18452996867629248,
+                    "users": 0.1617889845692889,
+                    "word": 0.20362940313353597,
+                    "yes": 0.31797067274771057
+                },
+                "Max term": "pattern",
+                "Max score": 0.3924408839896757
+            }
+        ]
+    },
+    {
+        "ID": "2259",
+        "Question": "Sometimes, one creates a exploratory prototype and forgets about structure in the directories... What are good tips on dividing the programming files over (several levels of) directories? ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "files": 0.5907736590992156,
+                    "good": 0.3818840532374425,
+                    "programming": 0.33963302169061427,
+                    "tips": 0.62434002288398
+                },
+                "Max term": "tips",
+                "Max score": 0.62434002288398
+            }
+        ],
+        "Best answer": "If your language is OOP and package based (Eg Java), then you should probably keep each package in its own folder (eg my/package/name) to keep with the convention. If your language isn't package based (Eg PHP), then organize by what each file does. Here's an example  Does this do utility functions? Goes in /util Is this a 3rd party plugin? Goes in /plugin Is this part of the admin panel? Goes in /admin, along with ALL supporting files Is this Javascript? Goes in /javascript Is this CSS? Goes in /css Is this a template? Goes in /templates/templateName etc  Language agnostic, Most people have a /src directory for all source files, a /lib directory for libraries, and a /bin or /dist directory for builds.  ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "agnostic": 0.1211536490610346,
+                    "based": 0.1961031256450762,
+                    "css": 0.25309750182470975,
+                    "directory": 0.3796462527370646,
+                    "example": 0.07704021084874749,
+                    "file": 0.0980515628225381,
+                    "files": 0.21388461769668277,
+                    "functions": 0.11674552988034813,
+                    "goes": 0.6781111093082021,
+                    "java": 0.08645658014019736,
+                    "javascript": 0.21958006773305058,
+                    "language": 0.20249511929203676,
+                    "libraries": 0.11674552988034813,
+                    "oop": 0.1211536490610346,
+                    "organize": 0.12654875091235487,
+                    "party": 0.1211536490610346,
+                    "people": 0.06548239607222556,
+                    "php": 0.09998681283451855,
+                    "probably": 0.09303131682069571,
+                    "source": 0.0962598011722041,
+                    "utility": 0.12654875091235487
+                },
+                "Max term": "goes",
+                "Max score": 0.6781111093082021
+            }
+        ]
+    }
+]
