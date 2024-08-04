@@ -223,7 +223,7 @@ def main():
     write_to_json('q_shorter_than/short_q.json', generate_short_q)
 
     # Questions and Answers with Code
-    write_to_json('qa_with_codes/qa_with_codes.json', generate_a_with_code)
+    write_to_json('a_with_codes/a_with_codes.json', generate_a_with_code)
 
     #Questions with keywords in tf_idf terms
     generate_files_for_keywords(df_tfidf, keywords)
