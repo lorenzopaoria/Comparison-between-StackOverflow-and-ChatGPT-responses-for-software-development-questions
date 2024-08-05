@@ -1,6 +1,6 @@
 [
     {
-        "ID:": "1",
+        "ID": "1",
         "Question": "A coworker of mine believes that any use of in-code comments (ie, not javadoc style method or class comments) is a code smell.  What do you think? ",
         "TF-IDF scores": [
             {
@@ -75,7 +75,7 @@
         }
     },
     {
-        "ID:": "4",
+        "ID": "4",
         "Question": "When starting a project for a company that's not primarily a programming company, one of the expectations is that there's a finished product at the end free of all bugs and does everything needed right away. However, that's rarely the case.  What are some ways to manage expectations and explain to non-programmers how software development differs from other types of product development? ",
         "TF-IDF scores": [
             {
@@ -142,7 +142,7 @@
         }
     },
     {
-        "ID:": "9",
+        "ID": "9",
         "Question": "Sometimes, the things I have to do for my job are interesting and engaging.  Sometimes, they aren't.  Occasionally, they really aren't. Do you have any particular strategies or tricks for dealing with those dull stretches when your brain would rather be doing anything other than what you're supposed to be doing, particularly when the Internet and its boundless opportunities for interesting Slack beckon? ",
         "TF-IDF scores": [
             {
@@ -181,7 +181,7 @@
         }
     },
     {
-        "ID:": "16",
+        "ID": "16",
         "Question": "I have read a few articles on Internet about programming language choice in the enterprise. Recently many dynamic typed languages have been popular, i.e. Ruby, Python, PHP and Erlang. But many enterprises still stay with static typed languages like C, C++, C# and Java. And yes, one of the benefits of static typed languages is that programming errors are caught earlier, at compile time, rather than at run time. But there are also advantages with dynamic typed languages. (more on Wikipedia) The main reason why enterprises don't start to use languages like Erlang, Ruby and Python, seem to be the fact that they are dynamic typed. That also seem to be the main reason why people on StackOverflow decide against Erlang. See Why did you decide \"against\" Erlang. However, there seem to be a strong criticism against dynamic typing in the enterprises, but I don't really get it why it is that strong. Really, why is there so much criticism against dynamic typing in the enterprises? Does it really affect the cost of projects that much, or what? But maybe I'm wrong. ",
         "TF-IDF scores": [
             {
@@ -292,7 +292,7 @@
         }
     },
     {
-        "ID:": "18",
+        "ID": "18",
         "Question": "At first glance, I'd say a good programming team needs to understand the following matters:  The details of the core language / framework HTML, (asynchronous) javascript SQL / data model Usability / UI design Security Project management.  If this team is not complete: what is needed? ",
         "TF-IDF scores": [
             {
@@ -367,7 +367,7 @@
         }
     },
     {
-        "ID:": "38",
+        "ID": "38",
         "Question": "Where waterfall commonly includes:  Requirements Functional design Technical design Build Test Review (Deploy)  And iterations across this list. If I forgot a step, let me know. ",
         "TF-IDF scores": [
             {
@@ -427,7 +427,7 @@
         }
     },
     {
-        "ID:": "39",
+        "ID": "39",
         "Question": "What's your favourite quote about programming? One quote per answer, and please check for duplicates before posting! ",
         "TF-IDF scores": [
             {
@@ -458,7 +458,7 @@
         }
     },
     {
-        "ID:": "42",
+        "ID": "42",
         "Question": "We've all had them, managers who have either come from sales or last looked at code 10 or more years ago but think they know how to write code. What can I do to give the impression that I'm grateful for their intervention, but keep it as short as possible so I can get on with my work? Or, should I be engaging more with the manager to educate them with modern coding techniques and practices? After all, a manager who understands these will be able to talk sensibly to clients and more senior management when discussing the project and its timescales. ",
         "TF-IDF scores": [
             {
@@ -520,7 +520,7 @@
         }
     },
     {
-        "ID:": "44",
+        "ID": "44",
         "Question": "I am finishing my college degree in programming soon and I'm exploring the next steps to take to further my career. One option I've been considering is getting a certification or a series of certifications in the area of development I want to work in. Are these certifications worth the time and money? Do employers place a lot of value in them? ",
         "TF-IDF scores": [
             {
@@ -584,7 +584,7 @@
         }
     },
     {
-        "ID:": "49",
+        "ID": "49",
         "Question": "During my four years at university we have been using much functional programming in several functional programming languages. But I have also used much object oriented programming to, and in fact I use object oriented languages more when doing my own small project to prepare for my first job. But I often wish that I was coding in a functional programming language when doing these projects. However, when looking for a job, it is very rare to see a job where knowledge of a functional programming language is required. Why isn't functional programming languages used more in the industry? There is quite much news about functional programming languages these days, so I wonder if functional programming is catching on in the industry now? ",
         "TF-IDF scores": [
             {
@@ -658,7 +658,7 @@
         }
     },
     {
-        "ID:": "57",
+        "ID": "57",
         "Question": "The coding standards for the code hosted in drupal.org suggest to use two spaces to indent the code; other sites suggest to use tabs to indent the code. What is the proper indentation character for everything, and in every situation? Please explain the answer you give. ",
         "TF-IDF scores": [
             {
@@ -722,7 +722,7 @@
         }
     },
     {
-        "ID:": "73",
+        "ID": "73",
         "Question": "We often receive last minute requests from the business asking for an extra feature to be implemented.  The project manager is usually responsible for filtering out these requests as \"must haves\" or \"nice to have\", but there are cases where the business wants to squeeze all these features into a release.   Is there a good way to say NO to the business?  What steps can be taken to stop or minimize scope creep? ",
         "TF-IDF scores": [
             {
@@ -775,7 +775,7 @@
         }
     },
     {
-        "ID:": "94",
+        "ID": "94",
         "Question": "I realize there have been lots of discussions about this type of thing and they often devolve into dogma around whether you ask the \"100 logical pirates\" type of questions or whether you get them to write \"fizz buzz\".  I'm interested in what techniques and questions have been effective for you when interviewing potential developers for jobs.  One technique per answer so we can vote on them, please. ",
         "TF-IDF scores": [
             {
@@ -854,7 +854,7 @@
         }
     },
     {
-        "ID:": "104",
+        "ID": "104",
         "Question": "We've often run across scenarios where the business will promise a client a new feature.  The business will promise that the feature be implemented in a specific way.  These technical details promised by the business are usually poor.  Unfortunately, client is now set and want this feature to be implemented in the way described by the business. In the end, the business just wants this feature to be completed without regard to quality and maintainability.  Is there a good way to push back?  How can we explain to the business that providing technical details before the requirements have been gathered is a bad idea? ",
         "TF-IDF scores": [
             {
@@ -940,7 +940,7 @@
         }
     },
     {
-        "ID:": "134",
+        "ID": "134",
         "Question": "How do you bill your programming projects? Do you do it per hour? Per job?  Please include what kind of project you are doing in the answer. (Mobile, Web, Desktop, etc... You can be more specific if you want.) BONUS: If you'd like to give specific amounts in your answer, you may. ;-) ",
         "TF-IDF scores": [
             {
@@ -988,7 +988,7 @@
         }
     },
     {
-        "ID:": "135",
+        "ID": "135",
         "Question": "Who in the software engineering and software development fields uses Twitter to tweet about relevant happenings in the field? ",
         "TF-IDF scores": [
             {
@@ -1027,7 +1027,7 @@
         }
     },
     {
-        "ID:": "163",
+        "ID": "163",
         "Question": "Are there any great programming or software development books that are language agnostic?  Why should I read it? ",
         "TF-IDF scores": [
             {
@@ -1073,7 +1073,7 @@
         }
     },
     {
-        "ID:": "188",
+        "ID": "188",
         "Question": "For the longest time in places like Java's IRC channel, SO, and other places I've been told something along the lines of \"Worry about how the code looks and its readability/understandability now, and performance later if absolutely necessary\". So for the longest time, I haven't really been OCD about performance for my small desktop or web apps, just removing the obviously inefficient. Most responses are \"What about scalability?\". Thats a legitimate point, but if my app was only built to parse, say, files 10,000 lines long, should I make my code a mess for the small percentage of people that are going to shove in a 1,000,000 line file? My main question is when should I trade the easy but somewhat inefficient ways of doing tasks for big giant complicated beasts that do things extremely quickly but destroy any possible ways of upgrading and make the code excessively difficult and prone to rewriting anyway by the next developer?  ",
         "TF-IDF scores": [
             {
@@ -1179,7 +1179,7 @@
         }
     },
     {
-        "ID:": "192",
+        "ID": "192",
         "Question": "If I have some code that has 80% test coverage (all tests pass), is it fair to say that it's of higher quality than code with no test coverage?   Or is it fair to say it's more maintainable? ",
         "TF-IDF scores": [
             {
@@ -1227,7 +1227,7 @@
         }
     },
     {
-        "ID:": "206",
+        "ID": "206",
         "Question": "Test driven development. I get it, like it. But writing tests does require overhead. So should TDD be used universally throughout the code base, or are there areas where TDD provides a high ROI and other areas where the ROI is so low that it is not worth following. ",
         "TF-IDF scores": [
             {
@@ -1301,7 +1301,7 @@
         }
     },
     {
-        "ID:": "215",
+        "ID": "215",
         "Question": "Having taken a course in Operating Systems I'm interested in expanding my knowledge of the Linux kernel and practice working with a big system. What are some interesting but not overly difficult projects I can try my hand at?  EDIT: a bit of background on what I did do with the kernel.   Implemented a new scheduling policy Implemented User Threads and a corresponding mutex library (not really kernel hacking but contained kernel related theory)  ",
         "TF-IDF scores": [
             {
@@ -1371,7 +1371,7 @@
         }
     },
     {
-        "ID:": "220",
+        "ID": "220",
         "Question": "How would someone implement Agile process concepts as a solo developer?  Agile seems useful for getting applications developed at a faster pace, but it also seems very team oriented... ",
         "TF-IDF scores": [
             {
@@ -1418,7 +1418,7 @@
         }
     },
     {
-        "ID:": "221",
+        "ID": "221",
         "Question": " Possible Duplicate: Using “Foo” and “Bar” in examples   I know AT&T labs used them in their Unix days, but do they have even deeper histories? ",
         "TF-IDF scores": [
             {
@@ -1473,7 +1473,7 @@
         }
     },
     {
-        "ID:": "247",
+        "ID": "247",
         "Question": "Does learning COBOL still make sense? ",
         "TF-IDF scores": [
             {
@@ -1500,7 +1500,7 @@
         }
     },
     {
-        "ID:": "252",
+        "ID": "252",
         "Question": "There is a widely accepted opinion that Singleton is an anti-pattern. As usual, there are always exceptions to the rule. Can you explain why Singleton is a bad choice in general and give an example of some valid use cases for it? ",
         "TF-IDF scores": [
             {
@@ -1568,7 +1568,7 @@
         }
     },
     {
-        "ID:": "262",
+        "ID": "262",
         "Question": "Will Java have the same importance it had in the past, or it will be less relevant than nowadays? ",
         "TF-IDF scores": [
             {
@@ -1621,7 +1621,7 @@
         }
     },
     {
-        "ID:": "294",
+        "ID": "294",
         "Question": "I just started working a year ago, and I want to join an open source project for the same reasons as anyone else: help create something useful and develop my skills further. My problem is, I don't know how to find a project where I'll fit in. How can I find a beginner-friendly project?  What attributes should I be searching for?  What are warning signs that a project might not be the right fit?  Are there any tools out there to help match people with open source projects? There's a similar question here, but that question has to do with employment and is limited to PHP/Drupal. ",
         "TF-IDF scores": [
             {
@@ -1690,7 +1690,7 @@
         }
     },
     {
-        "ID:": "348",
+        "ID": "348",
         "Question": "Elite developers can be 10x more productive than an average developer.  Clearly it's easier to find an elite developer around the whole world than in a company's backyard.  If a company is not located in a programming hot spot, should they consider hiring people who work from home? ",
         "TF-IDF scores": [
             {
@@ -1765,7 +1765,7 @@
         }
     },
     {
-        "ID:": "368",
+        "ID": "368",
         "Question": "For a long time in SO and in other places Java has the reputation of being slow. From jokes to many comments in questions and answers, people still believe Java is slow based solely on experience with it in the 90s. This is my issue: we have disproved (most) of the reasons that people believe Java is slow. Outside of small things, Java is pretty fast. So why is it that people still refuse to believe Java is fast now? Is it part of their mindset that anything thats not C/C++ is slow? Is it because people don't check over time? Is it because people are just biased? ",
         "TF-IDF scores": [
             {
@@ -1828,7 +1828,7 @@
         }
     },
     {
-        "ID:": "370",
+        "ID": "370",
         "Question": "I've been told that to be taken seriously as a job applicant, I should drop years of relevant experience off my résumé, remove the year I got my degree, or both. Or not even bother applying, because no one wants to hire programmers older than them.1 Or that I should found a company, not because I want to, or because I have a product I care about, but because that way I can get a job if/when my company is acquired. Or that I should focus more on management jobs (which I've successfully done in the past) because… well, they couldn't really explain this one, except the implication was that over a certain age you're a loser if you're still writing code. But I like writing code. Have you seen this? Is this only a local (Northern California) issue? If you've ever hired programmers:2  Of the résumés you've received, how old was the eldest applicant? What was the age of the oldest person you've interviewed? How old (when hired) was the oldest person you hired?  How old is \"too old\" to employed as a programmer? 1 I'm assuming all applicants have equivalent applicable experience. This isn't about someone with three decades of COBOL applying for a Java guru job. 2 Yes, I know that (at least in the US) you aren't supposed to ask how old an applicant is. In my experience, though, you can get a general idea from a résumé. ",
         "TF-IDF scores": [
             {
@@ -1919,7 +1919,7 @@
         }
     },
     {
-        "ID:": "404",
+        "ID": "404",
         "Question": "Joel Spolsky wrote a famous blog post \"Human Task Switches considered harmful\". While I agree with the premise and it seems like common sense, I'm wondering if there are any studies or white papers on this to calculate the overhead on task switches, or is the evidence merely anecdotal?  ",
         "TF-IDF scores": [
             {
@@ -1965,7 +1965,7 @@
         }
     },
     {
-        "ID:": "408",
+        "ID": "408",
         "Question": "\"Regular\" golf vs. code golf: Both are competitions.  Both have a well-defined set of rules, which I'll leave out for simplicity.  Both have well-defined goals; in short, \"use fewer hits/characters than your competitors.\" To win matches, athletic golfers rely on  equipment  Some situations call for a sand wedge; others, a 9-iron.   techniques  The drive works better when your feet are about shoulder width apart and your arms are relaxed.   and strategies  Sure, you could take that direct shortcut to the hole... but do you really want to risk the water hazard or sand bunker when those trees are in the way and the wind is so strong?  It might be better to go around the long way.    What do code golfers have that's analagous to athletic golfers' equipment, techniques and strategies? Sample answer to get this started: use the right club!  Choose GolfScript instead of C#. ",
         "TF-IDF scores": [
             {
@@ -2038,7 +2038,7 @@
         }
     },
     {
-        "ID:": "487",
+        "ID": "487",
         "Question": "If you were to design a programming language, how would you do it? What features would you put in? What would you leave out? Statically or dynamically typed? Strongly or weakly typed? Compiled or interpreted? Justify your answers. ",
         "TF-IDF scores": [
             {
@@ -2118,7 +2118,7 @@
         }
     },
     {
-        "ID:": "492",
+        "ID": "492",
         "Question": "Did you learn to touch-type when you were already working as a programmer?  If so how did it affect your productivity?  Or are you still unable to touch type and do you think it holds you back? According to Steve Yegge it is essential, Personally I did not notice much difference, possibly because I was spending less than 25% of my work time actually typing (I was working on a large legacy project at the time and I was spending more time on reading and debugging existing code.) ",
         "TF-IDF scores": [
             {
@@ -2189,7 +2189,7 @@
         }
     },
     {
-        "ID:": "500",
+        "ID": "500",
         "Question": "Rather than slavishly pair program all the time, we use pair programming selectively on our team. I think it works best in the following circumstances:  Ramping up brand new team members on a project (instead of letting them wade through documentation or code on their own). Having junior and senior people work together (helps to show some of the skills and tricks of the more experienced developers, plus it allows the old dogs to learn new tricks sometimes). When someone is trying to track down a defect, it often helps to pair with a fresh set of eyes.  When to use pair program and why? When to avoid pair programming? Why? ",
         "TF-IDF scores": [
             {
@@ -2276,7 +2276,7 @@
         }
     },
     {
-        "ID:": "501",
+        "ID": "501",
         "Question": "No matter how much you love a programming language, there are always a few details in it that aren’t quite as nice as they could be. In this question, I would like to specifically focus on syntax elements. In a programming language that you use frequently (perhaps your favourite programming language, or perhaps the one you are forced to use at work), which syntax element do you find most unreadable, unclear, inconvenient or unpleasant? ",
         "TF-IDF scores": [
             {
@@ -2336,7 +2336,7 @@
         }
     },
     {
-        "ID:": "502",
+        "ID": "502",
         "Question": "I think everyone has their own program or set of features beyond \"Hello World!\", that they use when trying out a new language. Mine is a guessing game: I'm thinking of a number 1-10, guess what it is! Guess: 3 Nope, too low! Guess: 7 Nope, too high! Guess: 5 Yes, You win! Play again (Y/N)? N  What do you write? ",
         "TF-IDF scores": [
             {
@@ -2401,7 +2401,7 @@
         }
     },
     {
-        "ID:": "507",
+        "ID": "507",
         "Question": "I have seen this on the SO on many times. Whenever a question is vague and the question is asking some magical answer somebody or the other leaves a comment saying answer is 42. Even a book I am reading right now uses '42' as the number whenever it wants demonstrate some basic concept using an integer. So is there any history behind it or it is just a coincidence? ",
         "TF-IDF scores": [
             {
@@ -2441,7 +2441,7 @@
         }
     },
     {
-        "ID:": "558",
+        "ID": "558",
         "Question": "I am a moderately capable web developer. I can put stuff where I want it to go and put some JQuery stuff in there if I need to. However, if I am making my own website (which I am starting to do) I have no idea how to design it. If someone was to sit next to me a point to the screen and say \"put this picture there, text there\" I can do that quite easily. But designing my own site with my choice of colours and text will look like a toddler has invented it. Does anyone know any websites/books I can look at or has anyone got any tips on the basics of non-toddler web design? ",
         "TF-IDF scores": [
             {
@@ -2543,7 +2543,7 @@
         }
     },
     {
-        "ID:": "566",
+        "ID": "566",
         "Question": "goto is almost universally discouraged. Is using this statement ever worthwhile? ",
         "TF-IDF scores": [
             {
@@ -2601,7 +2601,7 @@
         }
     },
     {
-        "ID:": "568",
+        "ID": "568",
         "Question": "Managed OSes like Microsoft Singularity and JNode are quite an interesting concept. Essentially, the OS is bootstrapped with code written in a low-level language (C/C++/Assembly), which essentially implements a virtual machine. The rest of the OS (and all userland apps) run on the virtual machine. There are some great things about this. For example, you suddenly make arbitrary pointers obsolete. And if well written, you get rid of a ton of legacy crud that most modern OSes currently have.  However, as a disadvantage, you're that much farther away from the hardware, and as a developer, you lose the ability to drop down to a lower level of abstraction and get your hands dirty.  What are your opinions on this? ",
         "TF-IDF scores": [
             {
@@ -2695,7 +2695,7 @@
         }
     },
     {
-        "ID:": "570",
+        "ID": "570",
         "Question": "All but the most trivial programs are filled with bugs and so anything that promises to remove them is extremely alluring. At the moment, correctness proofs are code are extremely esoteric, mainly because of the difficultly of learning this and the extra effort it takes to prove a program correct. Do you think that code proving will ever take off? ",
         "TF-IDF scores": [
             {
@@ -2747,7 +2747,7 @@
         }
     },
     {
-        "ID:": "604",
+        "ID": "604",
         "Question": "on a widescreen monitor one can easily see more than 80 characters at a time, without scrollbars. even linus torvalds sees the 80 character limit as outdated. so, is the 80 character limit still relevant in times of widescreen monitors? ",
         "TF-IDF scores": [
             {
@@ -2793,7 +2793,7 @@
         }
     },
     {
-        "ID:": "616",
+        "ID": "616",
         "Question": "When I am in a code or design rut, I tend to find a non-dev coworker to discuss the problem with. It forces me to explain the problem in great detail and I'll usually find something I missed in the process. What are your \"unsticking\" methods? ",
         "TF-IDF scores": [
             {
@@ -2885,7 +2885,7 @@
         }
     },
     {
-        "ID:": "648",
+        "ID": "648",
         "Question": "We, as programmers, are constantly being asked 'How long will it take'? And you know, the situation is almost always like this:  The requirements are unclear. Nobody has done an in depth analysis of all the implications. The new feature will probably break some assumptions you made in your code and you start thinking immediately of all the things you might have to refactor.  You have other things to do from past assignments and you will have to come up with an estimate that takes that other work into account. The 'done' definition is probably unclear: When will it be done? 'Done' as in just finished coding it, or 'done' as in \"the users are using it\"? No matter how conscious you are of all these things, sometimes your \"programmer's pride\" makes you give/accept shorter times than you originally suppose it might take. Specially when you feel the pressure of deadlines and management expectations.  Many of these are organizational or cultural issues that are not simple and easy to solve, but in the end the reality is that you are being asked for an estimate and they expect you to give a reasonable answer. It's part of your job. You cannot simply say: I don't know.  As a result, I always end up giving estimates that I later realize I cannot fulfill. It has happened countless of times, and I always promise it won't happen again. But it does. What is your personal process for deciding and delivering an estimate? What techniques have you found useful? ",
         "TF-IDF scores": [
             {
@@ -3040,7 +3040,7 @@
         }
     },
     {
-        "ID:": "678",
+        "ID": "678",
         "Question": "I know some people are massive proponents of test driven development. I have used unit tests in the past, but only to test operations that can be tested easily or which I believe will quite possibly be correct. Complete or near complete code coverage sounds like it would take a lot of time.  What projects do you use test-driven development for? Do you only use it for projects above a certain size? Should I be using it or not? Convince me!  ",
         "TF-IDF scores": [
             {
@@ -3137,7 +3137,7 @@
         }
     },
     {
-        "ID:": "724",
+        "ID": "724",
         "Question": "When learning a new programming language you sometimes come across a language feature which  makes you wish you had it in your other programming languages that you know. What are some language feature which were at the time of learning very new to you and that you wish your other programming languages had.   An example of this is generators in Python or C#. Other examples may include list comprehensions in Python, template in C++ or LINQ in .NET or lazy evaluation in Haskell. What other semi-unique language features have you come across which were completely new and enlightening to you?  Are there other features of older programming languages which were unique and have fallen out of fashion? ",
         "TF-IDF scores": [
             {
@@ -3197,7 +3197,7 @@
         }
     },
     {
-        "ID:": "729",
+        "ID": "729",
         "Question": "As programmers we have a lot of inputs:  Ebooks  Code snippets  Interesting emails  Documents Web articles  Blog posts StackOverflow questions Podcasts ...  Which tools do you use to store, organize, search and consult all of this stuff? Is there a silver bullet solution to handle this huge amount of data?  ",
         "TF-IDF scores": [
             {
@@ -3261,7 +3261,7 @@
         }
     },
     {
-        "ID:": "739",
+        "ID": "739",
         "Question": "What is the recommended  User Account Control (UAC) setting when developing on Windows? Even on Win7 I find it annoying enough to turn it off (because it makes me more productive with it off) but sometimes I feel bad because I know I'll find more problems in my code if I leave it on. ",
         "TF-IDF scores": [
             {
@@ -3318,7 +3318,7 @@
         }
     },
     {
-        "ID:": "745",
+        "ID": "745",
         "Question": "What methods do you use to stay awake and alert while working? Personally I drink coffee non stop throughout the day.  But I've also heard of this thing called exercise that should help too.  Does anyone else have tips and tricks to stay more awake and alert while working?  Redbull? Maybe a magic pill that won't require me to sleep? ",
         "TF-IDF scores": [
             {
@@ -3379,7 +3379,7 @@
         }
     },
     {
-        "ID:": "750",
+        "ID": "750",
         "Question": "I'm freshly out of college, and starting university somewhere next week. We've seen unit tests, but we kinda not used them much; and everyone talks about them, so I figured maybe I should do some. The problem is, I don't know what to test. Should I test the common case? The edge case? How do I know that a function is adequately covered? I always have the terrible feeling that while a test will prove that a function works for a certain case, it's utterly useless to prove that the function works, period. ",
         "TF-IDF scores": [
             {
@@ -3450,7 +3450,7 @@
         }
     },
     {
-        "ID:": "756",
+        "ID": "756",
         "Question": "I'm trying to find places where I can hone my craft outside the context of school or work. Are there places online, or books available, where I can access lists of programming puzzles or challenges? ",
         "TF-IDF scores": [
             {
@@ -3629,7 +3629,7 @@
         }
     },
     {
-        "ID:": "775",
+        "ID": "775",
         "Question": "On any team, you are going to have the need for more grizzled and grey developers and some young pups. Some reasons include:  Money. There are often tasks that don't require the same level of experience to deliver, so it makes sense not to pay top dollar to have those tasks fulfilled. Energy. There's an energy and enthusiasm that new people can bring to a team that stops it from getting too stale and set in its ways. There's also calmness and wisdom that the more senior people can bring. Knowledge transfer and career growth. Both in terms of the project and skills, it's useful and often fun to teach people and to learn new stuff. It's satisfying to help \"bring on\" new team members.  I realise there are some cutting edge projects where it may be important for there to be more senior people than junior, but in general, is there an ideal mix of experiences on a team, or is it totally dependent on the project? ",
         "TF-IDF scores": [
             {
@@ -3736,7 +3736,7 @@
         }
     },
     {
-        "ID:": "778",
+        "ID": "778",
         "Question": "What question have you found especially valuable in interviewing software developers?  What is it about the question that has made it particularly useful? I'm looking for a particular question you like to ask, not just an interviewing approach like \"make them write code\". ",
         "TF-IDF scores": [
             {
@@ -3774,7 +3774,7 @@
         }
     },
     {
-        "ID:": "779",
+        "ID": "779",
         "Question": "It doesn't have to be programming or software development related, but just asked during an interview for an IT related job. I know some \"left field\" questions are meant to see how the candidate copes with unexpected and novel situations, but here I'm looking for a question that appeared to be completely unrelated to the job they were interviewing you for, or something that made you think \"what useful information could they possibly get from my answer to that question?\". ",
         "TF-IDF scores": [
             {
@@ -3835,7 +3835,7 @@
         }
     },
     {
-        "ID:": "811",
+        "ID": "811",
         "Question": "Literate programming has good ideals. Why do you think that this isn't mainstream? It is because it has failed to deliver? ",
         "TF-IDF scores": [
             {
@@ -3910,7 +3910,7 @@
         }
     },
     {
-        "ID:": "812",
+        "ID": "812",
         "Question": "I originally tried asking this on StackOverflow, but it was too subjective :-(. I am interested in methods of defining the power of programming languages. Turing completeness is one, but it is almost universally satisfied. What would be nice is to define a measure of power that discriminates among programming languages that are actually in used. For example, can anyone propose a non-subjective method that would discriminate between assembly and Java? Turing completeness means that a language is maximally powerful in what it can output (which pretty much means it can do anything non-time based in the real world). So if we want to define a stronger measure of power, we need to take another approach. Shortness was suggested in the original question, but this is not easy to define at all. Does anyone have any other suggestions? ",
         "TF-IDF scores": [
             {
@@ -4007,7 +4007,7 @@
         }
     },
     {
-        "ID:": "827",
+        "ID": "827",
         "Question": "For decades, the accepted degree to get to become a software developer was \"Compter Science.\" We've had a few questions already about whether that degree really prepares students to develop software. Some schools have, in the last 8 years or so, started offering multiple distinct majors in programming.  Using the curriculum from my school:  Computer Science, which starts out with some intro programming courses in the first year, and then focuses on theoretical computer science, algorithms, and a bit of OS stuff.  Most classes involve several smaller projects and homeworks, done solo or in pairs. Software Engineering, which starts out with the same intro programming courses, does a few classes of theory, and then goes into software development practices (testing, process methodologies, sofware metrics, requirements gathering) and software design (distributed system design, info system design, real-time/embedded design, subsystem design, etc)  Different schools do it differently, so the above is just a real-world example I'm familiar with.  What I ask is: Is there a need for distinct majors in programming? ",
         "TF-IDF scores": [
             {
@@ -4107,7 +4107,7 @@
         }
     },
     {
-        "ID:": "843",
+        "ID": "843",
         "Question": "I was instructed by my project manager that frequent deployment in PROD or to test server should be avoided. But I don't understand why? We roll our testing copy to PROD on every sprint end but suddenly client would ask a simple change to the existing application which would require a re-deployment. When every thing was well tested and QA approved. why should we avoid frequent deployment? How it was done universally? ",
         "TF-IDF scores": [
             {
@@ -4171,7 +4171,7 @@
         }
     },
     {
-        "ID:": "866",
+        "ID": "866",
         "Question": "I know this is obviously not true for some games, minesweeper, card games, etc.  But what about any game involving simulating the real world environment.  Obviously these games have some form of a physics engineer powering the graphics.  For someone like me who personally did not enjoy physics but loves video games, do I have a chance at ever getting involved in the development cycle of a video game such as this while disliking physics?  ",
         "TF-IDF scores": [
             {
@@ -4237,7 +4237,7 @@
         }
     },
     {
-        "ID:": "870",
+        "ID": "870",
         "Question": "One per answer please. I'll add my favourite as an answer. ",
         "TF-IDF scores": [
             {
@@ -4271,7 +4271,7 @@
         }
     },
     {
-        "ID:": "874",
+        "ID": "874",
         "Question": "In my current job it feels like we have a lot requirement changes. We are an \"Agile\" shop, so I get that we are supposed to adjust and what not, but sometime the change is large and nothing trivial.  My question is, how do you effectively communicate the cost of the change? Because of being agile, if a change is big enough something will get dropped from the current sprint, but it usually just get added next time around. Since our model is SaaS, the end customer is effectively the business itself, and they know they will get the cut feature n weeks later. I guess what I am trying to get at is the removal of a feature really isn't anything to use for communication as it was only delayed by n weeks. What other ways do you have to get the business to understand what a change costs? ",
         "TF-IDF scores": [
             {
@@ -4356,7 +4356,7 @@
         }
     },
     {
-        "ID:": "937",
+        "ID": "937",
         "Question": "I know that they are implemented extremely unsafely in C/C++. Can't they be implemented in a safer way? Are the disadvantages of macros really bad enough to outweigh the massive power they provide? ",
         "TF-IDF scores": [
             {
@@ -4438,7 +4438,7 @@
         }
     },
     {
-        "ID:": "940",
+        "ID": "940",
         "Question": "This is more a discussion question than an actual attempt to determine the \"best\", since that clearly varies by the needs of the organization. I'm more curious about the arguments in favor of different systems across categories (centralized vs distributed, open vs proprietary, etc). So, what do you think is the best version control system? ",
         "TF-IDF scores": [
             {
@@ -4480,7 +4480,7 @@
         }
     },
     {
-        "ID:": "966",
+        "ID": "966",
         "Question": "There are a lot of questions about what programming books should be on the programmer's bookshelf. How about non-programming related books that can help you become a better programmer or developer? It would also be interesting to know why they would help. My first choice would be Sun Tzu's \"Art of War\" (however cliché), because it made it obvious that the success of any project depends on the strength of its weakest link (and warfare is a big project). ",
         "TF-IDF scores": [
             {
@@ -4519,7 +4519,7 @@
         }
     },
     {
-        "ID:": "991",
+        "ID": "991",
         "Question": "What are the first 5 things you do before starting a new project? Do you always spend a day researching new frameworks? Or, using similar or competing products? ",
         "TF-IDF scores": [
             {
@@ -4649,7 +4649,7 @@
         }
     },
     {
-        "ID:": "1007",
+        "ID": "1007",
         "Question": "Tester and blogger Lanette Creamer recently posted this question on Twitter:  If you are a professional software developer who works with testers, think of the best testers you know. What traits do they have in common?  I thought it would make an excellent question for here. My thoughts are:  They want to remove ambiguity from requirements even if it means asking awkward questions. They create new features by seeing the way software \"should\" work, rather than just how it's documented. They demonstrate honesty and integrity and encourage but not demand it from those around them. In other words, they model behavior.  What are the traits of the best testers you've worked with? ",
         "TF-IDF scores": [
             {
@@ -4722,7 +4722,7 @@
         }
     },
     {
-        "ID:": "1009",
+        "ID": "1009",
         "Question": "I'd like to sell my software on the 'net but am not sure how to do the whole Merchant setup.  I have access to Commerce Server 2009, and I want to seem professional so a plain old PayPal account is out. What do I need to know/do to sell a few things using ASP.NET, accept credit cards, and what not?  ",
         "TF-IDF scores": [
             {
@@ -4773,7 +4773,7 @@
         }
     },
     {
-        "ID:": "1025",
+        "ID": "1025",
         "Question": "I'm considering learning iPhone development and Objective C but don't want to avoid developing something for the most saturated markets and app categories. What categories should I avoid?  Are there too many dating applications, or should I just stick to coming up with a creative game or two? ",
         "TF-IDF scores": [
             {
@@ -4828,7 +4828,7 @@
         }
     },
     {
-        "ID:": "1058",
+        "ID": "1058",
         "Question": "I'm not exactly sure when to use Enterprise Library, and when not to... and that is making me not learn it at all.  I feel that I have enough of a reason to start learning then perhaps one day I'll use it. Are there times when I should use EntLib? When shouldn't I use it?   ",
         "TF-IDF scores": [
             {
@@ -4916,7 +4916,7 @@
         }
     },
     {
-        "ID:": "1059",
+        "ID": "1059",
         "Question": "I have often heard it said that objects have not delivered in terms of code reuse. Do you agree? If you believe that they haven't, why not? ",
         "TF-IDF scores": [
             {
@@ -4954,7 +4954,7 @@
         }
     },
     {
-        "ID:": "1060",
+        "ID": "1060",
         "Question": "Aspect oriented programming promises to deal with cross cutting concerns, but I'm not completely sold on it yet. Have there been any other attempts to deal with this problem? ",
         "TF-IDF scores": [
             {
@@ -4997,7 +4997,7 @@
         }
     },
     {
-        "ID:": "1063",
+        "ID": "1063",
         "Question": "I have often wondered if it would be possible to write a programming language that would work as a conversation. I would tell the computer that I want to store coordinates and it would ask what representation I would use. I would then ask to find the shortest path between points and it would ask if I want to use Djkstra's, brute force or use Floyd's? What research has been done towards producing a system like this? ",
         "TF-IDF scores": [
             {
@@ -5046,7 +5046,7 @@
         }
     },
     {
-        "ID:": "1065",
+        "ID": "1065",
         "Question": "I'm comparing different STS's for claims based authentication and am trying when it's appropriate to use each one.   It appears that ADFSv2 should be used in all Windows Environments.  Ping and Siteminder are more for the Unix side... although a sales rep said Ping was better for Windows, I didn't really understand \"why\" Any comparative information is much appreciated! ",
         "TF-IDF scores": [
             {
@@ -5110,7 +5110,7 @@
         }
     },
     {
-        "ID:": "1070",
+        "ID": "1070",
         "Question": "Dcpromo.exe is famous among MCSEs for being they only way to create a Windows Domain Controller (in other words an Active Directory Domain) ... which in turn is often used by the ASP.NET Membership system. I'm trying to determine if I should put content on \"www.dcpromo.com\" geared for developers or more towards sysadmins. To me, a logical extension of this \"domain controller on the internet\" is to use WIF for the ASP.NET Membership system.  We'd then have a website that will serve the developer's interests in the SSO, SAML, user managment and identity areas we all struggle with. So my question is:  Q:  Do programmers see a connection between the utility dcpromo.exe and ASP.NET Membership?  If so does it make sense to have a purpose of http://www.dcpromo.com  help developers in the areas of membership and cloud computing?   ",
         "TF-IDF scores": [
             {
@@ -5170,7 +5170,7 @@
         }
     },
     {
-        "ID:": "1090",
+        "ID": "1090",
         "Question": "Language shortcuts can often be used to make code more concise. For example, ternary and null coalescing operators can reduce the amount of code, but arguably to the detriment of readability: In C#: Person newGuy = new Person(); if (boss == null) {     newGuy.Boss = GetDefaultBoss(); } else {     newGuy.Boss = boss; }  is functionally equivalent to: Person newGuy = new Person(); newGuy.Boss = boss ?? GetDefaultBoss();  but obviously a lot more verbose. Where do you draw the line when it comes to conciseness vs readability? ",
         "TF-IDF scores": [
             {
@@ -5231,7 +5231,7 @@
         }
     },
     {
-        "ID:": "1095",
+        "ID": "1095",
         "Question": "I used ad-hoc MUML (made-up modeling language) to design and explain system fairly frequently.  It looks similar to UML and tends to be pretty well understood. However, I've had a professor or two that harped on the use of strict, formal UML, as close to the spec as possible.  I always suspected that strict UML wasn't really as common as they claimed.  So, how 'bout it- how often do you actually draw out complete diagrams that use all the proper line endings, multiplicity, member type symbols, etc? ",
         "TF-IDF scores": [
             {
@@ -5284,7 +5284,7 @@
         }
     },
     {
-        "ID:": "1106",
+        "ID": "1106",
         "Question": "This goes back to a conversation I've had with my girlfriend. I tried to tell her that I simply don't feel adequate enough in my programming language (C++) to call myself good. She then asked me, \"Well, when do you consider yourself good enough?\" That's an interesting question. I didn't know what to tell her. So I'm asking you. For any programming language, framework or the like, when do you reach a point were you sit back, look at what you've done and say, \"Hey, I'm actually pretty good at this.\"? How do you define \"good\" so that you can tell others, honestly, \"Yeah, I'm good at X\". Additionally, do you reach these conclusions by comparing what others can do? Additional Info I have read the canonical paper on how it takes ten-thousand hours before you are an expert on the field. (Props to anybody that knows what this paper is called again) I have also read various articles from Coding Horror about interviewing people. Some people, it was said, \"Cannot function outside of a framework.\" So they may be \"good\" for that framework, but not otherwise in the language. Is this true?  ",
         "TF-IDF scores": [
             {
@@ -5347,7 +5347,7 @@
         }
     },
     {
-        "ID:": "1135",
+        "ID": "1135",
         "Question": "Planning Poker Summary, in case you don't want to read the wiki article:  Get a list of tasks you want to do for the upcoming iteration For each task: 2.1 Discuss with the group what it entails 2.2 Everyone writes down / selects an estimation of how much effort is required for the task 2.3 Everyone reveals their estimation 2.4 The highest and lowest outliers explain their reasoning 2.5 Repeat until a consensus is reached  Usually something similar to numbers from the Fibonacci sequence like 0, ½, 1, 2, 3, 5, 8, 13, 20, 40, 100 are the allowed values, so you don't get long arguments over close values like 23 vs 27. Further, the numbers represent a unit-less value of effort, whose value is determined by a baseline task that everyone agrees equals about a 1, and all else is relative to that. Ultimately, the goal is to get a good feel for a given team's \"velocity\", which is the number of these points that can be completed in a given iteration.  With that, it's possible to make reasonably accurate estimates of how long any given feature will take.  We did this at iteration planning meetings at one company I worked at, and I thought it was one of the few good things about that particular company.  So, what I'm wondering is, has anyone used this?  Do you think it's a useful tool for estimation?  Does it work in all situations, or does it lend itself to certain teams, projects, etc? ",
         "TF-IDF scores": [
             {
@@ -5479,7 +5479,7 @@
         }
     },
     {
-        "ID:": "1180",
+        "ID": "1180",
         "Question": "I've been in workplaces where, at the start of a project, the \"Should we use VB.Net or C#\" question has been raised. Granted, it's probably less common to have to make that decision now than it was in the early days of .Net, particularly given the trend towards language convergence, but it can still be a heated debate. So, between VB.Net and C#, Which language do you prefer and why? ",
         "TF-IDF scores": [
             {
@@ -5644,7 +5644,7 @@
         }
     },
     {
-        "ID:": "1189",
+        "ID": "1189",
         "Question": "By now I work with asp.net and C#. I have done a decent work in Java as well. I am planning my career in such a way I should be language-agnostic someday. What are the things that I need to learn?  First would OOP paradigms as its speaks about the Class design. Are there any others? ",
         "TF-IDF scores": [
             {
@@ -5779,7 +5779,7 @@
         }
     },
     {
-        "ID:": "1200",
+        "ID": "1200",
         "Question": "Coming from a procedural/OO programming background, I tend to write Scheme programs in a procedural fashion. I would be intersted in learning Scheme or Lisp in a functional way from the ground up, to kind of reset my programmer's mind. Is there a tutorial or book out there that's the de-facto standard for describing best practices, design methodologies, and other helpful information on functional programming concepts? What about that book makes it special? ",
         "TF-IDF scores": [
             {
@@ -5842,7 +5842,7 @@
         }
     },
     {
-        "ID:": "1217",
+        "ID": "1217",
         "Question": "I think we’ve all seen this. Beginners ask questions on Stack Overflow that follow the basic outline...  I’m trying to do (very vague description of the goal) but it doesn’t work/I get an error/exception. Please help!  Isn’t it bizarre that so many of them seem to consider it unnecessary to paste the error message? I wonder what the psychology of this is. What is it about error messages that makes people initially assume that they are useless and not worth paying any attention to? The answer I’m looking for is not “they don’t understand the error message”. That doesn’t explain why they wouldn’t consider telling anyone else who might understand it. ",
         "TF-IDF scores": [
             {
@@ -5913,7 +5913,7 @@
         }
     },
     {
-        "ID:": "1224",
+        "ID": "1224",
         "Question": "I've never found the ideal way to perform code reviews and yet often my customers require them. Each customer seems to do them in a different way and I've never felt satisfied in any of them.  What has been the most effective way for you to perform code reviews? For example:  Is one person regarded as the gatekeeper for quality and reviews the code, or do the team own the standard?   Do you do review code as a team exercise using a projector? Is it done in person, via email or using a tool?  Do you eschew reviews and use things like pair programming and collective code ownership to ensure code quality?  ",
         "TF-IDF scores": [
             {
@@ -5999,7 +5999,7 @@
         }
     },
     {
-        "ID:": "1262",
+        "ID": "1262",
         "Question": "I'm considering whether I should start using VIM again instead of an IDE. What are the most useful features of VIM that aren't standard in an IDE? ",
         "TF-IDF scores": [
             {
@@ -6064,7 +6064,7 @@
         }
     },
     {
-        "ID:": "1280",
+        "ID": "1280",
         "Question": "What best practices should be undertaken for a website that needs to \"scale out\" to handle capacity?  This is especially relevant now that people are considering the cloud, but may be missing out on the fundamentals. I'm interested in hearing about anything you consider a best practice from development-level tasks, to infrastructure, to management. ",
         "TF-IDF scores": [
             {
@@ -6115,7 +6115,7 @@
         }
     },
     {
-        "ID:": "1323",
+        "ID": "1323",
         "Question": "I recently saw that Microsoft released a coding standards document (All-In-One Code Framework Coding Standards) and it got me thinking...  The company that I work for has no formal coding standards at all.  There are only a few developers and we have been together long enough to have evolved into similar styles and its never been an issue. Does the company you work for have a documented coding standards?  If no, why not?  Does having a standard make a difference?  Is it worth writing a standard from scratch or should you adopt another standard as your own (ie. make Microsoft's standards yours)? ",
         "TF-IDF scores": [
             {
@@ -6196,7 +6196,7 @@
         }
     },
     {
-        "ID:": "1338",
+        "ID": "1338",
         "Question": "Have you ever had to work to coding standards that:  Greatly decreased your productivity? Were originally included for good reasons but were kept long after the original concern became irrelevant? Were in a list so long that it was impossible to remember them all? Made you think the author was just trying to leave their mark rather than encouraging good coding practice? You had no idea why they were included?  If so, what is your least favorite rule and why?  Some examples here ",
         "TF-IDF scores": [
             {
@@ -6244,7 +6244,7 @@
         }
     },
     {
-        "ID:": "1371",
+        "ID": "1371",
         "Question": "Having worked on a failed project is one of the few things that most programmers have in common, regardless of language used, industry or experience. These projects can be great learning experiences, soul-crushing disasters (or both!), and can occur for a multitude of reasons:  upper management change of heart under-skilled / under-resourced team emergence of superior competitor during dev cycle over/under management  Once you've worked on a couple of such projects, is it possible to recognise at an early stage exactly when a project is doomed to fail?  For me, a big sign is having a hard & fast external deadline combined with feature creep. I've seen projects which were well planned out and proceeding right on schedule go horribly off the rails once the late feature requests started to roll in and get added to the final \"deliverable\". The proposers of these requests earned the nickname of Columbo, due to rarely leaving the room without asking for \"just one more thing\". What are the warning signs you look out for that set off the alarm bells of impending doom in your head? ",
         "TF-IDF scores": [
             {
@@ -6328,7 +6328,7 @@
         }
     },
     {
-        "ID:": "1376",
+        "ID": "1376",
         "Question": "I have a tester that while testing will have an error occur (ok so far), but then he frequently reports it right away.  We (the developers) then later find that the tester has not tried to reproduce the issue and (when asked) cannot find a way to make it happen again. Now these are still bugs, I don't want to ignore them.  But without repro steps I am kind of stuck.  Sometimes there is a stack trace (though frequently it is not useful because this is compact framework and there are no line numbers).  But when there is one I can take the stack trace and crack open the code and start guessing, but that does not lead to testable \"fixes\". What do you do in scenarios like this? ",
         "TF-IDF scores": [
             {
@@ -6409,7 +6409,7 @@
         }
     },
     {
-        "ID:": "1380",
+        "ID": "1380",
         "Question": "We are starting a push for code coverage here at my work, and it has got me to thinking.... How much code coverage is enough? When do you get to the point of diminishing returns on code coverage?  What is the sweet spot between good coverage and not enough?  Does it vary by the type of project your are making (ie WPF, WCF, Mobile, ASP.NET)  (These are C# classes we are writing.) ",
         "TF-IDF scores": [
             {
@@ -6468,7 +6468,7 @@
         }
     },
     {
-        "ID:": "1386",
+        "ID": "1386",
         "Question": "Sometimes I feel like a musician who can't play live shows. Programming is a pretty cool skill, and a very broad world, but a lot of it happens \"off camera\"- in your head, in your office, away from spectators.  You can of course talk about programming with other programmers, and there is peer programming, and you do get to create something that you can show to people, but when it comes to explaining to non programmers what is it that you do, or how was your day at work, it's sort of tricky.  How do you get the non programmers in your life to understand what is it that you do?  NOTE: this is not a repeat of Getting non-programmers to understand the development process, because that question was about managing client expectations.  ",
         "TF-IDF scores": [
             {
@@ -6538,7 +6538,7 @@
         }
     },
     {
-        "ID:": "1474",
+        "ID": "1474",
         "Question": "I've read Peopleware in 2009. It was one of the best book I ever read. But this book is a little old. I'd like to know, in your opinion, what is and what is not relevant in this book? ",
         "TF-IDF scores": [
             {
@@ -6581,7 +6581,7 @@
         }
     },
     {
-        "ID:": "1483",
+        "ID": "1483",
         "Question": "I've heard it said (by coworkers) that everyone \"codes in English\" regardless of where they're from. I find that difficult to believe, however I wouldn't be surprised if, for most programming languages, the supported character set is relatively narrow. Have you ever worked in a country where English is not the primary language? If so, what did their code look like? ",
         "TF-IDF scores": [
             {
@@ -6637,7 +6637,7 @@
         }
     },
     {
-        "ID:": "1516",
+        "ID": "1516",
         "Question": "A few years ago I considered myself somewhat of a web developer, knowing the basic 3 languages (HTML, CSS, JS) and lots of PHP. Moving on from simple text to actual websites was a pain because of the so called \"standards\" out there, which at the time were ridiculously complicated for me. It pretty much boiled down to this (minus the IE related stuff):  Standards are there to replace old ways of doing things in a simpler way. However when trying to actually implement some of the stuff (Entirely CSS based layout for example), it took me 10x longer to actually do it then if I did the simpler and still working solution. If it rendered the same, then why should I use the more complicated example that takes 10x longer and breaks once you change browsers? This sparked many long religious debates in ##php, ##css, and ##js in Freenode IRC and actually got me banned from ##css because I messed with their little world over there. My question: Should I follow every single standard and coding conventions even if they take me 10x longer but get me the same result as the simple one?  For the poll tag, those of you who have websites of any size (huge or small), do you follow all the standards?  ",
         "TF-IDF scores": [
             {
@@ -6760,7 +6760,7 @@
         }
     },
     {
-        "ID:": "1533",
+        "ID": "1533",
         "Question": "If you're developer (Senior or Lead Developer) and you'd rather stay with code/design than pursue a management career, what are the available career paths at your company, or any you've heard of? How far can you go? Is it possible to continue being a geek until you bite the dust or is that too naive? Are people like Uncle Bob for example still considered developers, as they claim? ",
         "TF-IDF scores": [
             {
@@ -6808,7 +6808,7 @@
         }
     },
     {
-        "ID:": "1588",
+        "ID": "1588",
         "Question": "Use of desktops are decreasing day by day in daily life but for coding purpose are there any reasons for using desktop over laptop?  ",
         "TF-IDF scores": [
             {
@@ -6852,7 +6852,7 @@
         }
     },
     {
-        "ID:": "1620",
+        "ID": "1620",
         "Question": "I am excited about the changes in PHP 6 previewed in PHP 5.3+. However, I wonder why it takes so long to release PHP 6? Books about it have been published since 2008, and announcements on it since 2007, but I am yet to hear about an alpha or a beta. Why does it take so long to release it? Or is that the way it goes with all languages when they transition to a major release where I guess it takes around 4-5 years to release? ",
         "TF-IDF scores": [
             {
@@ -6902,7 +6902,7 @@
         }
     },
     {
-        "ID:": "1674",
+        "ID": "1674",
         "Question": "i wonder apart from those very simple hello world apps, what other programs should i try developing for learning. i am entering uni next year and wonder what kind of programs will be developed in that environment.  this is not really a language specific thing, but if you want to know what i use currently mainly  windows: C#/WPF - i studied java/vb etc in poly but i think C# is the way to go, maybe even F# web: PHP/MySQL, Zend Framework/Doctrine, + HTML/CSS/JS(jQuery) of course. looking to try google app engine with python too.   for now, i am thinking of   todo lists apps that integrate with api eg. twitter/tumblr which i use text editor - i am currently trying to develop a text editor that uses markdown and generates html files for viewing (link to blog entry). not very pratical after i started developing it. cos when editing theres no formatting and in HTML format, i cannot edit directly  blog software (for web)  ",
         "TF-IDF scores": [
             {
@@ -6980,7 +6980,7 @@
         }
     },
     {
-        "ID:": "1701",
+        "ID": "1701",
         "Question": "I am currently reading the recently published Being Geek by Michael \"Rands\" Lopp and I can't get enough of it.  Is there any other career guidance books aimed directly or indirectly at programmers that are worth reading? ",
         "TF-IDF scores": [
             {
@@ -7027,7 +7027,7 @@
         }
     },
     {
-        "ID:": "1719",
+        "ID": "1719",
         "Question": "In chapter one of \"The Pragmatic Programmer\" the first learning goal is:  Learn at least one new language every year. Different languages solve the same problems in different ways. By learning several different approaches, you can help broaden your thinking and avoid getter struck in a rut. [...]  To achieve this over a career, the list of languages is likely to get quite long (particularly if you do not want to \"progress\" into management). Clearly the education of a programmer (or whatever form) is going to get you started with a core of commercially useful languages (the usual list from job posting: C, C++, Ruby, Python, JavaScript, C#, Java, VB, ...). Additionally a formal or informal learning programme is likely to have covered functional approaches (via something like Haskell, LISP or an ML derived language) But once a reasonable subset of that list is learned- what's next, and why? ",
         "TF-IDF scores": [
             {
@@ -7105,7 +7105,7 @@
         }
     },
     {
-        "ID:": "1745",
+        "ID": "1745",
         "Question": "To put it another way... What is the most commonly held and frustrating misunderstanding about programming, you have encountered? Which widespread and longstanding myths/misconceptions do you find hard for programmers to dispel/correct. Please, explain why this is a myth. ",
         "TF-IDF scores": [
             {
@@ -7138,7 +7138,7 @@
         }
     },
     {
-        "ID:": "1750",
+        "ID": "1750",
         "Question": "I work for a company that supports several languages: COBOL, VB6, C#, and Java. I use those languages for my primary work, but I often find myself coding some minor programs (e.g. scripts) in Python because I find it to be the best tool for that type of task. For example: an analyst gives me a complex CSV file to populate some DB tables, so I use Python to parse it and create a DB script. What's the problem? The main problem I see is that a few parts of these quick and dirty scripts are slowly gaining importance and:  My company does not support Python They're not version controlled (I back them up in another way) My coworkers do not know Python  The analysts have even started to reference them in emails (\"launch the script that exports...\"), so they are needed more often than I initially thought. I should add that these scripts are just utilities that are not part of the main project; they simply help to get trivial tasks done in less time. For my own small tasks they help a lot. In short, if I were a lottery winner to be in a accident, my coworkers would need to keep the project alive without those scripts; they would spend more time fixing CSV errors by hand, for example. Is this a common scenario? Am I doing something wrong? What should I do? ",
         "TF-IDF scores": [
             {
@@ -7238,7 +7238,7 @@
         }
     },
     {
-        "ID:": "1752",
+        "ID": "1752",
         "Question": "In fact this question is about cautions to be taken to enhance quality user experience and reduce avoidable support calls. ",
         "TF-IDF scores": [
             {
@@ -7318,7 +7318,7 @@
         }
     },
     {
-        "ID:": "1785",
+        "ID": "1785",
         "Question": "Please, stay on technical issues, avoid behavior, cultural, career or political issues. ",
         "TF-IDF scores": [
             {
@@ -7401,7 +7401,7 @@
         }
     },
     {
-        "ID:": "1849",
+        "ID": "1849",
         "Question": "If you've always loved unit testing, good for you! But for the unfortunate ones who weren't born with a liking for it, how have you managed to make this task more enjoyable ?  This is not a \"what is the right way to unit test\" question. I simply want to know little personal tricks that reduce the boredom (dare I say) of writing unit tests. ",
         "TF-IDF scores": [
             {
@@ -7468,7 +7468,7 @@
         }
     },
     {
-        "ID:": "1877",
+        "ID": "1877",
         "Question": "As an example, say there's an interface that contains a table/grid of information that is periodically updated.  The table is meant to represent an event that has happened, perhaps the date and time of a stock price change. The actual frequency of these events could be dozens of events per second.  This is obviously too much information for a user to process/understand, so I'm trying to find out how much information a user COULD process in a given amount of time so that we can throttle the data and come up with an alternate display. I know some studies have been done on this, but I can't seem to find an authoritative source. ",
         "TF-IDF scores": [
             {
@@ -7546,7 +7546,7 @@
         }
     },
     {
-        "ID:": "1885",
+        "ID": "1885",
         "Question": "As programmers I think we are the most inclined to use new technologies and things that are not so mainstream. I absolutely love OpenId's ability to log in with credentials you already have, but I always use a provider that I already use and that is the fastest to log in, like google. God knows I'd never used it if i had to type in the whole \"https://www.google.com/accounts/o8/id\" I like to click on the google button and then just say yes (the first time, then its just clicking the button). Does any of you ever uses the Generic \"Enter your own provider\" OpenId? Do you think its worth to even offer it to more casual end users? ",
         "TF-IDF scores": [
             {
@@ -7594,7 +7594,7 @@
         }
     },
     {
-        "ID:": "1890",
+        "ID": "1890",
         "Question": "What is the best practice, most commonly accepted naming conventions for private variables in C#?  private int myInteger; private int MyInteger; private int mMyInteger; private int _myInteger; private int _MyInteger; Mysterious other option  Which do you use and why?  (My company is fairly new to C# and I would like to pick the most \"industry accepted\" method to try and get into our coding standard.) ",
         "TF-IDF scores": [
             {
@@ -7642,7 +7642,7 @@
         }
     },
     {
-        "ID:": "1947",
+        "ID": "1947",
         "Question": " Possible Duplicate: Really “wow” them in the interview   Let's say I appear for an interview. What questions could I expect and how do I prepare? ",
         "TF-IDF scores": [
             {
@@ -7716,7 +7716,7 @@
         }
     },
     {
-        "ID:": "1969",
+        "ID": "1969",
         "Question": "I'm posting this here since programmers write viruses, and AV software.  They also have the best knowledge of heuristics and how AV systems work (cloaking etc). The EICAR test file was used to functionally test an antivirus system.  As it stands today almost every AV system will flag EICAR as being a \"test\" virus.  For more information on this historic test virus please click here. Currently the EICAR test file is only good for testing the presence of an AV solution, but it doesn't check for engine file or DAT file up-to-dateness. In other words, why do a functional test of a system that could have definition files that are more than 10 years old.  With the increase of zero day threats it doesn't make much sense to functionally test your system using EICAR. That being said, I think EICAR needs to be updated/modified to be effective test that works in conjunction with an AV management solution. This question is about real world testing, without using live viruses... which is the intent of the original EICAR. That being said I'm proposing a new EICAR file format with the appendage of an XML blob that will conditionally cause the Antivirus engine to respond. X5O!P%@AP[4\\PZX54(P^)7CC)7}$EICAR-EXTENDED-ANTIVIRUS-TEST-FILE!$H+H* <?xml version=\"1.0\"?> <engine-valid-from>2010-1-1Z</engine-valid-from> <signature-valid-from>2010-1-1Z</signature-valid-from> <authkey>MyTestKeyHere</authkey>   In this sample, the antivirus engine would only alert on the EICAR file if both the signature  or engine file is equal to or newer than the valid-from date. Also there is a passcode that will protect the usage of EICAR to the system administrator. If you have a backgound in \"Test Driven Design\" TDD for software you may get that all I'm doing is applying the principals of TDD to my infrastructure.   Based on your experience and contacts how can I make this idea happen? ",
         "TF-IDF scores": [
             {
@@ -7814,7 +7814,7 @@
         }
     },
     {
-        "ID:": "1997",
+        "ID": "1997",
         "Question": "People make mistakes, even in the real life... Which should we, geeky programmers, avoid? ",
         "TF-IDF scores": [
             {
@@ -7845,7 +7845,7 @@
         }
     },
     {
-        "ID:": "2042",
+        "ID": "2042",
         "Question": "I've been working in the enterprise space for the past 4½ years and have noticed that generally speaking, enterprises are not conducive environments for the test-first style of development. Projects are usually fixed-cost, fixed-timeline and waterfall style. Any unit testing, if done at all, usually comes after development in the QA phase and done by another team. Prior to working for an enterprise, I consulted for many small to medium sized companies, and none of them were willing to pay for a test-first style of development project. They usually wanted development started immediately, or after a short design stint: i.e., something more akin to Agile, though some clients wanted everything mapped out similar to waterfall. With what types of shops, companies, and clients does test-driven development work best? What types of projects tend to be conducive to TDD? ",
         "TF-IDF scores": [
             {
@@ -7919,7 +7919,7 @@
         }
     },
     {
-        "ID:": "2051",
+        "ID": "2051",
         "Question": "See title, but I am asking from a technical perspective, not   Take my 40 year old virgin niece on a date or you're fired.  ",
         "TF-IDF scores": [
             {
@@ -7968,7 +7968,7 @@
         }
     },
     {
-        "ID:": "2086",
+        "ID": "2086",
         "Question": "When writing or using an algorithm, should the Big Oh complexity be mentioned? ",
         "TF-IDF scores": [
             {
@@ -8007,7 +8007,7 @@
         }
     },
     {
-        "ID:": "2164",
+        "ID": "2164",
         "Question": "So I'm sure everyone has run into this person at one point or another, someone catches wind of your project or idea and initially shows some interest. You get to talking about some of your methods and usually around this time they interject stating how you should use method X instead, or just use library Y. But not as a friendly suggestion, but bordering on a commandment. Often repeating the same advice over and over like a overzealous parrot. Personally, I like to reinvent the wheel when I'm learning, or even just for fun, even if it turns out worse than what's been done before. But this person apparently cannot fathom recreating ANY utility for such purposes, or possibly try something that doesn't strictly follow traditional OOP practices, and will settle for nothing except their sense of perfection, and thus naturally heave their criticism sludge down my ears full force. To top it off, they eventually start justifying their advice (retardation) by listing all the incredibly complex things they've coded single-handedly (usually along the lines of \"trust me, I've made/used program X for a long time, blah blah blah\"). Now, I'm far from being a programming master, I'm probably not even that good, and as such I value advice and critique, but I think advice/critique has a time and place. There is also a big difference between being helpful and being narcissistic. In the past I probably would have used a somewhat stronger George Carlin style dismissal, but I don't think burning bridges is the best approach anymore. Do you have any advice on how to deal with this kind of verbal flogging? ",
         "TF-IDF scores": [
             {
@@ -8097,7 +8097,7 @@
         }
     },
     {
-        "ID:": "2185",
+        "ID": "2185",
         "Question": "When should a project be released to alpha, beta and to the public? Is it a good idea to extend the alpha and beta phases when it is needed? When in a later phase (eg. beta), is it wise to go back to an early phase (eg. alpha) if it didn't work out? ",
         "TF-IDF scores": [
             {
@@ -8186,7 +8186,7 @@
         }
     },
     {
-        "ID:": "2192",
+        "ID": "2192",
         "Question": "What things tend to slow a developer down? Please try to refrain from posting answers that:  are slow now but useful in the feature. (TDD, Refactoring, ...) list a distraction.  ",
         "TF-IDF scores": [
             {
@@ -8240,7 +8240,7 @@
         }
     },
     {
-        "ID:": "2204",
+        "ID": "2204",
         "Question": "What steps and measures can I take to prevent deep indentations in my code? ",
         "TF-IDF scores": [
             {
@@ -8270,7 +8270,7 @@
         }
     },
     {
-        "ID:": "2226",
+        "ID": "2226",
         "Question": "In an earlier question, I asked for career advice for new software engineers who did well before and during college.  But what about people who weren't fortunate enough to go to MIT or Yale, for whatever reason?  What if you went to what Joel Spolsky calls a JavaSchool? What can/should JavaSchool alumni do to develop their skills and make up for the things they missed in college?  (Or, was Joel wrong about those schools being disadvantageous?) ",
         "TF-IDF scores": [
             {
@@ -8409,7 +8409,7 @@
         }
     },
     {
-        "ID:": "2247",
+        "ID": "2247",
         "Question": "How can I track that I'm developing software more or less productive than the previous days?  ",
         "TF-IDF scores": [
             {
@@ -8468,7 +8468,7 @@
         }
     },
     {
-        "ID:": "2252",
+        "ID": "2252",
         "Question": "I've been asked this in a few interviews. And it always catches me off guard.My professional and academic background are already in the resumé, which the interviewer has obviously looked at. What more to tell him/her? Should I start with my hobbies? I like gardening, or looking at NSFW pictures on reddit in my free time? What and how do you answer to this specific question? Do you have a prepared answer for it? Am I wrong if I think this question is a bit silly? UPDATE There have been a lot of great answers to this question. I'm in pickle which to choose as the 'correct' answer, because most of them are very insightful. I found a great writing on this subject matter. It's a bit crazy for my taste, but it's interesting: How To Introduce Yourself… I Mean Practically ",
         "TF-IDF scores": [
             {
@@ -8548,7 +8548,7 @@
         }
     },
     {
-        "ID:": "2259",
+        "ID": "2259",
         "Question": "Sometimes, one creates a exploratory prototype and forgets about structure in the directories... What are good tips on dividing the programming files over (several levels of) directories? ",
         "TF-IDF scores": [
             {
@@ -8592,7 +8592,7 @@
         }
     },
     {
-        "ID:": "2329",
+        "ID": "2329",
         "Question": "Google sometimes come up with irrelevant links, not everything is available on SO, there are cases where the local documentation is also annoying to look through... Are there other efficient ways you use to search? ",
         "TF-IDF scores": [
             {
@@ -8644,7 +8644,7 @@
         }
     },
     {
-        "ID:": "2331",
+        "ID": "2331",
         "Question": "Please, explain why and list which languages have the (mis)feature implemented As far you know. Post what you consider a harmful feature, not what you dislike. ",
         "TF-IDF scores": [
             {
@@ -8702,7 +8702,7 @@
         }
     },
     {
-        "ID:": "2410",
+        "ID": "2410",
         "Question": "I am referring to explaining to the non-programmer what programming is. I made sure to search for similar questions before creating this one, but the few ones I did find seemed to dodge the question, and I specifically would like to see some metaphors or analogies. I personally find it easier to explain something technical to someone through the use of metaphors or analogies. The reason I'm interested in this is because many people encounter the work of a programmer on a daily basis, but if you ask the average person what a programmer is or does, they don't really know. This leads to certain situations of misunderstanding (ex. \"[...] but I thought you were good with computers!\") I really would like to find the best one out there. I would like to be able to easily explain to someone what my career choice is about. Of course, at least the general idea. I personally don't have a solid one, but I have long thought about it and I have usually gravitated towards the 'language' metaphor, where we happen to know a language that computers understand, and therefore we are able to tell computers what to do, or \"teach\" them, to solve our problems. For example:  Imagine that in an alternate reality, humanoid robots with artificial intelligence exist, and some people are able to communicate with them through a common language, which is a variation of English. These people who can communicate with the robots are able to teach them how to solve certain problems or do certain tasks, like doing our chores. Well, although robots like that don't exist yet, programmers of our time are like those people, but instead of communicating with the robots, they communicate with computers. Programmers \"teach\" the computers how to perform certain tasks or solve certain problems by means of software which they create by using this \"common language\". Programmers and this \"common language\" are what give us things like email, websites, video games, word processors, smart phones (to put it simply), and many other things which we use on a daily basis.  I don't mean to put programming on the throne or anything, it's just the best metaphor I could come up with. I'm sure someone will find some issue with this one, it's probably a bit contrived, but then again that's why I'm asking this question. ",
         "TF-IDF scores": [
             {
@@ -8797,7 +8797,7 @@
         }
     },
     {
-        "ID:": "2497",
+        "ID": "2497",
         "Question": "How useful are infix operators in a programming language? Are they worth the extra complexity they provide? Can you provide any examples where infix operators are better suited to the problem that can't be handled by just overloading the normal operators? ",
         "TF-IDF scores": [
             {
@@ -8838,7 +8838,7 @@
         }
     },
     {
-        "ID:": "2654",
+        "ID": "2654",
         "Question": "In response to This Question, I ask:   What are the best parts of your coding standard? What are the best practices that help with code quality, reliability, maintainability, readability, etc. Please include the language, the item from the standard, and the reason it improves your code. ",
         "TF-IDF scores": [
             {
@@ -8873,7 +8873,7 @@
         }
     },
     {
-        "ID:": "2682",
+        "ID": "2682",
         "Question": "We’re working on a .Net framework which ultimately amounts to a single DLL.  We intend to charge for commercial use of the framework, but make it free for open source/non-commercial use.  The rough plan at the moment is to administer this through some form of fairly simple licence which will be issued whether you’re using it for free or paying. We’re debating whether to make the source code available.  It’s our perception (and our own preference) that it’s far more appealing to use something where you have access to the source code. I’m interested in whether people think making the source code available will damage our ability to make money from the framework, or whether it will encourage more usage and enough “good” people will arrange to pay for the correct licence if using it commercially. My feeling is that, generally, commercial operations don’t mess about on the licencing front and so making the source code available will only encourage usage and therefore ultimately generate more revenue, but I’d be interested in others views/experience. ",
         "TF-IDF scores": [
             {
@@ -8978,7 +8978,7 @@
         }
     },
     {
-        "ID:": "2699",
+        "ID": "2699",
         "Question": "This is a \"Share the Knowledge\" question. I am interested in learning from your successes and/or failures. Information that might be helpful... Background:  Context: Language, Application, Environment, etc. How was the bug identified ? Who or what identified the bug ? How complex was reproducing the bug ?   The Hunting.  What was your plan  ? What difficulties did you encounter ? How was the offending code finally found ?  The Killing.  How complex was the fix ? How did you determine the scope of the fix ? How much code was involved in the fix ?  Postmortem.  What was the root cause technically ? buffer overrun, etc. What was the root cause from 30,000 ft ? How long did the process ultimately take ? Were there any features adversely effected by the fix ? What methods, tools, motivations did you find particularly helpful ? ...horribly useless ? If you could do it all again ?............  These examples are general, not applicable in every situation and possibly useless. Please season as needed. ",
         "TF-IDF scores": [
             {
@@ -9110,7 +9110,7 @@
         }
     },
     {
-        "ID:": "2700",
+        "ID": "2700",
         "Question": "I have had a few that I am proud of and some of them were written by myself few years ago. It doesn't have to be necessarily buggy, just bad code.  ",
         "TF-IDF scores": [
             {
@@ -9160,7 +9160,7 @@
         }
     },
     {
-        "ID:": "2715",
+        "ID": "2715",
         "Question": "Should curly braces be on their own line or not? What do you think about it? if (you.hasAnswer()) {     you.postAnswer(); } else {     you.doSomething(); }  or should it be if (you.hasAnswer()) {     you.postAnswer(); } else {     you.doSomething(); }  or even if (you.hasAnswer())     you.postAnswer(); else     you.doSomething();  Please be constructive! Explain why, share experiences, back it up with facts and references. ",
         "TF-IDF scores": [
             {
@@ -9262,7 +9262,7 @@
         }
     },
     {
-        "ID:": "2756",
+        "ID": "2756",
         "Question": "Coding standards are common in any software development organization, but how important are they to follow?  I can understand the need for some consistency, but when dealing with simple things like the position of braces, line length, etc., I'm not sure excessively strict standards contribute much to software development. Isn't it more important that your code is readable, not that it conforms to a predefined standard?  It seems they're more like... guidelines anyway. ",
         "TF-IDF scores": [
             {
@@ -9339,7 +9339,7 @@
         }
     },
     {
-        "ID:": "2776",
+        "ID": "2776",
         "Question": "The Joel Test is a well known test for determining how good your team is. What do you think about the points? Do you disagree with any of them? Is there anything that you would add? ",
         "TF-IDF scores": [
             {
@@ -9389,7 +9389,7 @@
         }
     },
     {
-        "ID:": "2777",
+        "ID": "2777",
         "Question": "I have heard a lot of people mention Code Complete as a book worthwhile reading. Unfortunately, I am so busy that I don't have time to read it, so can anyone tell me what the key points of the book are? ",
         "TF-IDF scores": [
             {
@@ -9445,7 +9445,7 @@
         }
     },
     {
-        "ID:": "2806",
+        "ID": "2806",
         "Question": "There's around a zillion \"PHP frameworks\". And most of them bill themselves as following the MVC pattern. While it's welcome to overcome osCommerce coding style (processing logic heavily intermixed with SQL and HTML), there are certainly simpler and easier to follow approaches to get a maintainable application design. The original MVC concept was targetted at GUI applications. And for Gtk/Python it seems feasible to follow it accordingly. But PHP web apps don't operate on live Views (GUI elements) and a persistent Controller runtime. It's quite certainly a misnomer if it just describes the used code + directory grouping or class naming. \"MVC\" seems to be used like a buzzword for PHP frameworks. And I've actually seen one or two mature PHP frameworks admit it, but redefining the phrase anyway to match interna. So is it generally snake oil? Why isn't better terminology used, and a more sensible concept for maintainable PHP propagated? Some elaborative reasoning Why I suspect that PHP implementations don't follow the real MVC pattern: Models: in theory, Models should be fat and contain business logic, and controllers should be thin handlers (input->output). In reality the PHP frameworks advocate shallow Models. CI and Symfony for example equate Model == ORM. Even HTTP input is handled by the controller, isn't treated as model. Views: workarounds with AJAX discounted, there can't be Views on web pages. PHP frameworks still pump out pages. The interface still effectively follows the ordinary HTTP model, there's no advantage over non-MVC applications. (And lastly, none of the widespread php frameworks can factually output to GUI Views instead of HTML. I've seen a PHP library that can operate Gtk/Console/Web, but the frameworks don't.) Controller: I'm unsure. Controllers probably don't need to be long-running and persistently active in the MVC model. In PHP framework context, they're however mostly request handlers. Not really something to get argumentative about, but it just feels slightly buzzwordish. Would there be better descriptors? I've seen acronyms like PMVC or HMVC thrown around. Though descriptions get more ambigous there, maybe these would describe the current web frameworks less hokey? ",
         "TF-IDF scores": [
             {
@@ -9567,7 +9567,7 @@
         }
     },
     {
-        "ID:": "2829",
+        "ID": "2829",
         "Question": "I originally thought of creative commons when while reading a book about wordpress (professional wordpress), I learned that I should also specify that the product is provided   ... WITHOUT ANY WARRANTY; without even the   implied warranty of MERCHANTABILITY or   FITNESS FOR A PARTICULAR PURPOSE  and they recommend GNU GPL.  How do I write a license or select 1? btw, what does MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE mean actually? Isn't without warranty enough?  ",
         "TF-IDF scores": [
             {

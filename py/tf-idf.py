@@ -92,7 +92,7 @@ def generate_tfidf(df_tfidf):
     questions_list= []
     for i, (qid, question, _raw_body) in enumerate(answered_questions):
         question_dict= {
-            "ID:":qid,
+            "ID":qid,
             "Question": question.replace("\n", " "),
             "TF-IDF scores": []
         }
@@ -186,7 +186,7 @@ def generate_short_q(limit_char=700):
         best_answer = best_answers[qid][0]
         if len(question) < limit_char:
             question_dict = {
-                "ID:": qid,
+                "ID": qid,
                 "Question": question.replace("\n"," "),
                 "Best Answer": best_answer.replace("\n"," "),
             }
