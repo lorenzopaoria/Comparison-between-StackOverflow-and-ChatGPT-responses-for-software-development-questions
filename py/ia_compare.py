@@ -51,15 +51,21 @@ def openai_a(file_path, answer):
         json.dump(output_json, f, indent=4)
 
 def main():
-    file_path = 'q_without_a/q_without_a.json'
     api_key = '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'
 
-    openai_answer = get_openai_a(file_path, api_key)
+    file_path_q_without_a = 'q_without_a/q_without_a.json'
+    openai_answer = get_openai_a(file_path_q_without_a, api_key)
     
     #Answer for questions without answer by chatGpt
-    openai_a(file_path, openai_answer)
+    openai_a(file_path_q_without_a, openai_answer)
+
+    #Answer for questions shorter than limitchat
+
+
+    #ChatGpt answer for question with codes
+    # per ogni domanda di stack presente su  a_with_codes ricavare la risposta di chatgpt e vedere se compila quella di chatgpt e quella di stackoverflow e chiedere a chatgpt se sono similari
     
-    print(f"Risposte scritte per le domande senza risposte in:{file_path}")
+    print(f"Risposte scritte per le domande senza risposte in:{file_path_q_without_a}")
 
 if __name__ == '__main__':
     main()
