@@ -10,7 +10,7 @@ client = OpenAI(
 )
 
 # pass to chatGpt the question for receive the answer
-def openai_a(question):
+def ai_answer(question):
     try:
         chat_completion = client.chat.completions.create(
             messages=[{ "role": "user", "content": question }],
@@ -23,6 +23,7 @@ def openai_a(question):
     except Exception as e:
         raise Exception(f"Error in getting OpenAI response: {e}")
 
+# write the question and the answers into a json
 def write_on_json(file_path, questions_and_answers):
     base, ext = os.path.splitext(file_path)  # for creating a new JSON file
     output_file_path = f"{base}_openai_answer{ext}"
@@ -30,7 +31,13 @@ def write_on_json(file_path, questions_and_answers):
     with open(output_file_path, 'w', encoding='utf-8') as f:
         json.dump(questions_and_answers, f, indent=4)
 
-def process_questions(file_path, limit=None):
+
+def compare_answers(chatgpt_answer, best_answer):
+    comparison_question = f"Are the following two answers equivalent?, say yes or no.\nAnswer 1: {chatgpt_answer}\nAnswer 2: {best_answer}"
+    comparison_response = ai_answer(comparison_question)
+    return comparison_response
+
+def process_questions(file_path, limit=None, comparison= False):
     with open(file_path, 'r', encoding='utf-8') as f:
         input_json = json.load(f)
 
@@ -45,13 +52,17 @@ def process_questions(file_path, limit=None):
             question_id = item.get('ID', 'unknown')
             question_text = item['Question']
             
-            answer = openai_a(question_text)
+            answer = ai_answer(question_text)
             best_answer = item.get('Best Answer', None)
             
             output_json = {"ID": question_id, "Question": question_text, "ChatGpt answer": answer.replace("\n", " ")}
             
             if best_answer is not None:
                 output_json["Stack Overflow best answer"] = best_answer
+
+                if comparison:
+                    comparison_result = compare_answers(answer, best_answer)
+                    output_json["Are the two answers equivalent?"] = comparison_result
             
             questions_and_answers.append(output_json)
 
@@ -60,19 +71,19 @@ def process_questions(file_path, limit=None):
 def main():
     file_path_q_without_a = 'q_without_a/q_without_a.json'
     file_path_short_q= 'q_shorter_than/short_q.json'
+    file_path_a_with_code= 'a_with_codes/a_with_codes.json'
     
     # Answer by chatGpt for questions without answer
-    process_questions(file_path_q_without_a, limit=5)
-
+    process_questions(file_path_q_without_a, limit=5, comparison= False)
     #ChatGpt answer for question with codes
-    # per ogni domanda di stack presente su  a_with_codes ricavare la risposta di chatgpt e vedere se compila quella di chatgpt e quella di stackoverflow e chiedere a chatgpt se sono similari
-
+    process_questions(file_path_a_with_code, limit= 5, comparison= True)
     # Answer for short question by chatGpt
-    # inoltre chiedere a chatGpt se le due risposte sono similiari
-    process_questions(file_path_short_q, limit=5)
+    process_questions(file_path_short_q, limit=5, comparison= True)
 
-    print(f"Risposte scritte per le domande senza risposte in: {file_path_q_without_a}")
-    print(f"Risposte scritte per le domande sotto i 700 caratteri: {file_path_q_without_a}")
+    print(f"Risposte scritte per le domande senza risposte in json")
+    print(f"Risposte scritte per le domande sotto i 700 caratteri e scritte equivalenze in json")
+    print(f"Risposte scritte per le risposte col codice e scritte equivalenze in json")
+
 
 
 if __name__ == '__main__':
