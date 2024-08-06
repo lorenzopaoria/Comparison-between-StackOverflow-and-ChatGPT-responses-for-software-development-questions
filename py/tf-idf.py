@@ -13,6 +13,7 @@ file_path = 'stackOverflowDump/Posts.xml'
 QUESTION = '1' # 1=Question, 2=Answer
 ANSWER = '2'
 
+# use for extract the post from xml
 def extract_posts(file_path, limit=None):
     questions = []
     best_answers = {}
@@ -45,6 +46,7 @@ def extract_posts(file_path, limit=None):
 
     return questions, best_answers, unanswered_questions
 
+# verify witch answers contains code
 def contains_code(_text, raw_body):
     soup=BeautifulSoup(raw_body, 'html.parser')
     code_tags=soup.find_all(['code', 'pre']) #tag html for codes
