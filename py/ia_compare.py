@@ -9,7 +9,7 @@ client = OpenAI(
     api_key=os.environ.get("OPENAI_API_KEY"),
 )
 
-#used for questions without answer
+# pass to chatGpt the question for receive the answer
 def openai_a(question):
     try:
         chat_completion = client.chat.completions.create(
