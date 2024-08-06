@@ -9,7 +9,7 @@ client = OpenAI(
     api_key=os.environ.get("OPENAI_API_KEY"),
 )
 
-#used for questions without answer
+# pass to chatGpt the question for receive the answer
 def openai_a(question):
     try:
         chat_completion = client.chat.completions.create(
@@ -61,13 +61,14 @@ def main():
     file_path_q_without_a = 'q_without_a/q_without_a.json'
     file_path_short_q= 'q_shorter_than/short_q.json'
     
-    # Answer for questions without answer by chatGpt
+    # Answer by chatGpt for questions without answer
     process_questions(file_path_q_without_a, limit=5)
 
     #ChatGpt answer for question with codes
     # per ogni domanda di stack presente su  a_with_codes ricavare la risposta di chatgpt e vedere se compila quella di chatgpt e quella di stackoverflow e chiedere a chatgpt se sono similari
 
     # Answer for short question by chatGpt
+    # inoltre chiedere a chatGpt se le due risposte sono similiari
     process_questions(file_path_short_q, limit=5)
 
     print(f"Risposte scritte per le domande senza risposte in: {file_path_q_without_a}")
