@@ -23,7 +23,7 @@ def ai_answer(question):
     except Exception as e:
         raise Exception(f"Error in getting OpenAI response: {e}")
 
-# write the question and the answers into a json
+# create a json with custom name
 def write_on_json(file_path, questions_and_answers):
     base, ext = os.path.splitext(file_path)  # for creating a new JSON file
     output_file_path = f"{base}_openai_answer{ext}"
@@ -31,19 +31,20 @@ def write_on_json(file_path, questions_and_answers):
     with open(output_file_path, 'w', encoding='utf-8') as f:
         json.dump(questions_and_answers, f, indent=4)
 
-
+# ask to chatGpt if the two answers are equivalent
 def compare_answers(chatgpt_answer, best_answer):
     comparison_question = f"Are the following two answers equivalent?, say yes or no.\nAnswer 1: {chatgpt_answer}\nAnswer 2: {best_answer}"
     comparison_response = ai_answer(comparison_question)
     return comparison_response
 
+# read the input json for setting the output json
 def process_questions(file_path, limit=None, comparison= False):
     with open(file_path, 'r', encoding='utf-8') as f:
         input_json = json.load(f)
 
     questions_and_answers = []
 
-    num_limit_questions=min(limit if limit is not None else len(input_json), len(input_json))
+    num_limit_questions=min(limit if limit is not None else len(input_json), len(input_json))# for fast result
 
     for i, item in enumerate(input_json):
         if i >= num_limit_questions: break
@@ -83,8 +84,6 @@ def main():
     print(f"Risposte scritte per le domande senza risposte in json")
     print(f"Risposte scritte per le domande sotto i 700 caratteri e scritte equivalenze in json")
     print(f"Risposte scritte per le risposte col codice e scritte equivalenze in json")
-
-
 
 if __name__ == '__main__':
     main()
