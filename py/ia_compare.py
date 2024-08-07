@@ -37,6 +37,7 @@ def compare_answers(chatgpt_answer, best_answer):
     return comparison_response
 
 #ask to chatGpt if the code provided in question and answer compile
+#strutturare la risposta per il compiling in modo tale da semplificare il lavoro per l'analisi dei risultati
 def code_compiling(question, chatgpt_answer, best_answer):
     compile_question = f"Say if there is code or not in: question and in the two answers, and say if the code compile or not for the question and for the two answers.\nQuestion: {question}\nAnswer 1: {chatgpt_answer}\nAnswer 2: {best_answer}, outline: Question - code: yes/no, compile: yes/no, Answer 1 - code: yes/no, compile: yes/no, Answer 2 - code: yes/no, compile: yes/no"
     compile_response = ai_answer(compile_question)
