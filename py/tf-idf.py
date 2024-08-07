@@ -190,7 +190,7 @@ def generate_short_q(limit_char=700):
             question_dict = {
                 "ID": qid,
                 "Question": question.replace("\n"," "),
-                "Best Answer": best_answer.replace("\n"," "),
+                "Best answer": best_answer.replace("\n"," "),
             }
             question_list.append(question_dict)
     return question_list
@@ -200,11 +200,11 @@ def generate_a_with_code():
     for _i, (qid, question, raw_body) in enumerate(answered_questions):
         best_answer = best_answers[qid][0]
         raw_answer_body = best_answers[qid][2]
-        if contains_code(best_answer, raw_answer_body):
+        if contains_code(best_answer, raw_answer_body) or contains_code(question, raw_body):
             question_dict = {
                 "ID": qid,
                 "Question": question.replace("\n", " "),
-                "Best Answer": best_answer.replace("\n", " ")
+                "Best answer": best_answer.replace("\n", " ")
             }
             questions_list.append(question_dict)
     return questions_list
@@ -225,7 +225,7 @@ def main():
     write_to_json('q_shorter_than/short_q.json', generate_short_q)
 
     # Questions and Answers with Code
-    write_to_json('a_with_codes/a_with_codes.json', generate_a_with_code)
+    write_to_json('qa_with_codes/qa_with_codes.json', generate_a_with_code)
 
     #Questions with keywords in tf_idf terms
     generate_files_for_keywords(df_tfidf, keywords)
