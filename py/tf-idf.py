@@ -14,12 +14,12 @@ QUESTION = '1' # 1=Question, 2=Answer
 ANSWER = '2'
 
 # use for extract the post from xml
-def extract_posts(file_path, limit=None):
+def extract_posts(file_path, limit= None):
     questions = []
     best_answers = {}
     unanswered_questions = []
     with open(file_path, 'rb') as f:
-        context = etree.iterparse(f, events=('end',), tag='row')
+        context = etree.iterparse(f, events= ('end',), tag='row')
         for i, (_event, elem) in enumerate(context):
             post_id = elem.get('Id') #is not a progressive number for question
             post_type = elem.get('PostTypeId')  
@@ -48,8 +48,8 @@ def extract_posts(file_path, limit=None):
 
 # verify witch answers contains code
 def contains_code(_text, raw_body):
-    soup=BeautifulSoup(raw_body, 'html.parser')
-    code_tags=soup.find_all(['code', 'pre']) #tag html for codes
+    soup = BeautifulSoup(raw_body, 'html.parser')
+    code_tags = soup.find_all(['code', 'pre']) #tag html for codes
     return bool(code_tags) #if the list is full the bool return 1
 
 def added_stopwords_func():
@@ -69,31 +69,31 @@ def added_stopwords_func():
     
     return added_stopwords
 
-questions, best_answers, unanswered_questions = extract_posts(file_path, limit=1000) 
+questions, best_answers, unanswered_questions = extract_posts(file_path, limit= 1000) 
 
 answered_questions = [(qid, question, raw_body) for qid, question, raw_body in questions if qid in best_answers] #creation of a list with associate answer
 
 posts = [q[1] for q in answered_questions] + [best_answers[qid][0] for qid in best_answers] #creation of a list which have in q[1] the cleaned body of the answered_question and in [qid][0] the best answer with cleaned body
 
-def create_tfidf_matrix(posts, stopwords_list, max_df=0.8, min_df=3):
-    vectorizer = TfidfVectorizer(max_df=max_df, min_df=min_df, stop_words=stopwords_list)
+def create_tfidf_matrix(posts, stopwords_list, max_df= 0.8, min_df= 3):
+    vectorizer = TfidfVectorizer(max_df= max_df, min_df= min_df, stop_words= stopwords_list)
 
     tfidf_matrix = vectorizer.fit_transform(posts)
     feature_names = vectorizer.get_feature_names_out()
     dense_tfidf_matrix = tfidf_matrix.todense()
-    df_tfidf = pd.DataFrame(dense_tfidf_matrix, columns=feature_names)
+    df_tfidf = pd.DataFrame(dense_tfidf_matrix, columns= feature_names)
     
     return df_tfidf
 
 def write_to_json(file_path, genetate_func, *args):
-    data=  genetate_func(*args)
+    data =  genetate_func(*args)
     with open(file_path, 'w', encoding= 'utf-8') as f:
         json.dump(data, f, ensure_ascii= False, indent= 4)
 
 def generate_tfidf(df_tfidf):
-    questions_list= []
+    questions_list = []
     for i, (qid, question, _raw_body) in enumerate(answered_questions):
-        question_dict= {
+        question_dict = {
             "ID":qid,
             "Question": question.replace("\n", " "),
             "TF-IDF scores": []
@@ -182,8 +182,8 @@ def generate_unanswered_q():
         questions_list.append(question_dict)
     return questions_list
 
-def generate_short_q(limit_char=700):
-    question_list=[]
+def generate_short_q(limit_char= 700):
+    question_list = []
     for qid, question, _raw_body in answered_questions:
         best_answer = best_answers[qid][0]
         if len(question) < limit_char:
@@ -211,7 +211,7 @@ def generate_a_with_code():
 
 def main():
 
-    stopwords_list=added_stopwords_func()
+    stopwords_list = added_stopwords_func()
     df_tfidf = create_tfidf_matrix(posts, stopwords_list)
     keywords = ["python", "C++", "java", "php", "html", "sql", "css", "programming"]
 

@@ -6,15 +6,15 @@ api_key = 'sk-proj-lZCjW3biIUj6Kx3FHuVtsC2F1GJBu3jDVZLYsnwLhUccKbEsMJqpO4hxMqIjw
 os.environ['OPENAI_API_KEY'] = api_key
 
 client = OpenAI(
-    api_key=os.environ.get("OPENAI_API_KEY"),
+    api_key = os.environ.get("OPENAI_API_KEY"),
 )
 
 # pass to chatGpt the question for receive the answer
 def ai_answer(question):
     try:
         chat_completion = client.chat.completions.create(
-            messages=[{ "role": "user", "content": question }],
-            model="gpt-3.5-turbo",
+            messages =[{ "role": "user", "content": question }],
+            model ="gpt-3.5-turbo",
         )
         answer_text = chat_completion.choices[0].message.content.strip()
         return answer_text
@@ -28,7 +28,7 @@ def write_on_json(file_path, questions_and_answers):
     output_file_path = f"{base}_openai_answer{ext}"
     
     with open(output_file_path, 'w', encoding='utf-8') as f:
-        json.dump(questions_and_answers, f, indent=4)
+        json.dump(questions_and_answers, f, indent= 4)
 
 # ask to chatGpt if the two answers are equivalent
 def compare_answers(chatgpt_answer, best_answer):
@@ -36,10 +36,15 @@ def compare_answers(chatgpt_answer, best_answer):
     comparison_response = ai_answer(comparison_question)
     return comparison_response
 
-#ask to chatGpt if the code provided in question and answer compile
-#strutturare la risposta per il compiling in modo tale da semplificare il lavoro per l'analisi dei risultati
+# ask to chatGpt if the code provided in question and answer compile
 def code_compiling(question, chatgpt_answer, best_answer):
-    compile_question = f"Say if there is code or not in: question and in the two answers, and say if the code compile or not for the question and for the two answers.\nQuestion: {question}\nAnswer 1: {chatgpt_answer}\nAnswer 2: {best_answer}, outline: Question - code: yes/no, compile: yes/no, Answer 1 - code: yes/no, compile: yes/no, Answer 2 - code: yes/no, compile: yes/no"
+    compile_question = (
+        f"Say if there is code or not in: question and in the two answers, and say if the code compiles or not for the question and for the two answers. "
+        f"Output format should be 'Question: code: yes/no, compile: yes/no; "
+        f"Answer StackOverflow: code: yes/no, compile: yes/no; "
+        f"Answer ChatGpt: code: yes/no, compile: yes/no'."
+        f"\nQuestion: {question}\nAnswer StackOverflow: {best_answer}\nAnswer ChatGpt: {chatgpt_answer}"
+    )
     compile_response = ai_answer(compile_question)
     return compile_response
 
@@ -50,7 +55,7 @@ def process_questions(file_path, limit= None, comparison= False, code_comp= Fals
 
     questions_and_answers = []
 
-    num_limit_questions=min(limit if limit is not None else len(input_json), len(input_json))# for fast result
+    num_limit_questions = min(limit if limit is not None else len(input_json), len(input_json))# for fast result
 
     for i, item in enumerate(input_json):
         if i >= num_limit_questions: break
@@ -72,8 +77,28 @@ def process_questions(file_path, limit= None, comparison= False, code_comp= Fals
                     output_json["Are the two answers equivalent?"] = comparison_result.replace("\n", " ")
 
                 if code_comp:
-                    code_comp_result =  code_compiling(question_text, answer, best_answer)
-                    output_json["Are the code in the Question and in the Answers compile code?"] = code_comp_result.replace("\n", " ")
+                    code_comp_result = code_compiling(question_text, answer, best_answer)
+                    result_parts = code_comp_result.split(',')
+                    code_compile_info = {
+                        "Question": {"code": "no", "compile": "no"},
+                        "Answer StackOverflow": {"code": "no", "compile": "no"},
+                        "Answer ChatGpt": {"code": "no", "compile": "no"},
+                    }# vocabulary
+
+                    result_parts = code_comp_result.split(';')
+                    for part in result_parts:
+                        if ':' in part:
+                            key, values = part.split(':', 1)
+                            key = key.strip()
+                            sub_results = values.split(',')
+                            for sub_result in sub_results:
+                                if ':' in sub_result:
+                                    sub_key, sub_value = sub_result.split(':', 1)
+                                    sub_key = sub_key.strip()
+                                    sub_value = sub_value.strip()
+                                    code_compile_info[key][sub_key] = sub_value
+
+                    output_json["Code and Compile Information"] = code_compile_info
             
             questions_and_answers.append(output_json)
 
@@ -87,9 +112,9 @@ def process_questions_in_directory(directory_path, limit= None, comparison= Fals
 
 def main():
     file_path_q_without_a = 'q_without_a/q_without_a.json'
-    file_path_short_q= 'q_shorter_than/short_q.json'
-    file_path_a_with_code= 'qa_with_codes/qa_with_codes.json'
-    directory_path_q_tfidf_terms= 'q_for_tfidf_term/'
+    file_path_short_q = 'q_shorter_than/short_q.json'
+    file_path_a_with_code = 'qa_with_codes/qa_with_codes.json'
+    directory_path_q_tfidf_terms = 'q_for_tfidf_term/'
     
     # Answer by chatGpt for questions without answer
     process_questions(file_path_q_without_a, limit=5, comparison= False, code_comp= False)
