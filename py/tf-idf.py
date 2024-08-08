@@ -10,11 +10,10 @@ from nltk.corpus import stopwords #stopwords
 
 file_path = 'stackOverflowDump/Posts.xml'
 
-QUESTION = '1' # 1=Question, 2=Answer
-ANSWER = '2'
-
 # use for extract the post from xml
 def extract_posts(file_path, limit= None):
+    QUESTION = '1' # 1=Question, 2=Answer
+    ANSWER = '2'
     questions = []
     best_answers = {}
     unanswered_questions = []
@@ -182,17 +181,26 @@ def generate_unanswered_q():
         questions_list.append(question_dict)
     return questions_list
 
-def generate_short_q(limit_char= 700):
+def generate_short_longer_q(limit_char, threshold= False):
     question_list = []
     for qid, question, _raw_body in answered_questions:
         best_answer = best_answers[qid][0]
-        if len(question) < limit_char:
-            question_dict = {
-                "ID": qid,
-                "Question": question.replace("\n"," "),
-                "Best answer": best_answer.replace("\n"," "),
-            }
-            question_list.append(question_dict)
+        if threshold: # True do longer than
+            if len(question) > limit_char:
+                question_dict = {
+                    "ID": qid,
+                    "Question": question.replace("\n"," "),
+                    "Best answer": best_answer.replace("\n"," "),
+                }
+                question_list.append(question_dict)
+        else: # False do shorter than
+            if len(question) < limit_char:
+                question_dict = {
+                    "ID": qid,
+                    "Question": question.replace("\n"," "),
+                    "Best answer": best_answer.replace("\n"," "),
+                }
+                question_list.append(question_dict)
     return question_list
 
 def generate_a_with_code():
@@ -217,24 +225,23 @@ def main():
 
     # TF-IDF Results
     write_to_json('tfidf_results/tfidf_results.json', generate_tfidf, df_tfidf)
-
-    # Questions Without Answers
+    # Questions without answers
     write_to_json('q_without_a/q_without_a.json', generate_unanswered_q)
-
-    # Questions and Answers Shorter Than a Limit
-    write_to_json('q_shorter_than/short_q.json', generate_short_q)
-
-    # Questions and Answers with Code
+    # Questions shorter than a limit
+    write_to_json('q_shorter_than/short_q.json', generate_short_longer_q, 700, False)
+    #Questions longer than a limit
+    write_to_json('q_longer_than/long_q.json', generate_short_longer_q, 700, True)
+    # Questions and answers with code
     write_to_json('qa_with_codes/qa_with_codes.json', generate_a_with_code)
-
     #Questions with keywords in tf_idf terms
     generate_files_for_keywords(df_tfidf, keywords)
 
-    print(f'Le domande con le risposte sono state salvate in json')
-    print(f'Le domande senza risposte sono state salvate in json')
-    print(f'Le domande sotto i 700 caratteri sono state salvate in json')
-    print(f'Le domande e le risposte contenenti codice sono state salvate in json')
-    print(f'Le domande contenenti tf_idf keywords sono state salvate in json')
+    print("Questions with answers have been saved in JSON.")
+    print("Questions without answers have been saved in JSON.")
+    print("Questions under 700 characters have been saved in JSON.")
+    print("Questions over 700 characters have been saved in JSON.")
+    print("Questions and answers containing code have been saved in JSON.")
+    print("Questions containing TF-IDF keywords have been saved in JSON.")
 
 if __name__ == "__main__":
     main()
