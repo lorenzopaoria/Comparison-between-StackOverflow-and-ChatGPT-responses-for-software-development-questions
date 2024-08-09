@@ -123,7 +123,7 @@ def main():
     process_questions(file_path_a_with_code, limit= 5, comparison= True, code_comp= True)
     # Answer for short question by chatGpt
     process_questions(file_path_short_q, limit=5, comparison= True, code_comp= False)
-    # Answer for short question by chatGpt
+    # Answer for long question by chatGpt
     process_questions(file_path_long_q, limit=2, comparison= True, code_comp= False)# spend a lot of time
     # Answer for tf-idf terms
     process_questions_in_directory(directory_path_q_tfidf_terms, limit= 5, comparison= True, code_comp= False)
