@@ -131,7 +131,7 @@ def generate_q_for_tfidf_terms(df_tfidf, keyword):
         tfidf_scores = df_tfidf.iloc[i]
         max_term = tfidf_scores.idxmax()
         
-        if max_term == keyword or (keyword in tfidf_scores.index and tfidf_scores[keyword] > 0.3):
+        if max_term == keyword or (keyword in tfidf_scores.index and tfidf_scores[keyword] > 0.2):
             question_dict = {
                 "ID": qid,
                 "Question": question.replace("\n", " "),
@@ -221,7 +221,7 @@ def main():
 
     stopwords_list = added_stopwords_func()
     df_tfidf = create_tfidf_matrix(posts, stopwords_list)
-    keywords = ["python", "C++", "java", "php", "html", "sql", "css", "programming"]
+    keywords = ["python", "C++", "java", "php", "html", "sql", "css", "programming", "bugs"]
 
     # TF-IDF Results
     write_to_json('tfidf_results/tfidf_results.json', generate_tfidf, df_tfidf)

@@ -1,0 +1,9 @@
+[
+    {
+        "ID": "570",
+        "Question": "All but the most trivial programs are filled with bugs and so anything that promises to remove them is extremely alluring. At the moment, correctness proofs are code are extremely esoteric, mainly because of the difficultly of learning this and the extra effort it takes to prove a program correct. Do you think that code proving will ever take off? ",
+        "ChatGpt answer": "It's hard to say for certain, but there are definitely signs that code proving is becoming more mainstream. Companies like Amazon and Microsoft have invested in tools that use formal verification techniques to ensure the correctness of their software. Additionally, programming languages like Rust and Ada have built-in support for writing provably correct code.  As the demand for higher quality software continues to grow, code proving may become more common. However, it will likely never be the silver bullet solution for all software bugs. It's still a complex and time-consuming process, and not all code is suited for formal verification.  Overall, while code proving may never completely eliminate bugs, it is likely to become a more standard practice in the software development industry.",
+        "Stack Overflow best answer": "Not really in that sense, but pure functional programming is good in this domain. If you use Haskell, it's likely that your program is correct if the code compiles. Except from IO, a good type system is a good help. Also programming to contract can be helpful. See Microsoft Code Contracts ",
+        "Are the two answers equivalent?": "No"
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "ID": "570",
+        "Question": "All but the most trivial programs are filled with bugs and so anything that promises to remove them is extremely alluring. At the moment, correctness proofs are code are extremely esoteric, mainly because of the difficultly of learning this and the extra effort it takes to prove a program correct. Do you think that code proving will ever take off? ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "bugs": 0.21216154529005793,
+                    "code": 0.21766852043920634,
+                    "correct": 0.22816238512572293,
+                    "effort": 0.23487172534577197,
+                    "extra": 0.24261709020556302,
+                    "extremely": 0.46974345069154394,
+                    "filled": 0.26298985277613074,
+                    "learning": 0.1847002300212126,
+                    "moment": 0.26298985277613074,
+                    "program": 0.20376784350110327,
+                    "programs": 0.2222443276349953,
+                    "prove": 0.26298985277613074,
+                    "remove": 0.26298985277613074,
+                    "takes": 0.20376784350110327,
+                    "think": 0.1370986626145977,
+                    "trivial": 0.24261709020556302
+                },
+                "Max term": "extremely",
+                "Max score": 0.46974345069154394
+            }
+        ],
+        "Best answer": "Not really in that sense, but pure functional programming is good in this domain. If you use Haskell, it's likely that your program is correct if the code compiles. Except from IO, a good type system is a good help. Also programming to contract can be helpful. See Microsoft Code Contracts ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "code": 0.2267055015767761,
+                    "contract": 0.2622310190573856,
+                    "correct": 0.23763504183567635,
+                    "domain": 0.2622310190573856,
+                    "functional": 0.22096989239985232,
+                    "good": 0.44887846908372964,
+                    "haskell": 0.23763504183567635,
+                    "help": 0.18469648682699716,
+                    "helpful": 0.24462293487949513,
+                    "likely": 0.22096989239985232,
+                    "microsoft": 0.22595761348453047,
+                    "program": 0.21222770786020814,
+                    "programming": 0.2661435227688047,
+                    "really": 0.15749064380990763,
+                    "sense": 0.22595761348453047,
+                    "type": 0.21641645980210628,
+                    "use": 0.1241252898097838
+                },
+                "Max term": "good",
+                "Max score": 0.44887846908372964
+            }
+        ]
+    }
+]

@@ -1,5 +1,67 @@
 [
     {
+        "ID": "724",
+        "Question": "When learning a new programming language you sometimes come across a language feature which  makes you wish you had it in your other programming languages that you know. What are some language feature which were at the time of learning very new to you and that you wish your other programming languages had.   An example of this is generators in Python or C#. Other examples may include list comprehensions in Python, template in C++ or LINQ in .NET or lazy evaluation in Haskell. What other semi-unique language features have you come across which were completely new and enlightening to you?  Are there other features of older programming languages which were unique and have fallen out of fashion? ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "come": 0.2727673119604116,
+                    "completely": 0.13971160072767513,
+                    "example": 0.1006468935820348,
+                    "examples": 0.1363836559802058,
+                    "feature": 0.2515115121849168,
+                    "features": 0.26124959939997955,
+                    "haskell": 0.14343192643419173,
+                    "include": 0.14343192643419173,
+                    "know": 0.08750194265423891,
+                    "language": 0.35272497306253,
+                    "languages": 0.3223243732929978,
+                    "learning": 0.23221978320557246,
+                    "list": 0.11610989160278623,
+                    "makes": 0.11962309354412007,
+                    "net": 0.12153799867230443,
+                    "new": 0.28517494216155825,
+                    "programming": 0.32127819099262833,
+                    "python": 0.2667463275284395,
+                    "time": 0.08492203904803086,
+                    "unique": 0.330651708392158
+                },
+                "Max term": "language",
+                "Max score": 0.35272497306253
+            }
+        ],
+        "Best answer": "Practically anything in Haskell  Monads. Yes - the big scary word that makes increadibly easy parsers, IO, operations on Lists and other things so easy (once you notice common pattern) Arrows. The same for advanced users ;) Standard stuff like lambdas etc.  Currying functions Algebraic data types Pattern matching  And many more. PS. Yes. I am Haskell fanboy if anyone asked. ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "asked": 0.15636269863717944,
+                    "big": 0.1648004939892921,
+                    "common": 0.14937925741588817,
+                    "data": 0.14729486305530992,
+                    "easy": 0.31797067274771057,
+                    "functions": 0.19622044199483785,
+                    "haskell": 0.36905993735258497,
+                    "like": 0.0884967335091975,
+                    "lists": 0.20362940313353597,
+                    "makes": 0.15389910916929306,
+                    "notice": 0.20362940313353597,
+                    "operations": 0.2126972387154055,
+                    "pattern": 0.3924408839896757,
+                    "practically": 0.2126972387154055,
+                    "standard": 0.1617889845692889,
+                    "stuff": 0.1648004939892921,
+                    "things": 0.11618871414421617,
+                    "types": 0.18452996867629248,
+                    "users": 0.1617889845692889,
+                    "word": 0.20362940313353597,
+                    "yes": 0.31797067274771057
+                },
+                "Max term": "pattern",
+                "Max score": 0.3924408839896757
+            }
+        ]
+    },
+    {
         "ID": "1750",
         "Question": "I work for a company that supports several languages: COBOL, VB6, C#, and Java. I use those languages for my primary work, but I often find myself coding some minor programs (e.g. scripts) in Python because I find it to be the best tool for that type of task. For example: an analyst gives me a complex CSV file to populate some DB tables, so I use Python to parse it and create a DB script. What's the problem? The main problem I see is that a few parts of these quick and dirty scripts are slowly gaining importance and:  My company does not support Python They're not version controlled (I back them up in another way) My coworkers do not know Python  The analysts have even started to reference them in emails (\"launch the script that exports...\"), so they are needed more often than I initially thought. I should add that these scripts are just utilities that are not part of the main project; they simply help to get trivial tasks done in less time. For my own small tasks they help a lot. In short, if I were a lottery winner to be in a accident, my coworkers would need to keep the project alive without those scripts; they would spend more time fixing CSV errors by hand, for example. Is this a common scenario? Am I doing something wrong? What should I do? ",
         "TF-IDF scores": [

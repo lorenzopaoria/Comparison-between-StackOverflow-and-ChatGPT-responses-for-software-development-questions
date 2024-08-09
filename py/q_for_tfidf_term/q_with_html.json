@@ -1,5 +1,82 @@
 [
     {
+        "ID": "18",
+        "Question": "At first glance, I'd say a good programming team needs to understand the following matters:  The details of the core language / framework HTML, (asynchronous) javascript SQL / data model Usability / UI design Security Project management.  If this team is not complete: what is needed? ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "complete": 0.21432814642761508,
+                    "core": 0.25362234561663516,
+                    "data": 0.17563588926207815,
+                    "design": 0.1629228426128013,
+                    "details": 0.21432814642761508,
+                    "following": 0.22003540701751367,
+                    "framework": 0.19291882682266637,
+                    "good": 0.13854460167612168,
+                    "html": 0.23397524602212513,
+                    "javascript": 0.22003540701751367,
+                    "language": 0.1352766865483478,
+                    "management": 0.19291882682266637,
+                    "model": 0.21432814642761508,
+                    "needed": 0.22003540701751367,
+                    "needs": 0.22003540701751367,
+                    "programming": 0.1232162519154131,
+                    "project": 0.14453440364820805,
+                    "say": 0.14992392074049077,
+                    "security": 0.22650576542178785,
+                    "sql": 0.25362234561663516,
+                    "team": 0.3512717785241563,
+                    "ui": 0.23397524602212513,
+                    "understand": 0.16680136882388208
+                },
+                "Max term": "team",
+                "Max score": 0.3512717785241563
+            }
+        ],
+        "Best answer": "Customer (or an advocate of some sort).   Basically, someone that can say, \"Yes, you're building what I want and it's going to solve my problem.\" or that the team can go to when they have questions about how something is supposed to work.  That may or may not be the same person that is doing Project Management. Also, you're missing out on a QA person there.  You can't really depend on the developers to adequately test - they're usually too close to the code and the normal response for developers is to test happy path stuff, not doing weird crap like copy pasting War & Peace into a textbox and seeing what the application does. ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "adequately": 0.19824297399731597,
+                    "advocate": 0.19824297399731597,
+                    "application": 0.14573675985308113,
+                    "building": 0.18979136125271526,
+                    "close": 0.18288589083270987,
+                    "code": 0.08203977146258222,
+                    "copy": 0.18288589083270987,
+                    "customer": 0.1675288076681038,
+                    "developers": 0.27845578459304565,
+                    "going": 0.14127570059598638,
+                    "like": 0.08248276162806881,
+                    "management": 0.15079429171121925,
+                    "normal": 0.18979136125271526,
+                    "path": 0.18979136125271526,
+                    "person": 0.3132655675211849,
+                    "problem": 0.12454118463910183,
+                    "project": 0.11297478522440542,
+                    "qa": 0.19824297399731597,
+                    "questions": 0.14573675985308113,
+                    "really": 0.11398485114649153,
+                    "say": 0.11718748144478691,
+                    "seeing": 0.19824297399731597,
+                    "solve": 0.15992835944879732,
+                    "sort": 0.19824297399731597,
+                    "stuff": 0.1536011480072767,
+                    "supposed": 0.17198986692519855,
+                    "team": 0.13728514710848042,
+                    "test": 0.26735050475335986,
+                    "usually": 0.14573675985308113,
+                    "want": 0.11009680171987492,
+                    "war": 0.18979136125271526,
+                    "work": 0.10334560942512253,
+                    "yes": 0.14818117101599176
+                },
+                "Max term": "person",
+                "Max score": 0.3132655675211849
+            }
+        ]
+    },
+    {
         "ID": "1674",
         "Question": "i wonder apart from those very simple hello world apps, what other programs should i try developing for learning. i am entering uni next year and wonder what kind of programs will be developed in that environment.  this is not really a language specific thing, but if you want to know what i use currently mainly  windows: C#/WPF - i studied java/vb etc in poly but i think C# is the way to go, maybe even F# web: PHP/MySQL, Zend Framework/Doctrine, + HTML/CSS/JS(jQuery) of course. looking to try google app engine with python too.   for now, i am thinking of   todo lists apps that integrate with api eg. twitter/tumblr which i use text editor - i am currently trying to develop a text editor that uses markdown and generates html files for viewing (link to blog entry). not very pratical after i started developing it. cos when editing theres no formatting and in HTML format, i cannot edit directly  blog software (for web)  ",
         "TF-IDF scores": [

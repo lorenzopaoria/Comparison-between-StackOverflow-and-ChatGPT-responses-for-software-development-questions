@@ -1,5 +1,38 @@
 [
     {
+        "ID": "39",
+        "Question": "What's your favourite quote about programming? One quote per answer, and please check for duplicates before posting! ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "answer": 0.37933870912174267,
+                    "check": 0.43870424261910873,
+                    "favourite": 0.5552479607013989,
+                    "posting": 0.5315762983647503,
+                    "programming": 0.26975372550460147
+                },
+                "Max term": "favourite",
+                "Max score": 0.5552479607013989
+            }
+        ],
+        "Best answer": " Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.    — Brian W. Kernighan ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "code": 0.40851829847944604,
+                    "definition": 0.47253449505536155,
+                    "hard": 0.38242963449161704,
+                    "place": 0.38242963449161704,
+                    "possible": 0.34180674630984414,
+                    "write": 0.29458356784772927,
+                    "writing": 0.33720582712436786
+                },
+                "Max term": "definition",
+                "Max score": 0.47253449505536155
+            }
+        ]
+    },
+    {
         "ID": "49",
         "Question": "During my four years at university we have been using much functional programming in several functional programming languages. But I have also used much object oriented programming to, and in fact I use object oriented languages more when doing my own small project to prepare for my first job. But I often wish that I was coding in a functional programming language when doing these projects. However, when looking for a job, it is very rare to see a job where knowledge of a functional programming language is required. Why isn't functional programming languages used more in the industry? There is quite much news about functional programming languages these days, so I wonder if functional programming is catching on in the industry now? ",
         "TF-IDF scores": [
@@ -72,6 +105,54 @@
                 },
                 "Max term": "technologies",
                 "Max score": 0.38929093541524185
+            }
+        ]
+    },
+    {
+        "ID": "163",
+        "Question": "Are there any great programming or software development books that are language agnostic?  Why should I read it? ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "agnostic": 0.4860681199705606,
+                    "books": 0.4095870143622821,
+                    "development": 0.3001248234586737,
+                    "great": 0.37950169457330235,
+                    "language": 0.27080329455012836,
+                    "programming": 0.24666014382963883,
+                    "read": 0.3732413973155734,
+                    "software": 0.29731300511518993
+                },
+                "Max term": "agnostic",
+                "Max score": 0.4860681199705606
+            }
+        ],
+        "Best answer": "The Pragmatic Programmer: From Journeyman to Master - Andrew Hunt and David Thomas This book is all about how to write code that works and is maintainable. A key concept is being practical. Everything in the book is boiled down to 70 tips that are easy to remember that help you deliver better, higher-quality software. ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "better": 0.17020129987810437,
+                    "book": 0.4030746649100853,
+                    "code": 0.10964656889966348,
+                    "concept": 0.23662474264762293,
+                    "deliver": 0.253657112851028,
+                    "easy": 0.19804488344836696,
+                    "help": 0.17865764992512823,
+                    "higher": 0.23662474264762293,
+                    "key": 0.253657112851028,
+                    "maintainable": 0.253657112851028,
+                    "master": 0.253657112851028,
+                    "pragmatic": 0.2649527359688568,
+                    "programmer": 0.17020129987810437,
+                    "quality": 0.2137450601177085,
+                    "remember": 0.22390309754869528,
+                    "software": 0.15515429914463358,
+                    "tips": 0.23662474264762293,
+                    "works": 0.23662474264762293,
+                    "write": 0.1581328307150475
+                },
+                "Max term": "book",
+                "Max score": 0.4030746649100853
             }
         ]
     },
@@ -196,6 +277,398 @@
                 },
                 "Max term": "pattern",
                 "Max score": 0.3924408839896757
+            }
+        ]
+    },
+    {
+        "ID": "811",
+        "Question": "Literate programming has good ideals. Why do you think that this isn't mainstream? It is because it has failed to deliver? ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "deliver": 0.51244016298256,
+                    "failed": 0.493795265953833,
+                    "good": 0.292392762030301,
+                    "mainstream": 0.51244016298256,
+                    "programming": 0.2600429016266636,
+                    "think": 0.27903504452357747
+                },
+                "Max term": "deliver",
+                "Max score": 0.51244016298256
+            }
+        ],
+        "Best answer": "I would blame the network effect. For other people to edit your code and documentation, they must be able to understand it.   This pushes people away from something like cweb/noweb, because using them would require you to learn TeX and the program-specific syntax on top of the programming language you are using for the project. This can be seen as a huge waste of time, especially if they don't need any of the math typesetting that is such a big draw for TeX in the first place. (And for many applications programmers, they really won't need it.) Instead they prefer something like Visual Studio's XML comments, because that's already popular and well-established.  The places I have seen literate programming take off are in scientific/statistical computing, where most of the programmers have significant training (aka PhDs) in math, CS, or statistics, and thus are already famliiar with LaTeX. The documentation they write is more likely to include a lot of complicated formulae that are best written in TeX, and they are more likely to be programming in R. The proportion of R programmers who know about SWeave is definitely much higher than, say, the proportion of C programmers who know about cweb.  ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "able": 0.12196398929068855,
+                    "applications": 0.11403148764118379,
+                    "away": 0.12889369505890869,
+                    "best": 0.09167102137039285,
+                    "big": 0.11182440221093828,
+                    "code": 0.059726431217106794,
+                    "comments": 0.1190587944791889,
+                    "complicated": 0.13314422242608404,
+                    "computing": 0.13817152926408915,
+                    "definitely": 0.1443244555614795,
+                    "documentation": 0.25042344155315854,
+                    "draw": 0.1443244555614795,
+                    "edit": 0.11643072609776715,
+                    "especially": 0.1190587944791889,
+                    "higher": 0.12889369505890869,
+                    "huge": 0.13817152926408915,
+                    "include": 0.12521172077657927,
+                    "instead": 0.10787856134379344,
+                    "know": 0.15277308314000343,
+                    "language": 0.0769795503971975,
+                    "learn": 0.09491875285628354,
+                    "like": 0.12009787207227327,
+                    "likely": 0.2328614521955343,
+                    "lot": 0.09167102137039285,
+                    "need": 0.1644953567929035,
+                    "network": 0.1443244555614795,
+                    "people": 0.14936079722399614,
+                    "place": 0.11182440221093828,
+                    "places": 0.12889369505890869,
+                    "popular": 0.13314422242608404,
+                    "prefer": 0.12889369505890869,
+                    "program": 0.11182440221093828,
+                    "programmers": 0.3588024911252838,
+                    "programming": 0.21034958608377094,
+                    "project": 0.08224767839645175,
+                    "really": 0.08298302457970794,
+                    "require": 0.10978096027400848,
+                    "say": 0.0853145971184272,
+                    "seen": 0.2088546638066549,
+                    "specific": 0.11403148764118379,
+                    "studio": 0.13314422242608404,
+                    "syntax": 0.13314422242608404,
+                    "time": 0.07413436398303175,
+                    "training": 0.1443244555614795,
+                    "understand": 0.09491875285628354,
+                    "using": 0.16903059838343576,
+                    "visual": 0.12889369505890869,
+                    "write": 0.08613775817747146,
+                    "written": 0.12889369505890869,
+                    "xml": 0.1443244555614795
+                },
+                "Max term": "programmers",
+                "Max score": 0.3588024911252838
+            }
+        ]
+    },
+    {
+        "ID": "827",
+        "Question": "For decades, the accepted degree to get to become a software developer was \"Compter Science.\" We've had a few questions already about whether that degree really prepares students to develop software. Some schools have, in the last 8 years or so, started offering multiple distinct majors in programming.  Using the curriculum from my school:  Computer Science, which starts out with some intro programming courses in the first year, and then focuses on theoretical computer science, algorithms, and a bit of OS stuff.  Most classes involve several smaller projects and homeworks, done solo or in pairs. Software Engineering, which starts out with the same intro programming courses, does a few classes of theory, and then goes into software development practices (testing, process methodologies, sofware metrics, requirements gathering) and software design (distributed system design, info system design, real-time/embedded design, subsystem design, etc)  Different schools do it differently, so the above is just a real-world example I'm familiar with.  What I ask is: Is there a need for distinct majors in programming? ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "accepted": 0.11970860131934442,
+                    "algorithms": 0.11460511280649253,
+                    "ask": 0.08947888727913815,
+                    "bit": 0.09275172894271476,
+                    "classes": 0.22087051814428918,
+                    "computer": 0.18550345788542952,
+                    "decades": 0.11970860131934442,
+                    "degree": 0.22921022561298507,
+                    "design": 0.38449422831280095,
+                    "develop": 0.10690969797430691,
+                    "developer": 0.08071951893356573,
+                    "development": 0.07076341326518841,
+                    "different": 0.08289934624618342,
+                    "differently": 0.11970860131934442,
+                    "engineering": 0.11460511280649253,
+                    "example": 0.07287607202411803,
+                    "familiar": 0.11970860131934442,
+                    "goes": 0.10690969797430691,
+                    "multiple": 0.10690969797430691,
+                    "need": 0.06821958554632061,
+                    "practices": 0.09875222952633798,
+                    "process": 0.08661629654534297,
+                    "programming": 0.23263005695723105,
+                    "projects": 0.0880028347590353,
+                    "questions": 0.0880028347590353,
+                    "real": 0.1760056695180706,
+                    "really": 0.06882951172092945,
+                    "requirements": 0.10116191682494477,
+                    "school": 0.11460511280649253,
+                    "schools": 0.23941720263868885,
+                    "science": 0.35912580395803323,
+                    "smaller": 0.11970860131934442,
+                    "software": 0.35050221450572966,
+                    "solo": 0.11460511280649253,
+                    "started": 0.09657240221372028,
+                    "stuff": 0.09275172894271476,
+                    "testing": 0.08947888727913815,
+                    "theory": 0.11460511280649253,
+                    "time": 0.06149007101798859,
+                    "using": 0.07010044290114593,
+                    "world": 0.08289934624618342,
+                    "year": 0.09657240221372028,
+                    "years": 0.08407246882647518
+                },
+                "Max term": "design",
+                "Max score": 0.38449422831280095
+            }
+        ],
+        "Best answer": "Yes, they should be. The relationship between computer science and software engineering is the same as the relationship between physics and mechanical engineering. One provides the theoretical background while the other takes those theories, along with good engineering principles, and applies them to the design and implementation of software. You need both in order to produce new and better software. A good computer science education trains people to produce new and better algorithms, data structures, programming languages and paradigms, compilers, and a number of other things that can be used to enhance software systems. A good software engineering education, on the other hand, trains you to take these tools and knowledge obtained through a scientific study of computation, along with a knowledge of the software development lifecycle and process models to actually build the system that a customer wants and needs. ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "actually": 0.08692536209877093,
+                    "algorithms": 0.12017092269329561,
+                    "background": 0.10889948238886211,
+                    "better": 0.16126689309092807,
+                    "build": 0.11210177919484753,
+                    "computer": 0.19451245368545275,
+                    "customer": 0.10607485642287456,
+                    "data": 0.08692536209877093,
+                    "design": 0.08063344654546403,
+                    "development": 0.0742000462000587,
+                    "engineering": 0.48068369077318246,
+                    "good": 0.20570464928537407,
+                    "hand": 0.11579855955449951,
+                    "implementation": 0.12017092269329561,
+                    "knowledge": 0.1909579977951704,
+                    "languages": 0.08157402210594206,
+                    "need": 0.07153267720871814,
+                    "needs": 0.10889948238886211,
+                    "new": 0.14434444902993046,
+                    "number": 0.09917577925723717,
+                    "paradigms": 0.12017092269329561,
+                    "people": 0.06495124180867973,
+                    "physics": 0.12552226268612446,
+                    "process": 0.09082282649732104,
+                    "produce": 0.23159711910899902,
+                    "programming": 0.06098194030388986,
+                    "provides": 0.12552226268612446,
+                    "science": 0.2510445253722489,
+                    "software": 0.441029271644964,
+                    "structures": 0.12017092269329561,
+                    "study": 0.12552226268612446,
+                    "systems": 0.11579855955449951,
+                    "takes": 0.09725622684272638,
+                    "things": 0.06856821642845802,
+                    "tools": 0.10126245153063869,
+                    "used": 0.07030258180150857,
+                    "wants": 0.10889948238886211,
+                    "yes": 0.09382443926440831
+                },
+                "Max term": "engineering",
+                "Max score": 0.48068369077318246
+            }
+        ]
+    },
+    {
+        "ID": "966",
+        "Question": "There are a lot of questions about what programming books should be on the programmer's bookshelf. How about non-programming related books that can help you become a better programmer or developer? It would also be interesting to know why they would help. My first choice would be Sun Tzu's \"Art of War\" (however cliché), because it made it obvious that the success of any project depends on the strength of its weakest link (and warfare is a big project). ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "better": 0.16032303375340282,
+                    "big": 0.1933740154594962,
+                    "books": 0.40267913949443285,
+                    "choice": 0.20588419619519893,
+                    "depends": 0.21652423576999863,
+                    "developer": 0.16828858804112307,
+                    "help": 0.33657717608224613,
+                    "interesting": 0.1933740154594962,
+                    "know": 0.13209256636661093,
+                    "lot": 0.15852348103974193,
+                    "non": 0.1752790063526441,
+                    "obvious": 0.23024163256600644,
+                    "programmer": 0.32064606750680563,
+                    "programming": 0.2425001061606864,
+                    "project": 0.2844560492931014,
+                    "questions": 0.18347325406390527,
+                    "related": 0.21652423576999863,
+                    "war": 0.23893517790129232
+                },
+                "Max term": "books",
+                "Max score": 0.40267913949443285
+            }
+        ],
+        "Best answer": "The Design of Everyday Things by Donald Norman  ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "design": 0.7618004295900059,
+                    "things": 0.6478117824464776
+                },
+                "Max term": "design",
+                "Max score": 0.7618004295900059
+            }
+        ]
+    },
+    {
+        "ID": "1200",
+        "Question": "Coming from a procedural/OO programming background, I tend to write Scheme programs in a procedural fashion. I would be intersted in learning Scheme or Lisp in a functional way from the ground up, to kind of reset my programmer's mind. Is there a tutorial or book out there that's the de-facto standard for describing best practices, design methodologies, and other helpful information on functional programming concepts? What about that book makes it special? ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "background": 0.20382415915627713,
+                    "best": 0.14922539786157465,
+                    "book": 0.35741082033598015,
+                    "coming": 0.2249206032544017,
+                    "concepts": 0.2249206032544017,
+                    "design": 0.15091939907772003,
+                    "functional": 0.37906027805778925,
+                    "helpful": 0.20981780981035558,
+                    "information": 0.1820317987200856,
+                    "kind": 0.20382415915627713,
+                    "learning": 0.1649981396333168,
+                    "lisp": 0.2249206032544017,
+                    "makes": 0.16999058064307423,
+                    "mind": 0.2249206032544017,
+                    "practices": 0.19380820361203616,
+                    "programmer": 0.15091939907772003,
+                    "programming": 0.2282764331564885,
+                    "programs": 0.19853738460217435,
+                    "standard": 0.17870541016799008,
+                    "tend": 0.20981780981035558,
+                    "way": 0.13158340432730503,
+                    "write": 0.14021815228829496
+                },
+                "Max term": "functional",
+                "Max score": 0.37906027805778925
+            }
+        ],
+        "Best answer": "Use it. If you do functional programming daily, maybe smaller applications or exercises from books, then you will be better on it. I have used it since the first programming lecture in university. At the beginning it was very hard, because it is so different, but now I prefer it to imperative programming. If you are looking for a good book, I would recommend Real World Functional Programming: With Examples in F# and C# by Tomas Petricek and Jon Skeet ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "applications": 0.18107142749968225,
+                    "better": 0.1472175301223162,
+                    "book": 0.1743219842193954,
+                    "books": 0.184881195671897,
+                    "daily": 0.21142067789106994,
+                    "different": 0.15870507415249424,
+                    "examples": 0.18905432454388196,
+                    "functional": 0.369762391343794,
+                    "good": 0.1251892843473881,
+                    "hard": 0.1775667805137039,
+                    "imperative": 0.22917385129502862,
+                    "looking": 0.1775667805137039,
+                    "maybe": 0.19366750448711126,
+                    "prefer": 0.20467123461078307,
+                    "programming": 0.44535418083826017,
+                    "real": 0.16847535051225324,
+                    "recommend": 0.21940357493526966,
+                    "smaller": 0.22917385129502862,
+                    "university": 0.21940357493526966,
+                    "use": 0.10385320707686103,
+                    "used": 0.12835582376110655,
+                    "world": 0.15870507415249424
+                },
+                "Max term": "programming",
+                "Max score": 0.44535418083826017
+            }
+        ]
+    },
+    {
+        "ID": "1386",
+        "Question": "Sometimes I feel like a musician who can't play live shows. Programming is a pretty cool skill, and a very broad world, but a lot of it happens \"off camera\"- in your head, in your office, away from spectators.  You can of course talk about programming with other programmers, and there is peer programming, and you do get to create something that you can show to people, but when it comes to explaining to non programmers what is it that you do, or how was your day at work, it's sort of tricky.  How do you get the non programmers in your life to understand what is it that you do?  NOTE: this is not a repeat of Getting non-programmers to understand the development process, because that question was about managing client expectations.  ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "away": 0.15016673945350925,
+                    "client": 0.1551187880032456,
+                    "comes": 0.1551187880032456,
+                    "course": 0.14209333198303367,
+                    "create": 0.13564684061788687,
+                    "day": 0.13564684061788687,
+                    "development": 0.09939520215638732,
+                    "expectations": 0.16814424402345754,
+                    "explaining": 0.16814424402345754,
+                    "feel": 0.1278995753119552,
+                    "getting": 0.1302802737067919,
+                    "happens": 0.16097581829282284,
+                    "head": 0.16097581829282284,
+                    "life": 0.14587707988190346,
+                    "like": 0.06995961228419856,
+                    "live": 0.1551187880032456,
+                    "lot": 0.10680071182126767,
+                    "non": 0.35426781930988116,
+                    "note": 0.1551187880032456,
+                    "office": 0.16814424402345754,
+                    "people": 0.08700590013752593,
+                    "play": 0.15016673945350925,
+                    "pretty": 0.12166236629794139,
+                    "process": 0.12166236629794139,
+                    "programmers": 0.4180204483660393,
+                    "programming": 0.24506638182076015,
+                    "question": 0.10035422045612089,
+                    "repeat": 0.16097581829282284,
+                    "shows": 0.16814424402345754,
+                    "sort": 0.16814424402345754,
+                    "talk": 0.1551187880032456,
+                    "understand": 0.22116891944027492,
+                    "work": 0.08765490660045286,
+                    "world": 0.1164414900097147
+                },
+                "Max term": "programmers",
+                "Max score": 0.4180204483660393
+            }
+        ],
+        "Best answer": "I don't even try. If they aren't tech oriented enough to have at least a basic understanding of programming, I am only going to bore them with the details. Usually I just go with something very high level like \"I create web sites\" or \"I write computer programs to do X\" ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "basic": 0.2909227573948823,
+                    "computer": 0.24433852887083451,
+                    "create": 0.2544034376005702,
+                    "details": 0.26649372703366947,
+                    "going": 0.22473202379440865,
+                    "high": 0.2816352710923689,
+                    "level": 0.24433852887083451,
+                    "like": 0.1312081120152259,
+                    "oriented": 0.26649372703366947,
+                    "programming": 0.15320600094466716,
+                    "programs": 0.26649372703366947,
+                    "sites": 0.2735900845168343,
+                    "try": 0.20493985015144017,
+                    "understanding": 0.3019075221930285,
+                    "usually": 0.23182838127757346,
+                    "web": 0.22473202379440865,
+                    "write": 0.18821270400009657
+                },
+                "Max term": "understanding",
+                "Max score": 0.3019075221930285
+            }
+        ]
+    },
+    {
+        "ID": "1745",
+        "Question": "To put it another way... What is the most commonly held and frustrating misunderstanding about programming, you have encountered? Which widespread and longstanding myths/misconceptions do you find hard for programmers to dispel/correct. Please, explain why this is a myth. ",
+        "TF-IDF scores": [
+            {
+                "Scores": {
+                    "commonly": 0.44165659071088564,
+                    "correct": 0.40023137913984147,
+                    "encountered": 0.46132403208519956,
+                    "explain": 0.32399217666006874,
+                    "hard": 0.35743965853030324,
+                    "programmers": 0.28672239102544156,
+                    "programming": 0.22412306775982968,
+                    "way": 0.25837863187481125
+                },
+                "Max term": "encountered",
+                "Max score": 0.46132403208519956
+            }
+        ],
+        "Best answer": "That because you're a programmer, you know how to fix [person]'s virus ridden machine. ",
+        "Best answer TF-IDF scores": [
+            {
+                "Scores": {
+                    "fix": 0.40932189159525173,
+                    "know": 0.2685432336958693,
+                    "machine": 0.48575349152675484,
+                    "person": 0.40088716945315894,
+                    "programmer": 0.32593557006515606,
+                    "virus": 0.5073846151596967
+                },
+                "Max term": "virus",
+                "Max score": 0.5073846151596967
             }
         ]
     },
