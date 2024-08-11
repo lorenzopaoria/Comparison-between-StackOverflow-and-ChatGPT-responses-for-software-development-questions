@@ -1,5 +1,6 @@
 import json
 import os
+import time
 from openai import OpenAI
 
 api_key = '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'
@@ -36,14 +37,21 @@ def compare_answers(chatgpt_answer, best_answer):
     comparison_response = ai_answer(comparison_question)
     return comparison_response
 
-# ask to chatGpt if the code provided in question and answer compile
+# ask to chatGpt if there is code in question and answer and if compile
 def code_compiling(question, chatgpt_answer, best_answer):
     compile_question = (
-        f"Say if there is code or not in: question and in the two answers, and say if the code compiles or not for the question and for the two answers(don't check if it compiles if there is no code). "
-        f"Output format should be 'Question: code: yes/no, compile: yes/no; "
-        f"Answer StackOverflow: code: yes/no, compile: yes/no; "
-        f"Answer ChatGpt: code: yes/no, compile: yes/no'."
-        f"\nQuestion: {question}\nAnswer StackOverflow: {best_answer}\nAnswer ChatGpt: {chatgpt_answer}"
+        "Say if there is code or not in the question and in the two answers, and then say if the code compiles "
+        "(i.e., if it's semantically correct) or not for the question and for the two answers. "
+        "If there is no code, the output should be 'code: No, compile: N/A'. "
+        "If there is code, the output should either be 'code: Yes, compile: Yes' or 'code: Yes, compile: No'. "
+        "Note that 'code: Yes, compile: N/A' is not an acceptable output.\n\n"
+        "Output format should be:\n"
+        "Question: code: Yes/No, compile: Yes/No/N/A;\n"
+        "Answer StackOverflow: code: Yes/No, compile: Yes/No/N/A;\n"
+        "Answer ChatGpt: code: Yes/No, compile: Yes/No/N/A.\n\n"
+        f"Question: {question}\n"
+        f"Answer StackOverflow: {best_answer}\n"
+        f"Answer ChatGpt: {chatgpt_answer}"
     )
     compile_response = ai_answer(compile_question)
     return compile_response
@@ -59,6 +67,8 @@ def process_questions(file_path, limit= None, comparison= False, code_comp= Fals
 
     for i, item in enumerate(input_json):
         if i >= num_limit_questions: break
+
+        print(f"Processing question {i+1} of {num_limit_questions}", end = '\r')
 
         if 'Question' in item:
             question_id = item.get('ID', 'unknown')
@@ -80,9 +90,9 @@ def process_questions(file_path, limit= None, comparison= False, code_comp= Fals
                     code_comp_result = code_compiling(question_text, answer, best_answer)
                     result_parts = code_comp_result.split(',')
                     code_compile_info = {
-                        "Question": {"code": "no", "compile": "no"},
-                        "Answer StackOverflow": {"code": "no", "compile": "no"},
-                        "Answer ChatGpt": {"code": "no", "compile": "no"},
+                        "Question": {"code": "No", "compile": "No"},
+                        "Answer StackOverflow": {"code": "No", "compile": "No"},
+                        "Answer ChatGpt": {"code": "No", "compile": "No"},
                     }# vocabulary
 
                     result_parts = code_comp_result.split(';')
@@ -104,11 +114,14 @@ def process_questions(file_path, limit= None, comparison= False, code_comp= Fals
 
     write_on_json(file_path, questions_and_answers)
 
+#like write_on_json but for a directory
 def process_questions_in_directory(directory_path, limit= None, comparison= False, code_comp= False):
     for file_name in os.listdir(directory_path):
         if file_name.endswith('.json') and 'openai' not in file_name:# to ensure that the output file from the first run of the program is not used
             file_path = os.path.join(directory_path, file_name)
             process_questions(file_path, limit, comparison, code_comp)
+
+start_time = time.time()
 
 def main():
     file_path_q_without_a = 'q_without_a/q_without_a.json'
@@ -118,21 +131,22 @@ def main():
     directory_path_q_tfidf_terms = 'q_for_tfidf_term/'
     
     # Answer by chatGpt for questions without answer
-    process_questions(file_path_q_without_a, limit=5, comparison= False, code_comp= False)
-    #ChatGpt answer for question with codes
-    process_questions(file_path_a_with_code, limit= 5, comparison= True, code_comp= True)
-    # Answer for short question by chatGpt
-    process_questions(file_path_short_q, limit=5, comparison= True, code_comp= False)
-    # Answer for long question by chatGpt
-    process_questions(file_path_long_q, limit=2, comparison= True, code_comp= False)# spend a lot of time
-    # Answer for tf-idf terms
-    process_questions_in_directory(directory_path_q_tfidf_terms, limit= 5, comparison= True, code_comp= False)
-
+    process_questions(file_path_q_without_a, limit= None, comparison= False, code_comp= False)
     print("Answers written for questions without answers in JSON")
+    #ChatGpt answer for question with codes
+    process_questions(file_path_a_with_code, limit= None, comparison= True, code_comp= True)
+    print("Answers written for questions and answers with code in JSON")
+    # Answer for short question by chatGpt
+    process_questions(file_path_short_q, limit= None, comparison= True, code_comp= False)
     print("Answers written for questions shorter than 700 characters in JSON")
+    # Answer for long question by chatGpt
+    process_questions(file_path_long_q, limit= 2, comparison= True, code_comp= False)# spend a lot of time due to long questions
     print("Answers written for questions longer than 700 characters in JSON")
-    print("Answers written for questions and answers with code, and results compiled in JSON")
+    # Answer for tf-idf terms
+    process_questions_in_directory(directory_path_q_tfidf_terms, limit= None, comparison= True, code_comp= False)
     print("Answers written for questions with specific TF-IDF terms in JSON")
+    
+    print("--%s seconds--" % (time.time() - start_time))
 
 if __name__ == '__main__':
     main()

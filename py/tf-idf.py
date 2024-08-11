@@ -68,7 +68,7 @@ def added_stopwords_func():
     
     return added_stopwords
 
-questions, best_answers, unanswered_questions = extract_posts(file_path, limit= 1000) 
+questions, best_answers, unanswered_questions = extract_posts(file_path, limit= 3000) 
 
 answered_questions = [(qid, question, raw_body) for qid, question, raw_body in questions if qid in best_answers] #creation of a list with associate answer
 
@@ -225,22 +225,21 @@ def main():
 
     # TF-IDF Results
     write_to_json('tfidf_results/tfidf_results.json', generate_tfidf, df_tfidf)
+    print("Questions with answers have been saved in JSON.")
     # Questions without answers
     write_to_json('q_without_a/q_without_a.json', generate_unanswered_q)
+    print("Questions without answers have been saved in JSON.")
     # Questions shorter than a limit
     write_to_json('q_shorter_than/short_q.json', generate_short_longer_q, 700, False)
+    print("Questions under 700 characters have been saved in JSON.")
     #Questions longer than a limit
     write_to_json('q_longer_than/long_q.json', generate_short_longer_q, 700, True)
+    print("Questions over 700 characters have been saved in JSON.")
     # Questions and answers with code
     write_to_json('qa_with_codes/qa_with_codes.json', generate_a_with_code)
+    print("Questions and answers containing code have been saved in JSON.")
     #Questions with keywords in tf_idf terms
     generate_files_for_keywords(df_tfidf, keywords)
-
-    print("Questions with answers have been saved in JSON.")
-    print("Questions without answers have been saved in JSON.")
-    print("Questions under 700 characters have been saved in JSON.")
-    print("Questions over 700 characters have been saved in JSON.")
-    print("Questions and answers containing code have been saved in JSON.")
     print("Questions containing TF-IDF keywords have been saved in JSON.")
 
 if __name__ == "__main__":
