@@ -111,6 +111,28 @@ def plot_results_compilation(results, output_file_path):
     plt.savefig(output_file_path)
     plt.close()
 
+def write_summary(summary_file_path, equivalent_count=None, not_equivalent_count=None, compilation_results=None):
+    with open(summary_file_path, 'w', encoding='utf-8') as f:
+        if equivalent_count is not None and not_equivalent_count is not None:
+            total = equivalent_count + not_equivalent_count
+            f.write(f"Comparison analysis summary:\n")
+            f.write(f"Total questions: {total}\n")
+            if total > 0:
+                f.write(f"Equivalent answers: {equivalent_count} ({(equivalent_count/total)*100:.2f}%)\n")
+                f.write(f"Not equivalent answers: {not_equivalent_count} ({(not_equivalent_count/total)*100:.2f}%)\n")
+            else:
+                f.write(f"No data available to calculate percentages.\n")
+            f.write("\n")
+        
+        if compilation_results is not None:
+            chatgpt_code_compiles, stackoverflow_code_compiles, chatgpt_has_code, stackoverflow_has_code = compilation_results
+            f.write(f"Code compilation and existence analysis summary:\n")
+            f.write(f"ChatGPT: code exists in {chatgpt_has_code} instances, of which {chatgpt_code_compiles} compile successfully.\n")
+            f.write(f"StackOverflow: code exists in {stackoverflow_has_code} instances, of which {stackoverflow_code_compiles} compile successfully.\n")
+            f.write("\n")
+
+
+
 def main():
     file_paths_equivalent = [
         'q_shorter_than/short_q_openai_answer.json',
@@ -139,6 +161,11 @@ def main():
                 f"comparison_analysis_{os.path.basename(file_path)}", 
                 os.path.join(os.path.dirname(file_path), f"plot_{os.path.basename(file_path).replace('.json', '.png')}")
             )
+            write_summary(
+                os.path.join(os.path.dirname(file_path), f"summary_{os.path.basename(file_path).replace('.json', '.txt')}"),
+                equivalent_count=equivalent,
+                not_equivalent_count=not_equivalent
+            )
 
     for file_path in file_paths_compile:
         if os.path.isfile(file_path):
@@ -148,6 +175,10 @@ def main():
             plot_results_compilation(
                 compilation_results, 
                 os.path.join(os.path.dirname(file_path), f"compilation_analysis_{os.path.basename(file_path).replace('.json', '.png')}")
+            )
+            write_summary(
+                os.path.join(os.path.dirname(file_path), f"summary_{os.path.basename(file_path).replace('.json', '.txt')}"),
+                compilation_results=compilation_results
             )
 
 if __name__ == "__main__":
