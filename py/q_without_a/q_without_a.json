@@ -1,30 +1,42 @@
 [
     {
-        "ID": "6510",
-        "Question": "What is a recommended setup in terms of source control, builds, testing, bug tracking, and deployment for a downloadable PHP application (a la Wordpress, phpBB, Magento, etc.)? As a developer working on the application, what would you expect? What about as a user of the application? Please describe a setup and workflow, as well as any resources you think might be relevant or helpful. "
+        "ID": "10998",
+        "Question": "In a message to comp.emacs.xemacs, Jamie Zawinski once said:  Some people, when confronted with a problem, think \"I know, I'll use regular expressions.\" Now they have two problems.  I've always had trouble understanding what he was getting at. What does he mean by this? Update The answer that I'm looking for is one which explains what the 2nd problem is. Most answers below are that regexes are hard, which doesn't seem to fit the question. "
     },
     {
-        "ID": "8157",
-        "Question": "I work at a company where we have a lot of different skillsets in the development team.  We do all of the following (generally geared towards web):  .NET (MVC, Umbraco, ASP.NET, Surface) Java (Spring, Hibernate, Android)  PHP (Zend, Code igniter)  Actionscript 3 AIR Objective-C Html/Javascript (obviously)  We're trying to streamline our development process. We currently have a TeamCity server that builds and deploys .NET projects with msbuild/msdeploy/nant. What I want is something like maven that will give us a standard project template structure that works for most projects to allow people from different teams to move between projects easily. Currently this works on one platform because we tend to do things in a standard way for that platform (as long as certain people have been involved) however I want to use something like maven to standardise how a project is laid out and built. Has anyone tried anything like this before? Experiences? Books? "
+        "ID": "14461",
+        "Question": "According SaaS maturity model a SaaS is level 2 if is configurable, but how i can get started in this concept?how patterns and Technics, i can use to enable my SaaS? "
     },
     {
-        "ID": "8416",
-        "Question": "I have a Java class that handles import and export of data. It started out as a simple private void export() { } private void import() { }  Of course, I wrote the export first, committed it, and then went on to write the import. But import is a keyword in Java - I can't use that as a function name. So I go back and rename both methods. I usually end up with  private void doExport() { } private void doImport() { }  which is both ugly and feels contrived. What do you think of these names? Got any better suggestions? Note: I'm asking now, because it's now happened thrice and that keyword is getting quite annoying. "
+        "ID": "16260",
+        "Question": "Why did Microsoft not provide generic implementation of OrderedDictionary? There are a few custom implementations I've seen, including: http://www.codeproject.com/KB/recipes/GenericOrderedDictionary.aspx But why did Microsoft not include it in the base .net library? Surely they had a reason for not building a generic.... but what is it? Prior to posting this message, I did see:  https://stackoverflow.com/questions/2629027/no-generic-implementation-of-ordereddictionary But that just confirms that it does not exist. Not why it does not exist. Thanks "
     },
     {
-        "ID": "8789",
-        "Question": "I was browsing through this talk about \"Historically Bad Ideas\" over the history of Computer Science, and found an interesting presentation about the rise & fall of the Java Enterprise initiatives. Slide #16 grabbed my attention by suggesting that Container Managed Persistence is a \"naïve ORM solution\". Of course, I assume  the presenter made a live in-depth analysis of the problem, which is missing in the slide. So I was left intrigued by that statement. Is CMP Entity Beans just a heavy piece of naive engineering? Aside any bias from the author(s) of the presentation, what would constitute a more adequate ORM solution in the domain of languages like Java or C#? I'm not asking for specific tools or frameworks, but better approaches. "
+        "ID": "20652",
+        "Question": "I basically need some confirmation and clarification concerning Windows Azure with respect to a Silverlight application using RIA Services. In a normal Silverlight app that uses RIA services you have 2 projects:  App App.Web  ... where App is the default client-side Silverlight and app.web is the server-side code where your RIA services go. If you create a Windows Azure app and add a WCF Web Services Role, you get:  App (Azure project) App.Services (WCF Services project)  In App.Services, you add your RIA DomainService(s). You would then add another project to this solution that would be the client-side Silverlight that accesses the RIA Services in the App.Services project.  You then can add the entity model to the App.Services or another project that is referenced by App.Services (if that division is required for unit testing etc.) and connect that entity model to either a SQLServer db or a SQLAzure instance. Is this correct? If not, what is the general 'layout' for building an application with the following tiers:  UI (Silverlight 4) Services (RIA Services) Entity/Domain (EF 4) Data (SQL Server)  "
     },
     {
-        "ID": "8956",
-        "Question": "If you are a solo developer, or have a leading role in a software company, you might have to decide how much your software will cost one or another day...  What is your experience with calculating how much your software costs for your customer? Why does this method it work for you? "
+        "ID": "22158",
+        "Question": "Roundup issue tracker is pretty minimalistic by default, and it does not bring any specific workflow with itself. It was once called ‘so configurable that it’s probably better described as a lightweight tracker-oriented framework.’ Have you ever used Roundup extensively or seen some interesting use cases? If so, please share an example. (If you don’t consider your workflow special enough, at least tell how do you understand & utilize superseder field in the default ‘classic’ template, which alone could be interpreted differently—see old.nabble.com/Superseder-td13792131.html) "
     },
     {
-        "ID": "8986",
-        "Question": "This isn't about the typical naming conventions, where to place your comments, should we use regions, etc.  This is about a coding standard that discusses specifics on how a programmer should design his applications. Stuff like: (on a .NET app and not in the exact wordings)  Make as few classes possible Classes should do as much as their real world counterparts can Modification is better than extension One DLL per category (One library for email functions, one library for File related functions)  Everyone's had their experience with bad code and possibly bad design, but what if you were placed in a team (leaving is not an option) where they had design standards that just don't feel right.  I'm unsure how to respond professionally when I feel like I'm dying inside whenever I'm asked to code this way. "
+        "ID": "23506",
+        "Question": "It is my first time writing an article on a software project. I am supposed to use ACM UbiComp paper format. I already have a structure that I should follow and there is a Background & Research Methods section after Abstract, Introduction, Related Work sections. I have browser through several articles, but some of them either dont have it, have only background section or have only research methods section. I am having hard time to find an article that has this section and moreover what I must write on here. My project is about Bluetooth location tracking and I do have the implementation and evaluation, so it is not something theoretical. "
     },
     {
-        "ID": "8988",
-        "Question": "I don't know if it's just with me, but when I start refactoring some code I waste a lot time doing that and it never ends. Every time I read the code again, I find something that can be improved, code refactoring is like my brain into a infinite loop and the end conditional is reached randomly with no satisfaction. So, how much time should I dedicate to refactoring my code? "
+        "ID": "23891",
+        "Question": "Lately I have become interested in familiarizing myself with REST. I tried reading wiki entry on REST, but it was of no help. I would really appreciate it if someone can explain in simple English (that is without unnecessary tech jargon)  What is REST? What position it occupies in web architecture ecosystem? How tightly (or loosely) it is coupled with protocol? What are the alternatives to REST and how does REST compare with them?  I understand it may not be possible to answer this in one or two paragraphs, in that case relevant links will be highly appreciated. "
+    },
+    {
+        "ID": "23915",
+        "Question": "Is there a specific format for a feasibility study in SDLC? If so, do you know any sources where I can find more information about this? or can you show me at least an outline of what it should contain? "
+    },
+    {
+        "ID": "24565",
+        "Question": "Ours is a software concern and we have a team structured like so: manager->team leads->team members. We are following the agile programming model and trying to develop a product in a collaborative fashion. We have daily morning meetings with team members and their team leads to discuss progress and issues.  When it comes to TL->Manager, most of the time they do not have items to discuss on a daily basis since TL goals would be for weekly plan and such. Most of the time, we just discuss about resources and it is less technical. I just want suggestions on how the manager & team lead interaction should be and whether the current system we have is fine. Please share your thoughts or ideas. "
+    },
+    {
+        "ID": "24583",
+        "Question": "What is a situation while coding in C# where using pointers is a good or necessary option? I'm talking about unsafe pointers. "
     }
 ]

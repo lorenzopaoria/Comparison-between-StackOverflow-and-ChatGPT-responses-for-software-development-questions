@@ -62,7 +62,6 @@ def process_questions(file_path, limit= None, comparison= False, code_comp= Fals
         input_json = json.load(f)
 
     questions_and_answers = []
-
     num_limit_questions = min(limit if limit is not None else len(input_json), len(input_json))# for fast result
 
     for i, item in enumerate(input_json):
@@ -74,45 +73,51 @@ def process_questions(file_path, limit= None, comparison= False, code_comp= Fals
             question_id = item.get('ID', 'unknown')
             question_text = item['Question']
             
-            answer = ai_answer(question_text)
-            best_answer = item.get('Best answer', None)
-            
-            output_json = {"ID": question_id, "Question": question_text, "ChatGpt answer": answer.replace("\n", " ")}
-            
-            if best_answer is not None:
-                output_json["Stack Overflow best answer"] = best_answer
+            try:
+                answer = ai_answer(question_text)
+                best_answer = item.get('Best answer', None)
+                
+                output_json = {"ID": question_id, "Question": question_text, "ChatGpt answer": answer.replace("\n", " ")}
 
-                if comparison:
-                    comparison_result = compare_answers(answer, best_answer)
-                    output_json["Are the two answers equivalent?"] = comparison_result.replace("\n", " ")
+                if best_answer is not None:
+                    output_json["Stack Overflow best answer"] = best_answer
 
-                if code_comp:
-                    code_comp_result = code_compiling(question_text, answer, best_answer)
-                    result_parts = code_comp_result.split(',')
-                    code_compile_info = {
-                        "Question": {"code": "No", "compile": "No"},
-                        "Answer StackOverflow": {"code": "No", "compile": "No"},
-                        "Answer ChatGpt": {"code": "No", "compile": "No"},
-                    }# vocabulary
+                    if comparison:
+                        comparison_result = compare_answers(answer, best_answer)
+                        output_json["Are the two answers equivalent?"] = comparison_result.replace("\n", " ")
 
-                    result_parts = code_comp_result.split(';')
-                    for part in result_parts:
-                        if ':' in part:
-                            key, values = part.split(':', 1)
-                            key = key.strip()
-                            sub_results = values.split(',')
-                            for sub_result in sub_results:
-                                if ':' in sub_result:
-                                    sub_key, sub_value = sub_result.split(':', 1)
-                                    sub_key = sub_key.strip()
-                                    sub_value = sub_value.strip()
-                                    code_compile_info[key][sub_key] = sub_value
+                    if code_comp:
+                        code_comp_result = code_compiling(question_text, answer, best_answer)
+                        result_parts = code_comp_result.split(',')
+                        code_compile_info = {
+                            "Question": {"code": "No", "compile": "No"},
+                            "Answer StackOverflow": {"code": "No", "compile": "No"},
+                            "Answer ChatGpt": {"code": "No", "compile": "No"},
+                        } # vocabulary
 
-                    output_json["Code and Compile Information"] = code_compile_info
-            
-            questions_and_answers.append(output_json)
+                        result_parts = code_comp_result.split(';')
+                        for part in result_parts:
+                            if ':' in part:
+                                key, values = part.split(':', 1)
+                                key = key.strip()
+                                sub_results = values.split(',')
+                                for sub_result in sub_results:
+                                    if ':' in sub_result:
+                                        sub_key, sub_value = sub_result.split(':', 1)
+                                        sub_key = sub_key.strip()
+                                        sub_value = sub_value.strip()
+                                        if key in code_compile_info:
+                                            code_compile_info[key][sub_key] = sub_value
+                                        else:
+                                            print(f"Unexpected key encountered: {key}")
+                                            
+                        output_json["Code and Compile Information"] = code_compile_info
+                questions_and_answers.append(output_json)
+            except Exception as e:
+                print(f"Skipping question due to error: {e}")
 
     write_on_json(file_path, questions_and_answers)
+
 
 #like write_on_json but for a directory
 def process_questions_in_directory(directory_path, limit= None, comparison= False, code_comp= False):
@@ -127,26 +132,26 @@ def main():
     file_path_q_without_a = 'q_without_a/q_without_a.json'
     file_path_short_q = 'q_shorter_than/short_q.json'
     file_path_long_q = 'q_longer_than/long_q.json'
-    file_path_a_with_code = 'qa_with_codes/qa_with_codes.json'
+    file_path_qa_with_code = 'qa_with_codes/qa_with_codes.json'
     directory_path_q_tfidf_terms = 'q_for_tfidf_term/'
     
     # Answer by chatGpt for questions without answer
     process_questions(file_path_q_without_a, limit= None, comparison= False, code_comp= False)
     print("Answers written for questions without answers in JSON")
     #ChatGpt answer for question with codes
-    process_questions(file_path_a_with_code, limit= None, comparison= True, code_comp= True)
+    process_questions(file_path_qa_with_code, limit= None, comparison= True, code_comp= True)
     print("Answers written for questions and answers with code in JSON")
     # Answer for short question by chatGpt
     process_questions(file_path_short_q, limit= None, comparison= True, code_comp= False)
     print("Answers written for questions shorter than 700 characters in JSON")
     # Answer for long question by chatGpt
-    process_questions(file_path_long_q, limit= 2, comparison= True, code_comp= False)# spend a lot of time due to long questions
+    process_questions(file_path_long_q, limit= 100, comparison= True, code_comp= False)
     print("Answers written for questions longer than 700 characters in JSON")
     # Answer for tf-idf terms
     process_questions_in_directory(directory_path_q_tfidf_terms, limit= None, comparison= True, code_comp= False)
     print("Answers written for questions with specific TF-IDF terms in JSON")
     
-    print("--%s seconds--" % (time.time() - start_time))
+    print("--%s minuts--" % round((time.time() - start_time)/60))
 
 if __name__ == '__main__':
     main()

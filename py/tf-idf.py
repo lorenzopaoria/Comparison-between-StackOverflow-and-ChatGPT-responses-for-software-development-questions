@@ -68,7 +68,7 @@ def added_stopwords_func():
     
     return added_stopwords
 
-questions, best_answers, unanswered_questions = extract_posts(file_path, limit= 3000) 
+questions, best_answers, unanswered_questions = extract_posts(file_path, limit= 10000) 
 
 answered_questions = [(qid, question, raw_body) for qid, question, raw_body in questions if qid in best_answers] #creation of a list with associate answer
 
