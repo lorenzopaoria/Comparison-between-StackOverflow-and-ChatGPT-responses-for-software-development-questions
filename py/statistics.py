@@ -61,7 +61,7 @@ def analyze_code_compilation(data):
     return chatgpt_code_compiles, stackoverflow_code_compiles, chatgpt_has_code, stackoverflow_has_code
 
 
-def plot_compilation_results(results, output_file_path):
+def plot_results_compilation(results, output_file_path):
     chatgpt_code_compiles, stackoverflow_code_compiles, chatgpt_has_code, stackoverflow_has_code = results
 
     labels = ['ChatGPT', 'StackOverflow']
@@ -112,40 +112,43 @@ def plot_compilation_results(results, output_file_path):
     plt.close()
 
 def main():
-    file_path_short_q = 'q_shorter_than/short_q_openai_answer.json'
-    file_path_long_q = 'q_longer_than/long_q_openai_answer.json'
-    file_path_qa_with_codes = 'qa_with_codes/qa_with_codes_openai_answer.json'
+    file_paths_equivalent = [
+        'q_shorter_than/short_q_openai_answer.json',
+        'q_longer_than/long_q_openai_answer.json'
+    ]
+    
+    file_paths_compile = [
+        'qa_with_codes/qa_with_codes_openai_answer.json'
+    ]
+    
     directory_path_q_tfidf_terms = 'q_for_tfidf_term/'
 
-    file_paths_equivalent = [file_path_short_q, file_path_long_q]
-    file_paths_compile = [file_path_qa_with_codes]
-
     if os.path.isdir(directory_path_q_tfidf_terms):
-        for filename in os.listdir(directory_path_q_tfidf_terms):
-            if filename.endswith('.json') and 'openai' in filename:
-                full_path = os.path.join(directory_path_q_tfidf_terms, filename)
-                file_paths_equivalent.append(full_path)
+        file_paths_equivalent.extend(
+            os.path.join(directory_path_q_tfidf_terms, filename)
+            for filename in os.listdir(directory_path_q_tfidf_terms)
+            if filename.endswith('.json') and 'openai' in filename
+        )
 
     for file_path in file_paths_equivalent:
         if os.path.isfile(file_path):
-            with open(file_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            # Process the file for equivalent answers
             equivalent, not_equivalent = process_file(file_path)
-            title = f"comparison_analysis_{os.path.basename(file_path)}"
-            output_file_name = f"plot_{os.path.basename(file_path).replace('.json', '.png')}"
-            output_file_path = os.path.join(os.path.dirname(file_path), output_file_name)
-            plot_results_comparison(equivalent, not_equivalent, title, output_file_path)
+            plot_results_comparison(
+                equivalent, 
+                not_equivalent, 
+                f"comparison_analysis_{os.path.basename(file_path)}", 
+                os.path.join(os.path.dirname(file_path), f"plot_{os.path.basename(file_path).replace('.json', '.png')}")
+            )
 
     for file_path in file_paths_compile:
         if os.path.isfile(file_path):
             with open(file_path, 'r', encoding='utf-8') as f:
                 data = json.load(f)
-            # Analyze code compilation
             compilation_results = analyze_code_compilation(data)
-            output_file_name = f"compilation_analysis_{os.path.basename(file_path).replace('.json', '.png')}"
-            output_file_path = os.path.join(os.path.dirname(file_path), output_file_name)
-            plot_compilation_results(compilation_results, output_file_path)
+            plot_results_compilation(
+                compilation_results, 
+                os.path.join(os.path.dirname(file_path), f"compilation_analysis_{os.path.basename(file_path).replace('.json', '.png')}")
+            )
 
 if __name__ == "__main__":
     main()
