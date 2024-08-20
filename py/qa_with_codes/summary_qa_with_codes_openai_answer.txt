@@ -1,4 +1,4 @@
 Code compilation and existence analysis summary:
-ChatGPT: code exists in 16 instances, of which 10 compile successfully.
-StackOverflow: code exists in 68 instances, of which 48 compile successfully.
+ChatGPT: code exists in 16 instances, of which 10 compile successfully (62.50%).
+StackOverflow: code exists in 68 instances, of which 48 compile successfully (70.59%).
 

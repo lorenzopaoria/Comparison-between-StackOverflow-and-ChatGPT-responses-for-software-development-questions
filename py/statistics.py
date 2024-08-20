@@ -2,7 +2,7 @@ import os
 import json
 import matplotlib.pyplot as plt
 
-def process_file(file_path):
+def analyze_a_equivalent(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
@@ -10,7 +10,7 @@ def process_file(file_path):
     not_equivalent_count = 0
     
     for item in data:
-        if item.get("Are the two answers equivalent?", "No") == "Yes":
+        if item.get("Are the two answers equivalent?", "No").lower().startswith("yes"):
             equivalent_count += 1
         else:
             not_equivalent_count += 1
@@ -50,12 +50,12 @@ def analyze_code_compilation(data):
                 if platform == "Answer ChatGpt":
                     chatgpt_has_code += 1
                     # Check if ChatGPT's code compiles
-                    if code_info.get("compile") == "Yes." or code_info.get("compile") == "Yes":
+                    if code_info.get("compile", "").lower().startswith("yes"):
                         chatgpt_code_compiles += 1
                 elif platform == "Answer StackOverflow":
                     stackoverflow_has_code += 1
                     # Check if StackOverflow's code compiles
-                    if code_info.get("compile") == "Yes." or code_info.get("compile") == "Yes":
+                    if code_info.get("compile", "").lower().startswith("yes"):
                         stackoverflow_code_compiles += 1
 
     return chatgpt_code_compiles, stackoverflow_code_compiles, chatgpt_has_code, stackoverflow_has_code
@@ -118,20 +118,46 @@ def write_summary(summary_file_path, equivalent_count=None, not_equivalent_count
             f.write(f"Comparison analysis summary:\n")
             f.write(f"Total questions: {total}\n")
             if total > 0:
-                f.write(f"Equivalent answers: {equivalent_count} ({(equivalent_count/total)*100:.2f}%)\n")
-                f.write(f"Not equivalent answers: {not_equivalent_count} ({(not_equivalent_count/total)*100:.2f}%)\n")
+                f.write(f"Equivalent answers: {equivalent_count} ({(equivalent_count / total) * 100:.2f}%)\n")
+                f.write(f"Not equivalent answers: {not_equivalent_count} ({(not_equivalent_count / total) * 100:.2f}%)\n")
             else:
                 f.write(f"No data available to calculate percentages.\n")
             f.write("\n")
         
         if compilation_results is not None:
             chatgpt_code_compiles, stackoverflow_code_compiles, chatgpt_has_code, stackoverflow_has_code = compilation_results
+            if chatgpt_has_code > 0:
+                chatgpt_compile_percentage = (chatgpt_code_compiles / chatgpt_has_code) * 100
+            else:
+                chatgpt_compile_percentage = 0.0
+
+            if stackoverflow_has_code > 0:
+                stackoverflow_compile_percentage = (stackoverflow_code_compiles / stackoverflow_has_code) * 100
+            else:
+                stackoverflow_compile_percentage = 0.0
+            
             f.write(f"Code compilation and existence analysis summary:\n")
-            f.write(f"ChatGPT: code exists in {chatgpt_has_code} instances, of which {chatgpt_code_compiles} compile successfully.\n")
-            f.write(f"StackOverflow: code exists in {stackoverflow_has_code} instances, of which {stackoverflow_code_compiles} compile successfully.\n")
+            f.write(f"ChatGPT: code exists in {chatgpt_has_code} instances, of which {chatgpt_code_compiles} compile successfully ({chatgpt_compile_percentage:.2f}%).\n")
+            f.write(f"StackOverflow: code exists in {stackoverflow_has_code} instances, of which {stackoverflow_code_compiles} compile successfully ({stackoverflow_compile_percentage:.2f}%).\n")
             f.write("\n")
 
-
+def process_file(file_path, compile=False):
+    if not os.path.isfile(file_path):
+        return
+    
+    base_name = os.path.basename(file_path)
+    dir_name = os.path.dirname(file_path)
+    
+    if compile:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        compilation_results = analyze_code_compilation(data)
+        plot_results_compilation(compilation_results, os.path.join(dir_name, f"compilation_analysis_{base_name.replace('.json', '.png')}"))
+        write_summary(os.path.join(dir_name, f"summary_{base_name.replace('.json', '.txt')}"), compilation_results = compilation_results)
+    else:
+        equivalent, not_equivalent = analyze_a_equivalent(file_path)
+        plot_results_comparison(equivalent, not_equivalent, f"comparison_analysis_{base_name}", os.path.join(dir_name, f"plot_{base_name.replace('.json', '.png')}"))
+        write_summary(os.path.join(dir_name, f"summary_{base_name.replace('.json', '.txt')}"), equivalent_count = equivalent, not_equivalent_count = not_equivalent)
 
 def main():
     file_paths_equivalent = [
@@ -139,47 +165,20 @@ def main():
         'q_longer_than/long_q_openai_answer.json'
     ]
     
-    file_paths_compile = [
-        'qa_with_codes/qa_with_codes_openai_answer.json'
-    ]
-    
-    directory_path_q_tfidf_terms = 'q_for_tfidf_term/'
+    file_paths_compile = ['qa_with_codes/qa_with_codes_openai_answer.json']
 
+    directory_path_q_tfidf_terms = 'q_for_tfidf_term/'
     if os.path.isdir(directory_path_q_tfidf_terms):
         file_paths_equivalent.extend(
             os.path.join(directory_path_q_tfidf_terms, filename)
             for filename in os.listdir(directory_path_q_tfidf_terms)
             if filename.endswith('.json') and 'openai' in filename
         )
-
     for file_path in file_paths_equivalent:
-        if os.path.isfile(file_path):
-            equivalent, not_equivalent = process_file(file_path)
-            plot_results_comparison(
-                equivalent, 
-                not_equivalent, 
-                f"comparison_analysis_{os.path.basename(file_path)}", 
-                os.path.join(os.path.dirname(file_path), f"plot_{os.path.basename(file_path).replace('.json', '.png')}")
-            )
-            write_summary(
-                os.path.join(os.path.dirname(file_path), f"summary_{os.path.basename(file_path).replace('.json', '.txt')}"),
-                equivalent_count=equivalent,
-                not_equivalent_count=not_equivalent
-            )
+        process_file(file_path, compile = False)
 
     for file_path in file_paths_compile:
-        if os.path.isfile(file_path):
-            with open(file_path, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-            compilation_results = analyze_code_compilation(data)
-            plot_results_compilation(
-                compilation_results, 
-                os.path.join(os.path.dirname(file_path), f"compilation_analysis_{os.path.basename(file_path).replace('.json', '.png')}")
-            )
-            write_summary(
-                os.path.join(os.path.dirname(file_path), f"summary_{os.path.basename(file_path).replace('.json', '.txt')}"),
-                compilation_results=compilation_results
-            )
+        process_file(file_path, compile = True)
 
 if __name__ == "__main__":
     main()
