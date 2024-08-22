@@ -1,5 +1,5 @@
 Comparison analysis summary:
-Total questions: 100
-Equivalent answers: 4 (4.00%)
-Not equivalent answers: 96 (96.00%)
+Total questions: 505
+Equivalent answers: 1 (0.20%)
+Not equivalent answers: 504 (99.80%)
 

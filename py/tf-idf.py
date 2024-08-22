@@ -10,7 +10,7 @@ from nltk.corpus import stopwords #stopwords
 
 file_path = 'stackOverflowDump/Posts.xml'
 
-# use for extract the post from xml
+# extract the post from xml
 def extract_posts(file_path, limit= None):
     QUESTION = '1' # 1=Question, 2=Answer
     ANSWER = '2'
@@ -51,6 +51,7 @@ def contains_code(_text, raw_body):
     code_tags = soup.find_all(['code', 'pre']) #tag html for codes
     return bool(code_tags) #if the list is full the bool return 1
 
+# add additional stopwords
 def added_stopwords_func():
     stopwords_file = 'stopwords/stopwords.json'
 
@@ -68,12 +69,16 @@ def added_stopwords_func():
     
     return added_stopwords
 
+# extract post and distinguish answered q from unanswered q
 questions, best_answers, unanswered_questions = extract_posts(file_path, limit= 10000) 
 
+# list of answered q with best a
 answered_questions = [(qid, question, raw_body) for qid, question, raw_body in questions if qid in best_answers] #creation of a list with associate answer
 
+# combine all post in a list
 posts = [q[1] for q in answered_questions] + [best_answers[qid][0] for qid in best_answers] #creation of a list which have in q[1] the cleaned body of the answered_question and in [qid][0] the best answer with cleaned body
 
+# create a tf-idf matrix from the list
 def create_tfidf_matrix(posts, stopwords_list, max_df= 0.8, min_df= 3):
     vectorizer = TfidfVectorizer(max_df= max_df, min_df= min_df, stop_words= stopwords_list)
 
@@ -84,11 +89,13 @@ def create_tfidf_matrix(posts, stopwords_list, max_df= 0.8, min_df= 3):
     
     return df_tfidf
 
+# write data on json
 def write_to_json(file_path, genetate_func, *args):
     data =  genetate_func(*args)
     with open(file_path, 'w', encoding= 'utf-8') as f:
         json.dump(data, f, ensure_ascii= False, indent= 4)
 
+# generate tf-idf scores
 def generate_tfidf(df_tfidf):
     questions_list = []
     for i, (qid, question, _raw_body) in enumerate(answered_questions):
@@ -125,6 +132,7 @@ def generate_tfidf(df_tfidf):
     
     return questions_list
 
+# generate data related a specific tf-idf keywords
 def generate_q_for_tfidf_terms(df_tfidf, keyword):
     questions_list = []
     for i, (qid, question, _raw_body) in enumerate(answered_questions):
@@ -166,11 +174,13 @@ def generate_q_for_tfidf_terms(df_tfidf, keyword):
 
     return questions_list
 
+# generate json for tf-idf specific keywords
 def generate_files_for_keywords(df_tfidf, keywords):
     for keyword in keywords:
         file_path = f"q_for_tfidf_term/q_with_{keyword}.json"
         write_to_json(file_path, generate_q_for_tfidf_terms, df_tfidf, keyword)
 
+# generate a list for unanswered q
 def generate_unanswered_q():
     questions_list = []
     for qid, question, _raw_body in unanswered_questions:
@@ -181,6 +191,7 @@ def generate_unanswered_q():
         questions_list.append(question_dict)
     return questions_list
 
+# generate a list of q shorter and longer than limit_char
 def generate_short_longer_q(limit_char, threshold= False):
     question_list = []
     for qid, question, _raw_body in answered_questions:
@@ -203,6 +214,7 @@ def generate_short_longer_q(limit_char, threshold= False):
                 question_list.append(question_dict)
     return question_list
 
+# generate a list for q and a that contain code
 def generate_a_with_code():
     questions_list = []
     for _i, (qid, question, raw_body) in enumerate(answered_questions):

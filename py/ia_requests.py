@@ -1,43 +1,70 @@
-import json
+import json 
 import os
-import time
-from openai import OpenAI
+import time # timer
+from openai import OpenAI # request openai
+from concurrent.futures import ThreadPoolExecutor # pool of thread
+import functools # cache for function
 
 api_key = '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'
 os.environ['OPENAI_API_KEY'] = api_key
 
-client = OpenAI(
-    api_key = os.environ.get("OPENAI_API_KEY"),
-)
+client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 
-# pass to chatGpt the question for receive the answer
-def ai_answer(question):
+#data for gpt-4o-mini acccording to site: https://platform.openai.com/settings/organization/limits
+RATE_LIMIT_TPM = 200000  # max 200,000 tokens per minute
+RATE_LIMIT_BUFFER = 5000  # buffer to avoid hitting the exact limit
+TOKEN_COST_PER_REQUEST = 2000  # estimated token cost per request 
+
+tokens_used = 0
+
+start_time = time.time()
+
+@functools.lru_cache(maxsize = None)
+
+# get ai answer witch caching for redundant questions
+def ai_answer(question, code = False):
+    global tokens_used, start_time
+
+    current_time = time.time()
+    elapsed_time = current_time - start_time
+    if elapsed_time < 60:
+        if tokens_used + TOKEN_COST_PER_REQUEST >= RATE_LIMIT_TPM - RATE_LIMIT_BUFFER:
+            sleep_time = 60 - elapsed_time
+            time.sleep(sleep_time)
+            tokens_used = 0
+            start_time = time.time()
+    else:
+        tokens_used = 0
+        start_time = current_time
+
     try:
+        if code:
+            modified_question = question + " if there is code in the question, answer with code if needed." 
+        else: modified_question = question
         chat_completion = client.chat.completions.create(
-            messages =[{ "role": "user", "content": question }],
-            model ="gpt-3.5-turbo",
+            messages=[{"role": "user", "content": modified_question}],
+            model="gpt-4o-mini",
         )
         answer_text = chat_completion.choices[0].message.content.strip()
-        return answer_text
 
+        tokens_used += TOKEN_COST_PER_REQUEST 
+
+        return answer_text
     except Exception as e:
         raise Exception(f"Error in getting OpenAI response: {e}")
 
-# create a json with custom name
+# write answer on json
 def write_on_json(file_path, questions_and_answers):
-    base, ext = os.path.splitext(file_path)  # for creating a new JSON file
-    output_file_path = f"{base}_openai_answer{ext}"
-    
+    output_file_path = f"{os.path.splitext(file_path)[0]}_openai_answer.json"
     with open(output_file_path, 'w', encoding='utf-8') as f:
-        json.dump(questions_and_answers, f, indent= 4)
+        json.dump(questions_and_answers, f, indent=4)
 
-# ask to chatGpt if the two answers are equivalent
+# compare ai answer with so answer
 def compare_answers(chatgpt_answer, best_answer):
-    comparison_question = f"Are the following two answers equivalent?, say yes or no.\nAnswer 1: {chatgpt_answer}\nAnswer 2: {best_answer}"
-    comparison_response = ai_answer(comparison_question)
-    return comparison_response
+    comparison_question = f"Are the following two answers equivalent? Say yes or no.\nAnswer 1: {chatgpt_answer}\nAnswer 2: {best_answer}"
+    return ai_answer(comparison_question, False)
 
-# ask to chatGpt if there is code in question and answer and if compile
+# check if the code compile
 def code_compiling(question, chatgpt_answer, best_answer):
     compile_question = (
         "Say if there is code or not in the question and in the two answers, and then say if the code compiles "
@@ -53,30 +80,28 @@ def code_compiling(question, chatgpt_answer, best_answer):
         f"Answer StackOverflow: {best_answer}\n"
         f"Answer ChatGpt: {chatgpt_answer}"
     )
-    compile_response = ai_answer(compile_question)
-    return compile_response
+    return ai_answer(compile_question, True)
 
-# read the input json for setting up the output json
-def process_questions(file_path, limit= None, comparison= False, code_comp= False):
-    with open(file_path, 'r', encoding='utf-8') as f:
+# process questions from a json
+def process_questions(file_path, limit = None, comparison = False, code_comp = False):
+    with open(file_path, 'r', encoding = 'utf-8') as f:
         input_json = json.load(f)
 
     questions_and_answers = []
-    num_limit_questions = min(limit if limit is not None else len(input_json), len(input_json))# for fast result
+    num_limit_questions = min(limit if limit is not None else len(input_json), len(input_json))
 
-    for i, item in enumerate(input_json):
-        if i >= num_limit_questions: break
-
-        print(f"Processing question {i+1} of {num_limit_questions}", end = '\r')
+    def process_item(i, item):
+        if i >= num_limit_questions:
+            return None
 
         if 'Question' in item:
             question_id = item.get('ID', 'unknown')
             question_text = item['Question']
-            
+
             try:
                 answer = ai_answer(question_text)
                 best_answer = item.get('Best answer', None)
-                
+
                 output_json = {"ID": question_id, "Question": question_text, "ChatGpt answer": answer.replace("\n", " ")}
 
                 if best_answer is not None:
@@ -88,12 +113,11 @@ def process_questions(file_path, limit= None, comparison= False, code_comp= Fals
 
                     if code_comp:
                         code_comp_result = code_compiling(question_text, answer, best_answer)
-                        result_parts = code_comp_result.split(',')
                         code_compile_info = {
                             "Question": {"code": "No", "compile": "No"},
                             "Answer StackOverflow": {"code": "No", "compile": "No"},
                             "Answer ChatGpt": {"code": "No", "compile": "No"},
-                        } # vocabulary
+                        }
 
                         result_parts = code_comp_result.split(';')
                         for part in result_parts:
@@ -108,25 +132,28 @@ def process_questions(file_path, limit= None, comparison= False, code_comp= Fals
                                         sub_value = sub_value.strip()
                                         if key in code_compile_info:
                                             code_compile_info[key][sub_key] = sub_value
-                                        else:
-                                            print(f"Unexpected key encountered: {key}")
-                                            
+
                         output_json["Code and Compile Information"] = code_compile_info
-                questions_and_answers.append(output_json)
+
+                return output_json
+
             except Exception as e:
                 print(f"Skipping question due to error: {e}")
+                return None
 
+    # API request parallelized
+    with ThreadPoolExecutor() as executor:
+        results = list(executor.map(lambda x: process_item(x[0], x[1]), enumerate(input_json)))
+
+    questions_and_answers = [result for result in results if result]
     write_on_json(file_path, questions_and_answers)
 
-
-#like write_on_json but for a directory
-def process_questions_in_directory(directory_path, limit= None, comparison= False, code_comp= False):
+# process question form a json in a directory
+def process_questions_in_directory(directory_path, limit = None, comparison = False, code_comp = False):
     for file_name in os.listdir(directory_path):
-        if file_name.endswith('.json') and 'openai' not in file_name:# to ensure that the output file from the first run of the program is not used
+        if file_name.endswith('.json') and 'openai' not in file_name:
             file_path = os.path.join(directory_path, file_name)
             process_questions(file_path, limit, comparison, code_comp)
-
-start_time = time.time()
 
 def main():
     file_path_q_without_a = 'q_without_a/q_without_a.json'
@@ -134,24 +161,21 @@ def main():
     file_path_long_q = 'q_longer_than/long_q.json'
     file_path_qa_with_code = 'qa_with_codes/qa_with_codes.json'
     directory_path_q_tfidf_terms = 'q_for_tfidf_term/'
-    
-    # Answer by chatGpt for questions without answer
-    process_questions(file_path_q_without_a, limit= None, comparison= False, code_comp= False)
+
+    process_questions(file_path_q_without_a, limit = None, comparison = False, code_comp = False)
     print("Answers written for questions without answers in JSON")
-    #ChatGpt answer for question with codes
-    process_questions(file_path_qa_with_code, limit= None, comparison= True, code_comp= True)
+
+    process_questions(file_path_qa_with_code, limit = None, comparison = True, code_comp = True)
     print("Answers written for questions and answers with code in JSON")
-    # Answer for short question by chatGpt
-    process_questions(file_path_short_q, limit= None, comparison= True, code_comp= False)
+
+    process_questions(file_path_short_q, limit = None, comparison = True, code_comp = False)
     print("Answers written for questions shorter than 700 characters in JSON")
-    # Answer for long question by chatGpt
-    process_questions(file_path_long_q, limit= 100, comparison= True, code_comp= False)
+
+    process_questions(file_path_long_q, limit = None, comparison = True, code_comp = False)
     print("Answers written for questions longer than 700 characters in JSON")
-    # Answer for tf-idf terms
-    process_questions_in_directory(directory_path_q_tfidf_terms, limit= None, comparison= True, code_comp= False)
+
+    process_questions_in_directory(directory_path_q_tfidf_terms, limit = None, comparison = True, code_comp = False)
     print("Answers written for questions with specific TF-IDF terms in JSON")
-    
-    print("--%s minuts--" % round((time.time() - start_time)/60))
 
 if __name__ == '__main__':
     main()
