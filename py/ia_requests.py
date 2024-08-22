@@ -19,9 +19,8 @@ tokens_used = 0
 
 start_time = time.time()
 
-@functools.lru_cache(maxsize = None)
-
 # get ai answer witch caching for redundant questions
+@functools.lru_cache(maxsize = None)
 def ai_answer(question, code = False):
     global tokens_used, start_time
 
