@@ -50,7 +50,7 @@ def ai_answer(question, code = False):
 
         return answer_text
     except Exception as e:
-        raise Exception(f"Error in getting OpenAI response: {e}")
+        raise Exception(f"Error in getting AI response: {e}")
 
 # write answer on json
 def write_on_json(file_path, questions_and_answers):
