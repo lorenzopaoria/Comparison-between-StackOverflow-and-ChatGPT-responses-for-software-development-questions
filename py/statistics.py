@@ -101,7 +101,8 @@ def plot_results_compilation(results, output_file_path):
     ax.set_title('Code Compilation and Existence Analysis')
     ax.set_xticks([p + width / 2 for p in x])
     ax.set_xticklabels(labels)
-    ax.legend(loc='upper left')
+
+    ax.legend(loc='upper left', bbox_to_anchor=(1, 1))
 
     def add_labels(bars):
         for bar in bars:
@@ -111,10 +112,12 @@ def plot_results_compilation(results, output_file_path):
     add_labels(bars_compile)
     add_labels(bars_code_exists)
 
-    plt.tight_layout()
+    plt.tight_layout(rect=[0, 0, 0.85, 1]) 
     plt.savefig(output_file_path)
     plt.close()
     print(f"Compilation plot saved to: {output_file_path}")
+
+
 
 # write a txt of the analysis results
 def write_summary(summary_file_path, equivalent_count= None, not_equivalent_count= None, compilation_results= None):
