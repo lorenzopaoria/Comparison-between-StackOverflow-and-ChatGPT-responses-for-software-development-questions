@@ -1,0 +1,5 @@
+Comparison analysis summary:
+Total questions: 1402
+Equivalent answers: 5 (0.36%)
+Not equivalent answers: 1397 (99.64%)
+
