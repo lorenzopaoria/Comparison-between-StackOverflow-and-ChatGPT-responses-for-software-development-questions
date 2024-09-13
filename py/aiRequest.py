@@ -161,7 +161,7 @@ def main():
     file_path_qa_with_code = 'qa_with_codes/qa_with_codes.json'
     directory_path_q_tfidf_terms = 'q_for_tfidf_term/'
 
-    process_questions(file_path_q_without_a, limit = None, comparison = False, code_comp = False)
+    process_questions(file_path_q_without_a, limit = 10, comparison = False, code_comp = False)
     print("Answers written for questions without answers in JSON")
 
     process_questions(file_path_qa_with_code, limit = None, comparison = True, code_comp = True)
