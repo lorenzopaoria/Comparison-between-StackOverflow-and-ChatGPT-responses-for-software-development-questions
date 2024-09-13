@@ -172,14 +172,6 @@ def process_file(file_path, compile= False):
         plot_results_equivalent(equivalent, not_equivalent, f"comparison_analysis_{base_name}", os.path.join(dir_name, f"plot_{base_name.replace('.json', '.png')}"))
         write_summary(os.path.join(dir_name, f"summary_{base_name.replace('.json', '.txt')}"), equivalent_count = equivalent, not_equivalent_count = not_equivalent)
 
-# unisce più json
-def merge_json_files(file_paths):
-    merged_data = []
-    for file_path in file_paths:
-        with open(file_path, 'r', encoding='utf-8') as f:
-            data = json.load(f)
-            merged_data.extend(data)
-    return merged_data
 
 def main():
     file_paths_equivalent = [
@@ -201,14 +193,6 @@ def main():
 
     for file_path in file_paths_compile:
         process_file(file_path, compile= True)
-
-    merged_file_paths = file_paths_equivalent
-    merged_data = merge_json_files(merged_file_paths)
-    merged_file_path = 'merged_equivalent/merged_equivalent_data.json'
-    with open(merged_file_path, 'w', encoding='utf-8') as f:
-        json.dump(merged_data, f, indent =4 )
-    
-    process_file(merged_file_path, compile = False)
 
 if __name__ == "__main__":
     main()
