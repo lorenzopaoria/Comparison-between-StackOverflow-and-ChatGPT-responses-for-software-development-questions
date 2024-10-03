@@ -5,7 +5,7 @@ from openai import OpenAI # request openai
 from concurrent.futures import ThreadPoolExecutor # pool of thread
 import functools # cache for function
 
-api_key = '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'
+api_key = 'YOUR API KEY'
 os.environ['OPENAI_API_KEY'] = api_key
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
