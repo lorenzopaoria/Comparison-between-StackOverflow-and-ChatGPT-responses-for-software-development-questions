@@ -62,8 +62,6 @@ To download the dataset, follow these steps:
 
 With the StackOverflow dataset in place, you can now run the program to compare the responses from StackOverflow and ChatGPT for software development-related questions.
 
-[...]
-
 ## Contributing
 
 If you find any issues or have suggestions for improvements, please feel free to submit a pull request or open an issue in the repository.
