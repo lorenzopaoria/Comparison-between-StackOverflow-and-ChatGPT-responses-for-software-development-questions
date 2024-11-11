@@ -43,7 +43,6 @@ The program includes the following features:
 3. **ChatGPT Response Retrieval**: The program will generate a response from ChatGPT for the given question.
 4. **Response Comparison**: The program will compare the StackOverflow and ChatGPT responses based on factors such as relevance, completeness, and overall quality.
 5. **Analysis Output**: The program will display the results of the comparison, highlighting the strengths and weaknesses of each source.
-# Comparison between StackOverflow and ChatGPT Responses for Software Development Questions
 
 [...]
 
