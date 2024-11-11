@@ -43,6 +43,29 @@ The program includes the following features:
 3. **ChatGPT Response Retrieval**: The program will generate a response from ChatGPT for the given question.
 4. **Response Comparison**: The program will compare the StackOverflow and ChatGPT responses based on factors such as relevance, completeness, and overall quality.
 5. **Analysis Output**: The program will display the results of the comparison, highlighting the strengths and weaknesses of each source.
+# Comparison between StackOverflow and ChatGPT Responses for Software Development Questions
+
+[...]
+
+## Downloading the StackOverflow Dataset
+
+This project utilizes a dataset of software development-related questions and answers from StackOverflow. The dataset was obtained from the following source:
+
+[StackOverflow Data Dump](https://archive.org/details/stackexchange)
+
+Specifically, the dataset used in this project was extracted from the "Posts" table of the StackOverflow data dump. The data contains information such as the question title, body, tags, and the top-voted answer.
+
+To download the dataset, follow these steps:
+
+1. Visit the [StackOverflow Data Dump](https://archive.org/details/stackexchange) page on the Internet Archive.
+2. Locate the latest "Posts" table dump for StackOverflow. At the time of writing, the latest available dump is from September 2022.
+3. Download the "Posts" table dump in your preferred format (e.g., SQL, CSV).
+4. Extract the downloaded file to a location on your local machine.
+5. Update the file path in the `main.py` script to point to the location of the extracted StackOverflow dataset.
+
+With the StackOverflow dataset in place, you can now run the program to compare the responses from StackOverflow and ChatGPT for software development-related questions.
+
+[...]
 
 ## Contributing
 
