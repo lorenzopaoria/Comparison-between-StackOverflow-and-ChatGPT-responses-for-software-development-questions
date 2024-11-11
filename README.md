@@ -44,8 +44,6 @@ The program includes the following features:
 4. **Response Comparison**: The program will compare the StackOverflow and ChatGPT responses based on factors such as relevance, completeness, and overall quality.
 5. **Analysis Output**: The program will display the results of the comparison, highlighting the strengths and weaknesses of each source.
 
-[...]
-
 ## Downloading the StackOverflow Dataset
 
 This project utilizes a dataset of software development-related questions and answers from StackOverflow. The dataset was obtained from the following source:
