@@ -62,6 +62,18 @@ To download the dataset, follow these steps:
 
 With the StackOverflow dataset in place, you can now run the program to compare the responses from StackOverflow and ChatGPT for software development-related questions.
 
+### API Limits and Configuration for GPT-4-turbo
+
+This project uses the `gpt-4-turbo` model, with the following rate limits:
+
+| Parameter               | Value                     | Description                                      |
+|-------------------------|---------------------------|--------------------------------------------------|
+| **RATE_LIMIT_TPM**       | 200,000 tokens/min        | Maximum tokens per minute                        |
+| **RATE_LIMIT_BUFFER**    | 5,000 tokens              | Buffer to avoid hitting the rate limit exactly   |
+| **TOKEN_COST_PER_REQUEST** | 2,000 tokens (estimated) | Estimated token usage per request               |
+
+These settings help maintain efficient API usage within the rate limits provided by OpenAI. For details, refer to [OpenAI Platform Settings](https://platform.openai.com/settings/organization/limits).
+
 ## Contributing
 
 If you find any issues or have suggestions for improvements, please feel free to submit a pull request or open an issue in the repository.
