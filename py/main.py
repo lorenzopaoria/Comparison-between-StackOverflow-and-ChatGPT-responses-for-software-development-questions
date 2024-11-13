@@ -1,7 +1,6 @@
 import subprocess
 
 def run_script(script_name, args=None):
-    """Esegue uno script con argomenti opzionali e stampa l'output."""
     command = ['python', script_name]
     if args:
         command.extend(args)
