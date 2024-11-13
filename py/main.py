@@ -8,24 +8,22 @@ def run_script(script_name, args=None):
     
     result = subprocess.run(command, capture_output=True, text=True)
     if result.returncode != 0:
-        print(f"Errore nell'esecuzione di {script_name}:")
+        print(f"execution error on {script_name}:")
         print(result.stderr)
         exit(1)
     else:
-        print(f"{script_name} eseguito con successo.")
+        print(f"{script_name} successfull execution.")
         print(result.stdout)
 
 def main():
-    # Step 1: Esegui dataCatalog.py
-    print("Esecuzione di dataCatalog.py...")
+
+    print("dataCatalog.py esecution...")
     run_script('dataCatalog.py')
 
-    # Step 2: Esegui aiRequest.py
-    print("Esecuzione di aiRequest.py...")
+    print("aiRequest.py esecution...")
     run_script('aiRequest.py')
 
-    # Step 3: Esegui resultAnalyzer.py
-    print("Esecuzione di resultAnalyzer.py...")
+    print("resultAnalyzer.py esecution...")
     run_script('resultAnalyzer.py')
 
 if __name__ == "__main__":
