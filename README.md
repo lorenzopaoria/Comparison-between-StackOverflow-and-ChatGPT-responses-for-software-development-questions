@@ -62,7 +62,7 @@ To download the dataset, follow these steps:
 
 With the StackOverflow dataset in place, you can now run the program to compare the responses from StackOverflow and ChatGPT for software development-related questions.
 
-### API Limits and Configuration for GPT-4-turbo
+## API Limits and Configuration for GPT-4-turbo
 
 This project uses the `gpt-4-turbo` model, with the following rate limits:
 
