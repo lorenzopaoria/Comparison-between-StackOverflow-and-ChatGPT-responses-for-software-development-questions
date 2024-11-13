@@ -24,7 +24,13 @@ To use the program, follow these steps:
    pip install -r requirements.txt
    ```
 
-4. Run the program:
+4. Navigate to the programs repository:
+
+   ```
+   cd py
+   ```
+
+5. Run the program:
 
    ```
    python main.py
