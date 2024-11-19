@@ -26,9 +26,9 @@ To download the dataset, follow these steps:
 4. Move the downloaded file to stackOverflowDump folder.
 5. Update the file path in the `dataCatalog.py` script to point to the location of the extracted StackOverflow dataset.
 
-## API Limits and Configuration for GPT-4-turbo
+## API Limits and Configuration for GPT-4o-mini
 
-This project uses the `gpt-4-turbo` model, with the following rate limits:
+This project uses the `gpt-4o-mini` model, with the following rate limits:
 
 | Parameter               | Value                     | Description                                      |
 |-------------------------|---------------------------|--------------------------------------------------|
@@ -72,7 +72,7 @@ To use the program, follow these steps:
    python main.py
    ```
 
-6. Review the analysis results, which will be displayed in the file for each categories.
+6. Review the analysis results, which will be saved in JSON file for each categories.
 
 ## Contributing
 
