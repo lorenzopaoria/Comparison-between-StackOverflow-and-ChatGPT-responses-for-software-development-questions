@@ -24,7 +24,7 @@ To download the dataset, follow these steps:
 2. Locate the latest "Posts" table dump for StackOverflow. At the time of writing, the latest available dump is from September 2022.
 3. Download the "Posts" table dump in XML.
 4. Move the downloaded file to stackOverflowDump folder.
-5. Update the file path in the `main.py` script to point to the location of the extracted StackOverflow dataset.
+5. Update the file path in the `dataCatalog.py` script to point to the location of the extracted StackOverflow dataset.
 
 With the StackOverflow dataset in place, you can now run the program to compare the responses from StackOverflow and ChatGPT for software development-related questions.
 
