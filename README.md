@@ -37,6 +37,7 @@ This project uses the `gpt-4o-mini` model, with the following rate limits:
 | **TOKEN_COST_PER_REQUEST** | 2,000 tokens (estimated) | Estimated token usage per request               |
 
 These settings help maintain efficient API usage within the rate limits provided by OpenAI. For details, refer to [OpenAI Platform Settings](https://platform.openai.com/settings/organization/limits).
+If you want change model you can change parameters in AiRequest.py.
 
 ## Usage
 
