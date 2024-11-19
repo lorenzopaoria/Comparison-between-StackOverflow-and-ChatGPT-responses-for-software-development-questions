@@ -72,11 +72,7 @@ To use the program, follow these steps:
    python main.py
    ```
 
-   The program will prompt you to enter a software development-related question. It will then retrieve the responses from StackOverflow and ChatGPT, and perform a comparative analysis.
-
-5. Review the analysis results, which will be displayed in the console.
-
-## Features
+6. Review the analysis results, which will be displayed in the file for each categories.
 
 ## Contributing
 
