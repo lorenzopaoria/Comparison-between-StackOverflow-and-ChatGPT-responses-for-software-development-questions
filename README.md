@@ -26,8 +26,6 @@ To download the dataset, follow these steps:
 4. Move the downloaded file to stackOverflowDump folder.
 5. Update the file path in the `dataCatalog.py` script to point to the location of the extracted StackOverflow dataset.
 
-With the StackOverflow dataset in place, you can now run the program to compare the responses from StackOverflow and ChatGPT for software development-related questions.
-
 ## API Limits and Configuration for GPT-4-turbo
 
 This project uses the `gpt-4-turbo` model, with the following rate limits:
